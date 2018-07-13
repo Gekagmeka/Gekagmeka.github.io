@@ -1,0 +1,101 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+/*для Checkbox - чтоб квадратик (по умолчанию) поменять на круг и при клике появлялась галочка
+ - галочку сделаем через псевдоэлементы ::before (одна сторона галочки) и ::after (вторая сторона галочки)*/
+.mark{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  border: 2px solid red;
+  border-radius: 50%;
+}
+
+.mark::before{
+  content: '';
+  position: absolute;
+  opacity: 0;
+  background-color: #f00;
+
+  width: 6px;
+  height: 3px;
+  transform: rotate(45deg);
+  top: 6px;
+  left: 3px;
+}
+.mark::after{
+  content: '';
+  position: absolute;
+  opacity: 0;
+  background-color: #f00;
+
+  width: 4px;
+  height: 8px;
+  transform: rotate(45deg);
+  top: 4px;
+  left: 8px
+}
+
+/* input[type="checkbox"]:checked ~ span{
+  color: #0f0;  цвет названия будет зеленый при нажатии на checkbox
+} */
+
+/*.mark::before{
+  content: '+';
+  position: absolute;
+  top: 0; left: 3px;
+  opacity: 0;
+}
+*/
+
+input[type="checkbox"]{
+  display: none;
+}
+
+input[type="checkbox"]:checked + .mark::before,
+input[type="checkbox"]:checked + .mark::after{
+  opacity: 1;
+}
+
+
+
+/*=======================ДЛя кнопки radio, чтоб вместо круг (по стандарту) был прямоугольник - а внутри его круг при выборе===========================*/
+  .radio_mark{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid blue;
+    position: relative;
+    border-radius: 0;
+  }
+
+  .radio_mark::before{
+    content: '';
+    position: absolute;
+    background-color: blue;
+    opacity: 0;
+
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 3px;
+    left: 3px
+  }
+
+  .radio_mark::after{
+    display: none;
+  }
+ 
+
+  input[type="radio"]:checked + .radio_mark::before{
+    opacity: 1;
+  }
+
+  input[type="radio"]{
+    display: none;
+  }

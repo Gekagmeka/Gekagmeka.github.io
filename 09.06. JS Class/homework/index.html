@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>JS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+</head>
+<body>
+  
+  <!-- Задание 9
+    <button onclick="myFunction()">Click me</button>
+    <p id="demo"></p>
+    <p>A function is triggered when the button is clicked. The function outputs some text in a p element with id="demo".</p>
+    
+    <script>
+    function myFunction() {
+    document.getElementById("demo").innerHTML = "Hello World";
+    document.getElementById("demo").style.color = "red"; // поменять цвет
+    document.getElementById('demo').style.fontSize='35px'; // меняет размер текста, onclick висит на button, а <p id="demo"
+    }
+    </script>
+  -->
+
+<!--____________________________________________________________Как заменить onclick в HTML, на что-то в JS-файле (функцией сделать?)?
+  убираю  onclick="myFunction1()" и без всяких ошибок работает, если оставляю - пишет неопределеена функция
+  Есть ли еще какие-либо варианты?
+
+  <body>
+    <h2>What Can JavaScript Do?</h2>
+    <p>JavaScript can change HTML attribute values.</p>
+    <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+    
+    <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+    <img id="myImage" src="pic_bulboff.gif" style="width:100px">
+    <button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+    </body>__________________________________________________________-->
+
+  <h2>What Can JavaScript Do?</h2>
+  <p>JavaScript can change HTML attribute values.</p>
+  
+  <button id="button1">Turn on the light</button>
+  <img id="myImage" src="images/off.gif" style="width:100px">
+  <button id="button2" >Turn off the light</button>
+  
+
+<!--Задание 10
+  <h2>JavaScript in Body</h2>
+  <p id="demo"></p>-->
+
+ <!--Задание 11
+  <h2>JavaScript in Head</h2>
+  <p id="demo">A Paragraph.</p>
+  <button id="button1" type="button" onclick="myFunction()">Try it</button>-->
+
+  <script src="file.js"></script>
+</body>
+</html> 

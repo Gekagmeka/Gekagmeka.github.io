@@ -1,0 +1,502 @@
+  /*.all-wrapper{
+    max-width: 1200px;
+    margin: auto;
+  }*/
+
+  .wrapper{
+    min-height: 100vh;
+    display: flex;
+    padding-bottom: 100px;
+    flex-direction: column;
+  }
+
+  .footer{
+    height: 100px;
+    flex-grow: 1;
+    margin-top: -100px;
+  }
+
+/*header part*/
+.header{
+  background-color: #f6f2f2;
+}
+
+.header-nav{ /*выравниваем по центру nav*/
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+  .header-nav-list{
+    display: flex;
+    background-color: #313030;
+    justify-content: center; /*выравниваем по центру относительно главной оси*/
+    align-items: stretch; /*выравнивание по центру относительно вторичной оси*/
+    height: 100px;
+    
+  }
+
+  .header-nav-list-item{
+    list-style-type: none;
+    list-style-type: none;
+    display: flex;
+  }
+
+  .header-nav-link{
+    color: #fff;
+    padding-left: 40px;
+    padding-right: 40px;
+    /*padding-top: 43px; /*ВОПРОС в этих отступах - нельзя ли как-то автоматически сделать, чтоб расстояния сверху и снизу не было*/
+    /*padding-bottom: 42px; - ответ - ставим display и ставим ai*/
+    text-transform: uppercase;
+    letter-spacing: 0.035em;
+    text-decoration: none;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+  }
+  .header-nav-link:hover{
+    background-color: #ff3f40;
+  }
+
+  .header-content{
+    padding-top: 110px;
+    padding-bottom: 100px;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+  }
+
+  .header-text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+
+  .header-text h2{
+    text-transform: uppercase;
+    font-size: 60px;
+    letter-spacing: 0.025em;
+  }
+
+  .header-text p{
+    font-size: 16px;
+  }
+
+  .header-content-button{
+    /* display: flex; */
+
+    font-size: 18px;
+    letter-spacing: 0.025em;
+    margin-top: 60px;
+    
+    /*margin-right: auto;/*!!!!!!!!!!! Вопрос снова по кнопке!!!!!чтоб работали padding, потому что правый край уходит на большую длину*/
+  }
+
+  .header-content-button a{
+    background-color: #ff2d2d;
+    text-decoration: none;
+    color: #fff;
+    padding: 20px 30px;
+    border-radius: 4px;
+  }
+
+  .second{
+    background-image: url('images/1.png');
+    background-size: cover;
+    text-align: center;
+  }
+
+
+  /*main____________________________________________________________-part*/
+  /*.content{
+    max-width: 1200px;
+    margin: auto;
+  }*/
+
+  .content-first{
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 110px;
+    padding-bottom: 110px;
+  }
+
+  .content-text{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap; /*разрешение переносить по строкам*/
+    justify-content: space-between;
+  }
+
+  .content-text-right{
+    max-width: 280px;
+  }
+
+  .content-text-left{
+    max-width: 600px;
+    padding-right: 120px;
+
+    display: flex; /*правильно ли я добавил сюда flex, чтоб убрать растягивание кнопки?*/
+    flex-direction: column;
+  }
+
+  .content-text-left h1{
+    text-transform: uppercase;
+    padding-bottom: 50px;
+  }
+
+  .content-text-right img{
+    padding-bottom: 30px;
+  }  
+
+  .content-text-right p{
+    padding-bottom: 30px;
+  }
+
+  .content-text-left-button{
+    /*display: flex;*/
+
+    font-size: 18px;
+    letter-spacing: 0.025em;
+    margin-top: 60px;
+    background-color: #fff;
+    border-radius: 4px;
+    /*margin-right: auto; /*также вопрос по отступам*/
+  }
+  .content-text-left-button a{
+    text-decoration: none;
+    color: #ff2d2d;
+    padding: 20px 30px;
+    border: 2px solid #ff2d2d;
+    border-radius: 4px;
+  }
+  
+/*---*/
+.content-second{
+  max-width: 1200px;
+    margin: auto;
+}
+
+.content-text-second{
+  text-align: center;
+}
+
+.content-text-second h1{
+  text-transform: uppercase;
+  font-size: 42px;
+  color: #000;
+  padding-bottom: 35px;
+  letter-spacing: 0.01em;
+}
+
+ .content-second-line{ /*для серой линии*/
+  border: none;
+  background-color: #ececec;
+  height: 2px;
+  max-width: 1200px;
+  margin-bottom: 100px;
+ }
+
+ .content-text-second-line{ /*для красной линии*/
+  border: none;
+  background-color: #ff2d2d;
+  color: red;
+  height: 2px;
+  width: 130px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
+  margin-bottom: 85px;
+ }
+
+ .content-second-nav{
+   text-align: center;
+ }
+
+ .content-second-nav-list{
+  display: flex;
+  justify-content: center;
+ }
+
+ .content-second-nav-list-item{
+   list-style-type: none;
+ }
+
+ .content-second-nav-link{
+  margin-right: 25px;
+  margin-left: 25px;
+  /*width: 100%;*/
+  flex-grow: 1;  /*пропорция, как будут занимать место все ссылки, если их 5  и ставим 1, то они будут занимать по 20%*/
+  min-width: 100px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #737373;
+ }
+
+ .content-second-nav-list .f{
+  color: red;
+}
+
+ .content-second-images{
+   padding-top: 60px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+ }
+
+ .content-second-images img{
+   padding:1px;
+ }
+
+
+ /*third part of main------------*/
+.content-third{
+  max-width: 1200px;
+    margin: auto;
+  padding-top: 130px;
+}
+
+  .content-text-third{
+    width: 33.3333%;
+}
+
+.content-text-third h1{
+  text-transform: uppercase;
+  padding-bottom: 40px;
+}
+
+.content-text-third p{
+  padding-bottom: 30px;
+}
+
+ .content-text-third-line{
+  border: none;
+  background-color: #ff2d2d;
+  color: red;
+  height: 2px;
+  width: 130px;
+  margin-bottom: 70px;
+ }
+
+.content-third-images{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.content-third-images-right{
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 70px;
+}
+
+.content-third-images-right h1{
+  text-transform: uppercase;
+  padding-bottom: 30px;
+}
+
+.content-third-images-right p{
+  padding-bottom: 40px;
+}
+
+.content-third-images-right ul{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.content-third-images-right li{
+  list-style-type: none;
+  padding-right: 10px;
+}
+
+.content-third-images-right a{
+  text-decoration: none;
+  color: rgba(0,0,0, 0.8);
+  font-style: italic;
+  
+}
+
+.content-third-images-right-little{
+  padding-top: 40px;
+}
+
+
+/*---fouth part of main---*/
+.content-fouth{
+  background-color: #f5f0dd;
+  text-align: center;
+  margin-top: 110px;
+  padding-left: 160px;
+  padding-right: 160px;
+}
+
+.content-text-fouth{
+  padding-top: 120px;
+  padding-bottom: 140px;
+}
+
+.content-text-fouth h1{
+  padding-bottom: 35px;
+  font-size: 42px;
+  letter-spacing: 0.025em;
+}
+
+.content-text-fouth p{
+  padding-bottom: 35px;
+}
+
+.content-text-fouth input{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 350px;
+  font-size: 18px;
+  letter-spacing: 0.025em;
+  border-radius: 4px;
+  border: 0;
+  color: #2c2c2c;
+}
+
+.content-text-fouth button{
+  text-transform: uppercase;
+  padding: 30px 55px;
+  font-size: 18px;
+  letter-spacing: 0.025em;
+  border-radius: 4px;
+  border: 0;
+  margin-left: 25px;
+  color: #fff;
+  background-color: #ff2d2d;
+}
+
+
+
+/*---Fifth part of main---*/
+.content-fifth{
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.content-text-fifth{
+  padding-top: 110px;
+  width: 50%;
+}
+
+.content-text-fifth h1{
+  font-size: 42px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  padding-bottom: 55px;
+}
+
+.content-text-fifth p{
+  font-size: 16px;
+  padding-bottom: 70px;
+}
+
+.content-fifth-line{
+  border: none;
+  background-color: #ff2d2d;
+  color: red;
+  height: 2px;
+  width: 130px;
+  margin-bottom: 70px;
+}
+
+.content-text-fifth-form{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fifth-input{
+  /*display: flex;*/
+  justify-content: space-between;
+}
+
+.fifth-input input{
+  max-width: 340px;
+  margin-bottom: 45px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 50px;
+  padding-right: 200px;
+  border-radius: 7px;
+  border: 0;
+  background-color: #e5e5e5;
+}
+
+.fifth-textarea{
+  width: 100%;
+  padding-top: 30px;
+  padding-left: 40px;
+  padding-bottom: 200px;
+  border-radius: 7px;
+  border: 0;
+  background-color: #e5e5e5;
+  resize: none;
+}
+
+.fifth-button{
+  margin-top: 50px;
+  margin-bottom: 110px;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 7px;
+  background-color: #ff3b3b;
+  border: 0;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  width: 100%;
+}
+
+.content-text-fifth-form-right{
+  background-color: #2d2d2d;
+}
+
+.content-text-fifth-form-right h2{
+  padding-top: 140px;
+  padding-left: 70px;
+  font-size: 18px;
+ 
+  padding-bottom: 35px;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+.content-text-fifth-form-right p{
+  font-size: 16px;
+  padding-left: 70px;
+}
+
+
+
+
+
+  
+@media screen and (max-width: 1024px){
+    .all-wrapper{
+      /*width: 33.3333%; /*чтоб на данном экране было 3 колонки при таком разрешении*/
+      width: 50%; /*4 колонки*/
+    }
+  }
+
+@media screen and (max-width: 720px){
+    .header-text{
+      /*width: 33.3333%; /*чтоб на данном экране было 3 колонки при таком разрешении*/
+      width: 33.3333%; /*4 колонки*/
+    }
+  }
+
+  @media screen and (max-width: 375px){
+    .header-text{
+      /*width: 33.3333%; /*чтоб на данном экране было 3 колонки при таком разрешении*/
+      width: 50%; /*4 колонки*/
+    }
+  }

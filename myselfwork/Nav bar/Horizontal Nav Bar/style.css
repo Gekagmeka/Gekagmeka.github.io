@@ -1,0 +1,42 @@
+@import "reset.css"; /*подключаем файл reset.css в данный файл*/
+
+ul{
+  background-color: #555;
+  list-style-type: none; /*убираем метки li*/
+  margin: 0;
+  padding: 0; /*убираем все отступы*/
+  /*text-align: center; - ссылки меню будут центрированы относительно страницы*/
+  overflow: hidden; /*без этого свойства - не будет видны ссылки*/
+}
+
+li{
+  float: left;
+  border-right: 2px solid gray;
+  
+}
+
+li a{
+  color: #fff;
+  text-decoration: none;
+  display: inline-block; /*если поставим только это свойство без float, то менюшки будут занимать всю ширину, также inline-block позволяет ставить ширину, отступы и т.п.*/
+  padding: 14px 16px;/*сделаем большую площадь кликабельной для менюшек*/
+  /*margin: 10px 15px; /*отступ от подсвеченной области ссылки до границы li*/
+  text-align: center;
+}
+li a:hover{
+  background-color: rgb(214, 136, 136);
+}
+li:last-child{
+  border-right: none; /*у последнего li (Contact Us) из ul не будет правой границы */
+}
+
+footer{
+  background-color: #999;
+  padding: 10px 20px;
+  position: relative; /*
+  relative -  сразу после текста занимает нижнее место, при скролле не видим footer, пока в самый низ не долистаем;
+  absolute -  опускаем footer в самый низ - делая отступ от низа = 0 - только оно не будет двигаться вниз, а останется на этом месте, даже если будем скролить вниз
+  fixed - будет всегда внизу, даже при прокрутке страницы вниз, но может перекрыть текст внизу */
+  bottom: 0;
+  width: 100%; /*потому что при absolute для footer выделится только необходимое место под название*/
+}

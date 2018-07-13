@@ -1,0 +1,309 @@
+@font-face{ /*определение шрифта и его подключение (шрифт находим на сайте cdn, скачиваем и пожключаем)*/
+  font-family: 'ralewaymedium';
+  src: url('fonts/raleway-medium.woff') format('woff');
+  font-weight: normal; 
+  font-display: swap;
+}
+
+@font-face{
+  font-family: 'ralewayregular';
+  src: url('fonts/raleway-regular.woff') format('woff');
+  font-weight: normal; /*если указываем число, то теперь можно убрать приставки в шрифте Bold Medium Book*/ 
+  font-display: swap;
+}
+
+@font-face{
+  font-family: 'ralewaysemibold'; /*без font-weight нужно указывать Gotham Book и т.п, а так можно просто написать его название Gotham*/
+  src: url('fonts/raleway-semibold.woff') format('woff');
+  font-weight: normal; /* и теперь можно убрать приставки в шрифте Bold Medium Book*/
+  font-display: swap; 
+}
+
+/*стандартный сброс стилей*/
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'ralewayregular', sans-serif;
+  background-color: rgb(247, 243, 243);
+  color: black;
+}
+
+ul{
+  list-style: none;
+}
+
+input, button{
+  border: none;
+  outline: none;
+}
+
+label{
+  user-select: none;
+}
+
+
+/*===================начинаем для самой формы писать==========================*/
+.wrapper{
+  display: flex;
+  height: 100vh;
+  align-items: center; /*при изменении высоты auth-container находится всегда по центру wrapper*/
+}
+
+.auth-container{
+  background-color: #fff;
+  max-width: 800px;
+  width: 100%;
+  margin-left:auto;
+  margin-right: auto;
+
+  /*добавление тени на контейнер - сдвиг по оси Х,  У(distance),  размер тени и цвет*/
+  box-shadow: 0 5px 5px rgba(0,0,0, 0.75); /*для opacity 75%*/
+}
+
+.auth-head{
+  padding: 30px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e4e4e4;
+  flex-wrap: wrap; /*для переноса невлезающих элементов на другую строку*/
+}
+
+.auth-head-title{
+  font-size: 1.375rem; /*шрифт задаем в относительных единицах rem (относительно размера шрифта HTML = 16px), т.е. 22px/16px =1.375rem */
+  font-family: 'ralewaymedium', sans-serif;
+  color: #464646;
+  letter-spacing: -0.02em;
+  margin-bottom: 5px;
+}
+
+.auth-head-subtitle{
+  font-size: 0.875rem;
+  color: #919191;
+  letter-spacing: -0.02em;
+}
+
+/*==========================боковые кнопки Sign in и Sign up============================*/
+.display-control-btn{
+  font-family: 'ralewaymedium', sans-serif;
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid #e4e4e4;
+  border-radius: 2px 0 0 2px;
+  font-size: 0.75rem;
+  color: #999;
+  box-shadow: 0 0 1px rgba(0,0,0, 0.5);
+  text-transform: uppercase;
+  background-color: #fff;
+}
+
+.display-control-btn.active{
+  background-color: #1585ff;
+  border-color: #1585ff;
+  box-shadow: none;
+  color: #fff;
+}
+/*убираем полностью границы и отступы между кнопками - 3 действия*/
+.display-control-btn:first-child{
+  border-right: none;
+}
+.display-control-btn:last-child{
+  border-left: none;
+}
+.form-display-controls{
+  display: flex; /*убираем границы*/
+}
+
+
+/*========================== auth-body=================================*/
+.auth-body{
+  padding: 30px 30px;
+}
+
+.form-control{
+  width: 100%;
+  height: 50px;
+  border: 1px solid #e2e2e2;
+  background-color: rgb(245, 245, 245);
+  color: #989898;
+  font-family: 'ralewaymedium', sans-serif;
+  font-size: 1.125rem;
+  border-radius: 3px;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: all 0.1s cubic-bezier(.82,.01,1,.59);
+}
+.form-control:focus{
+  box-shadow: 0 0 1px rgba(0,0,0, 0.5);
+  background-color: #fff;
+}
+
+.form-group label{
+  display: inline-block;
+  font-family: 'ralewaymedium', sans-serif;
+  font-size: 0.75rem;
+  margin-bottom: 10px;
+}
+
+.auth-body .form-group + .form-group{ /*все .form-group, кроме первого*/
+  margin-top: 10px;
+}
+
+.auth-body .checkbox-group{ /*отступы для полей*/
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+
+/*============Checkbox===========*/
+.checkbox-group input[type="checkbox"]{
+  display: none;
+}
+
+/*.checkbox-group input[type="checkbox"] + label::before{/*для иконки вместо стандартной
+  content:'\f0c8'; /*Не работает!!!!!!!!!
+  font-size: 1.5rem;
+  display: inline-block;
+  color: #999;
+  margin-right: 10px;
+}
+
+.checkbox-group input[type="checkbox"]:checked + label::before{/*при клике по label изменяется иконка
+  content:'\f14a';  /*Не работает!!!!!!!!!
+  color: green;
+}*/
+
+.mark{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid;
+  position: relative;
+  margin-right: 10px;
+}
+
+.mark::before{
+  content: 'x';
+  position: absolute;
+  top: -2px;
+  left: 6px;
+  opacity: 0;
+}
+
+.checkbox-group input[type="checkbox"]:checked + .mark::before{
+  opacity: 1;
+}
+
+
+
+/*для кнопки и соц сетей*/
+.submit-btn{
+  display: inline-block;
+  padding-top: 30px;
+  padding-bottom: 25px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: 1px solid #009bc9;
+  border-radius: 3px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: 'ralewaysemibold', sans-serif;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+  color: #132e34;
+  background-color: #3fc6ea;
+  position: relative;
+  overflow: hidden; /*чтоб выезжающий фон был скрыт при анимации*/
+  /*transition: all 0.2s ease-in 0.1s; это для задержки изменения цвета при анимации*/
+}
+.submit-btn::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: yellow;
+  top:0;
+  left:0;
+  transform: translateX(-100%); /*изначальное положение перед анимацией*/
+  transition: all 0.1s ease-in; /*скорость воспроизведения анимации*/
+}
+
+.submit-btn:hover::before{/*когда кнопка активная, мы обращаемся к псевдоэлементу ::before*/
+  transform: translateX(0);
+}
+
+.submit-btn span{
+  position: relative;
+  z-index: 1;
+}
+
+.submit-btn:hover{
+  color: #132e34;
+}
+
+/*========для иконок======*/
+.social-icon{
+  display: inline-block; /*чтоб можно было размеры ставить (высоту и ширину)*/
+  width: 36px;
+  height: 36px;
+  font-size: 1.25rem;
+  line-height: 36px; /*можно вместо высоты указать только line-height*/
+  border-radius: 1px;
+  text-align: center;
+  color: #fff;
+}
+
+.social-icon.fb{ /*обращение к классу .fb, который находится в классе .social-icon*/
+  background-color: #336699;
+}
+
+.social-icon.google{
+  background-color: #cc3333;
+}
+
+.social-icon.twitter{
+  background-color: rgb(146, 135, 240);
+}
+
+.social-icon + .social-icon{ /*каждой иконке кроме первой задаем отступ 10 px*/
+  margin-left: 10px;
+}
+
+.form-footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+/*=============================для медиа-запросов=================================*/
+@media screen and (max-width: 425px){ /*схлопывается в промежутке 425 и 391 px*/
+  .auth-head-title-container {
+    width: 100%;
+  }
+  .auth-head{
+    justify-content: center;
+    text-align: center; /*по другому никак нельзя выровнять???????*/
+  }
+  .form-display-controls{
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 350px){
+  .form-footer{
+    flex-wrap: wrap;
+  }
+  .form-footer .submit-btn{
+    width: 100%;
+  }
+  .form-footer .social{
+    margin-top: 10px;
+    margin-right: auto; /*потому что размеры заданы - мождно так выровнять по центру*/
+    margin-left: auto;
+  }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Скрипт фотогалереи в модальном окне</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/jquery.fancybox.css">
+<style type="text/css">h1,h2{padding:0;color:blue;font-size:24px;text-align:center;}h1{margin:20px 0;}h2{margin:70px 0 20px;}span{color:#900000;font-size:18px;font-weight:normal;}p{text-align:center;}</style>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox-thumbs.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+$(".fancybox").fancybox({
+openEffect:'none',
+closeEffect:'none'
+});
+$(".fancybox-thumb").fancybox({
+prevEffect:'none',
+nextEffect:'none',
+helpers:{title:{type:'outside'},
+thumbs:{width:50,height:50}}});});
+</script>
+</head>
+
+<body>
+<h1>Первый пример Фотогалерея в модальном окне<br />
+<span>Красивые животные</span></h1>
+<p>
+<a class="fancybox" title="Цапля" href="images/1_b.jpg" rel="gallery1"><img src="images/1_a.png" alt="Фото Цапля" /></a> 
+<a class="fancybox" title="Щенки" href="images/2_b.jpg" rel="gallery1"><img src="images/2_a.png" alt="Фото Щенки" /></a> 
+<a class="fancybox" title="Дельфин" href="images/3_b.jpg" rel="gallery1"><img src="images/3_a.png" alt="Фото Дельфин" /></a>
+</p>
+<h2>Второй пример Фотогалерея с миниатюрами<br />
+<span>Красивые животные</span></h2>
+<p>
+<a class="fancybox-thumb" title="Лягушка" href="images/5_b.jpg" rel="fancybox-thumb"><img src="images/5_a.png" alt="Фото Лягушка" /></a> 
+<a class="fancybox-thumb" title="Волк" href="images/6_b.jpg" rel="fancybox-thumb"><img src="images/6_a.png" alt="Фото Волк" /></a> 
+<a class="fancybox-thumb" title="Обезьянка" href="images/7_b.jpg" rel="fancybox-thumb"><img src="images/7_a.png" alt="Фото Обезьянка" /></a>
+</p>
+<p><span>Скрипт скачан с сайта:</span> <a href="http://age-dragon.com/scripts/fotogalereya.html" target="_blank">Age-dragon.com</a></p>
+</body>
+</html>

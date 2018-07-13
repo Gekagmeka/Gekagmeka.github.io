@@ -1,0 +1,221 @@
+/*div::before{
+  content: attr(data-translate);
+}
+
+li{
+  color: green;
+}
+ul{
+  list-style-type: none;
+}
+
+li::before{
+  background-color: brown;
+}
+li:nth-child(3){ /*только третий элемен будет покрашен в зеленый цвет
+  color: green;
+}
+*/
+
+/*.mark{
+  display: inline-block;
+  width: 10px;
+  position: relative;
+  height: 10px;
+  border: 1px solid black;
+  border-radius: 10px solid black;
+  padding-left: 10px;
+}
+.mark::before{
+  content: " ";
+  position: absolute;
+  
+}
+
+input[type="checkbox"]{
+  display: none;
+}*/
+
+
+
+
+/*Задание 2 задание с формой и косым фоном
+.panel{
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(22, 21, 21);
+  width: 240px; /*ширина блока
+  min-height: 240px; /*Минимальная высота блока
+  padding: 20px; /*поля вокруг текста
+  position: relative;
+  overflow: hidden; /*обрезаем лишнее все, что выходит за рамки 240 на 240
+  margin-top: 20px;
+}
+.panel::before{
+  content: '';
+  background-color: green;
+  position: absolute;
+  width: 100%; /*как раз полностью под размеры 240 на ширину и высоту 240
+  height: 100%;
+  transform: skewY(-10deg);
+  top: -25px;
+  z-index: -1; /*чтоб опустить фон вниз
+}
+
+.panel [type="email"]{
+  padding: 5px;
+}
+
+.panel button{
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.panel p{
+  margin-top: 10px;
+  margin-left: 10px;
+}
+*/
+
+
+
+/*Задание 3 - задание с рамками - одна из них повернута
+.border{
+  display: inline-block; /*чтоб рамка по размерам была
+  position: relative;
+  
+  border: 2px solid black;
+  outline: 1px solid green; /*внутрення линия границы border
+  padding: 4px; /*ширина границы
+  background-color: brown; /*цвет заполнения границы
+  margin: 40px;
+}
+
+.border::after{ /*для второй рамки
+  content:'';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  border: 2px solid black;
+  background-color: #dad6cf;
+  padding: 4px;
+
+  z-index: -1; /*опускаем рамку под картинку
+  transform: rotate(-7deg); /*поворачиваем рамку
+}
+
+.border img{
+  display: block; /* для подгона размеров
+}
+*/
+
+
+/*задание 4 - изменение вида нумерации
+ul{
+  padding: 20px;
+  list-style: none;
+}
+
+li{
+  counter-increment: list; /*создаем новую нумерацию
+  margin-bottom: 0.2em;
+}
+li::before{ /*для стиля нумерации
+  content: counter(list); /*выводим созданную новую нумерацию
+  width: 1.5em;
+  height: 1.5em;
+  background-color: rgb(185, 165, 165);
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  margin-right: 0.5em; /*отступ от нумерации
+  line-height: 1.5em;
+}
+*/
+
+
+
+/*Задание 5 - круглые картинки
+.round{
+  border-radius: 50%;
+}
+
+.round_class{
+  background-image: url(images/shark.jpg);
+  border-radius: 50%;
+  width: 300px; /*высота и ширина картинки
+  height: 300px;
+  background-size: auto 300px; /*старается заполнить все пространство
+  background-position: -70px 0; /*можно использовать center, или указывать расстояние в px, двигая фон, который под картинкой 
+}
+
+
+
+
+/*Задание 6 - стилизация формы (псевдокласс :checked) - при нажатии происходит подмена понятий - галочка становится крестиком
+.flag{
+ display: inline-block;
+ width: 20px;
+ height: 20px;
+ position: relative;
+ border: 2px solid black;
+ /*border-radius: 50%; делаем вместо квадратика - круг 
+}
+.flag::before{
+  content: '+';
+  position: absolute;
+  top: -2px;
+  left: 4px;
+  transform: rotate(45deg);
+  opacity: 0; /*сначала крестик скрыт при выкл checkbox
+}
+
+
+input[type="checkbox"]:checked + .flag::before{ /*следующий элемент с классом после input
+  opacity: 0.9; /*появляется крестик, когда включается checkbox
+}
+
+input[type="checkbox"]{
+  display: none; /*убираем стандартный квадратик при checkbox
+}
+*/
+
+
+
+/* Задача 7 - выпадание меню через :checked
+
+.flag{
+  display: inline-block;
+  position: relative;
+  /*border-radius: 50%; делаем вместо квадратика - круг
+ }
+ .flag::after{
+   content: 'Убийца — дворецкий!';
+   position: absolute;
+   opacity: 0; /*сначала крестик скрыт при выкл checkbox
+   top: 20px;
+   left: 0;
+ }
+ input[type="checkbox"]:checked + .flag::after{ /*следующий элемент с классом после input
+  opacity: 0.9; /*появляется крестик, когда включается checkbox
+  display: block;
+}
+
+input[type="checkbox"]{
+  display: none; /*убираем стандартный квадратик при checkbox
+}*/
+
+
+
+input[type=checkbox]{
+  display: none;
+}
+ul{
+  display: none;
+}
+input[type=checkbox]:checked ~ ul {
+  display: block;
+}

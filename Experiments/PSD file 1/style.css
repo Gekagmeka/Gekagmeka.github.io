@@ -1,0 +1,428 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /*не учитывать padding в общей длине*/
+}
+
+
+/*===========================header============================
+здесь нужно добавить кнопку меню, которая будет появвляться при уменьшении до мобильной версии*/
+header{
+  background: url("images/3.jpg") no-repeat center top / cover;
+  min-height: 100vh;
+  padding-bottom: 160px;
+  
+}
+
+.container{
+  max-width: 930px;
+  margin: 0 auto;
+}
+
+.logo{
+  margin-top: 43px;
+  float: left;
+}
+
+nav{
+  float: right;
+  margin-top: 55px;
+}
+
+.menu{
+  display: block;
+}
+
+.menu li{
+  float: left;
+  display: block;
+  margin-right: 41px;
+}
+
+.menu li a{
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.header-title-first{
+  color: #fff;
+  font-size: 2.5rem;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 210px;
+}
+
+.header-title-second{
+  color: #fff;
+  font-size: 4.6875rem;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  margin: 50px 15px;
+}
+
+.clearfix::after{ /*убираем обтекание для следующего элемента*/
+  content: '';
+  clear: both;
+  width: 100%;
+  display: block;
+}
+
+.header-button{
+  background-color: #fed136;
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+ 
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 3px;
+  display: block;
+  max-width: 240px;
+  margin: 0 auto;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.header-title{
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+
+
+/*===========================Section 2===============================
+при уменьшении до моб версии нужно, чтоб занимали 1 элемент в строку*/
+.title{
+  text-align: center;
+  padding-top: 115px;
+}
+
+.title-text{
+  font-size: 2.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.title-content{
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 15px;
+}
+
+.services{
+  margin-top: 70px;
+}
+
+.services-item{
+  max-width: 270px;
+  float: left;
+  text-align: center;
+}
+
+.services-title{
+  font-size: 1.125rem;
+  color: #222222;
+  margin-bottom: 15px;
+}
+
+.services-content{
+  font-size: 0.875rem;
+  color: #777777;
+}
+
+.services-item:last-child{
+  float: right;
+}
+
+.services-item:nth-child(2){
+  margin-left: 60px;
+}
+
+#services{
+  padding-bottom: 115px;
+}
+
+
+/*========================== Section 3================================
+здесь нужно зделать карусельку с кнопочками (можно, чтоб автоматически крутилась)
+при уменьшении до моб версии нужно, чтоб каруселька показывала только 2, а потом только 1 картинку и 1 менялась при прокрутке
+также нужно добавить белый фон под картинку (чуть больше), где внизу на белом фоне будет подпись*/
+#portfolio{
+  background-color: #f7f7f7;
+  padding-bottom: 130px;
+}
+
+.portfolio-item-image{
+  float: left;
+}
+.portfolio-item-image:last-child{
+  float: right;
+}
+.portfolio-item-image:nth-child(2){
+  margin-left: 30px;
+}
+
+.portfolio-item{
+  margin-top: 75px;
+}
+
+
+
+/*======================== Section 4 ======================
+здесь нужно добавить при клике на картинку - она открывается*/
+
+.about-item-image{
+  float: left;
+  margin-right: 35px;
+}
+
+.about-item{
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+.about-item-text ~ .about-item-text{ /*все элементы .about-item-text кроме первого*/
+  margin-top: 75px;
+}
+
+
+
+
+
+/*================== section 5 =======================*/
+#contact{
+  background: url("images/2.png") no-repeat center top / cover;
+  padding-bottom: 115px; /* или лучше min-height: 100vh;???????????????????????????*/
+}
+
+.contact-title-text{
+  color: #fff;
+  font-size: 2.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.contact-title-content{
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 15px;
+  color: #fff;
+  margin-bottom: 70px;
+}
+
+
+/*============================= Форма ==================================*/
+.wrapper{
+  display: flex;
+  align-items: center; /*при изменении высоты auth-container находится всегда по центру wrapper*/
+}
+
+.auth-container{
+  
+  max-width: 950px;
+  width: 100%;
+  margin-left:auto;
+  margin-right: auto;
+
+}
+
+.form-control{
+  width: 100%; /*занимают всю ширину от form-group*/
+  height: 50px;
+  border: 1px solid #e2e2e2;
+  background-color: #fff;
+  color: #bbbbbb;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  border-radius: 3px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.auth-body .form-group { /* + .form-group  - все .form-group, кроме первого*/
+  margin-bottom: 30px;
+}
+
+/*для кнопки и соц сетей*/
+.submit-btn{
+  display: inline-block;
+  padding-top: 30px;
+  padding-bottom: 25px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: 1px solid #009bc9;
+  border-radius: 3px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+  color: #fff;
+  background-color: #fed136;
+  position: relative;
+  overflow: hidden; /*чтоб выезжающий фон был скрыт при анимации*/
+  /*transition: all 0.2s ease-in 0.1s; это для задержки изменения цвета при анимации*/
+  cursor: pointer;
+}
+.submit-btn::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #3fc6ea;
+  top:0;
+  left:0;
+  transform: translateX(-100%); /*изначальное положение перед анимацией*/
+  transition: all 0.1s ease-in; /*скорость воспроизведения анимации*/
+  
+}
+.submit-btn:hover::before{/*когда кнопка активная, мы обращаемся к псевдоэлементу ::before*/
+  transform: translateX(0);
+}
+.submit-btn span{
+  position: relative;
+  z-index: 1;
+}
+
+
+/* изменение цвета при наведении 
+.submit-btn:hover{
+  color: #132e34;
+} */
+
+.form-group{
+  width: 50%; /*form-group's занимают по 50% от ширины контецнера, то есть половину от 950px*/
+  max-width: 460px;
+ 
+}
+
+.form-textarea{
+  float: right;
+  width: 50%;
+  max-width: 460px;
+}
+
+.form-textarea-content{
+  width: 100%; /*занимают всю ширину от form-group*/
+  height: 210px;
+  border: 1px solid #e2e2e2;
+  background-color: #fff;
+  color: #bbbbbb;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  border-radius: 3px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  resize: none;
+}
+
+.form-header{
+  max-height: 210px;
+  margin-right:30px;
+}
+
+.form-footer{
+  text-align: center;
+}
+
+
+
+
+/*==================== footer ==================*/
+.footer-content{
+  padding-top: 35px;
+  padding-bottom: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
+  color: #555555;
+  letter-spacing: -0.025em;
+}
+
+
+
+
+
+/*=================== Burger button ===================*/
+.burger-button{
+  width: 20px;
+  height: 21px;
+  position: absolute;
+  top: 40px;
+  right: 30px;
+  display: none; /*кнопка скрыта, когда ширина большая (больше в нашем случае, чем 425px)*/
+}
+
+.serif{
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+
+  /*для анимации в дальнейшем укажем время анимации*/
+  transition:
+              opacity 0.2s ease-in,
+              transform 0.2s ease-in;
+
+  /*определим точку вращения (смещение точки вращения)*/
+  transform-origin: 0 50%;
+}
+.serif:nth-child(2){
+  top: 9px;
+}
+.serif:nth-child(3){
+  top: auto;
+  bottom: 0;
+}
+
+/*добавим анимацию при активной кнопке burger-button*/
+.burger-button.active .serif:nth-child(2){
+  transform: translate(100px, 0); /*вторая полоска уезжает вправо на 100px по оси ОХ, когда кнопка активна*/
+  opacity: 0; /*при нажатии на кнопку - вторая полоска пропадает плавно*/
+}
+.burger-button.active .serif:nth-child(1){ /*или просто :first-child*/
+  transform: rotate(45deg);
+  top: 2px;
+}
+.burger-button.active .serif:nth-child(3){
+  transform: rotate(-45deg);
+  bottom: 2px;
+}
+
+
+
+/*======================= media =====================*/
+@media screen and (max-width: 1024px){
+
+}
+
+@media screen and (max-width: 720px){
+  .burger-button{
+    display: block;/*кнопка появится при уменьшении экрана до 425px и ниже*/
+  }
+  .header-content nav{
+    position: fixed;
+    max-width: 200px;
+    display: none; /*сначала скрытые*/
+  }
+  .header-content nav.active{
+    display: block; /*станут открытыми*/
+  }
+  .menu li {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 375px){
+
+}

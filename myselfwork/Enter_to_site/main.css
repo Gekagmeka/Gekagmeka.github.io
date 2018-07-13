@@ -1,0 +1,51 @@
+form{
+  width: 100%;
+}
+
+input{
+  margin: 0;
+}
+
+.info{
+  width: 15%;
+  padding: 20px 20px 20px 20px;
+  /*text-align: center; - all names and textbox will be situated on the center of fieldset*/
+}
+
+.info label{
+  color: #395870;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.send{
+  background: #f0f0f2;
+  border-top: 1px solid #c6c7cc;
+  padding: 20px;
+  width: 15%;
+}
+
+.info input{ /*for INPUT in the class INFO*/
+    padding: 6px;
+    margin-top: 6px;
+    width: 90%;
+  }
+
+  .send label{
+    color: #7c7c80;
+    font-size: 12px;
+    float: center;
+    margin: 10px 0 0 20px;
+  }
+  
+
+
+
+
+
+/*
+label{
+  float: left; - all "label" will take left side
+}
+*/

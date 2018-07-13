@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Font-family</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!--для поддержки Viewport-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,700" rel="stylesheet"> <!--подключаем font-family текст, который есть на гугл font-->
+  <link rel="stylesheet" href="css/font-awesome.min.css"> <!--подключаем font-awesome - это шрифтовые иконки, но не иконки-->
+  <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous"> -->
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <style>
+
+ </style>
+</head>
+
+<body>
+
+
+<!--Заголовок-->
+<header>
+ 
+</header>
+
+
+
+
+<!--Основная часть контента-->
+<main id="main">
+  <div class="wrapper">
+    <div class="auth-container">
+
+       <div class="auth-head">
+         <div class="auth-head-title-container">
+            <h3 class="auth-head-title">Sign Up</h3>
+            <span class="auth-head-subtitle">Want to sign up fill out this form!</span>
+         </div>
+         <!-- /.auth-head-title-container -->
+
+         <div class="form-display-controls"> <!--Элементы управления (2 кнопки)-->
+           <button class="display-control-btn">Sign in</button>
+           <button class="display-control-btn active">Sign up</button> <!--добавляем класс active, потому что сделаем на форме одну сразу активную унопку.-->
+         </div>
+       </div>
+       <!-- /.auth-head -->
+
+      <div class="auth-body">
+        <form name="sign-up">
+          <div class="form-group">
+            <label for="username">Your name</label>
+            <input type="text" name="username" class="form-control" id="username"> <!--id и for=" " должны совпадать, чтоб при клике по label курсор попадал в input-->
+          </div>
+          <!-- /.form-group -->
+
+          <div class="form-group">
+            <label for="email">Your email</label>
+            <input type="email" name="email" class="form-control" id="email"> <!--id и for=" " должны совпадать, чтоб при клике по label курсор попадал в input-->
+          </div>
+          <!-- /.form-group -->
+
+          <div class="form-group">
+            <label for="password">Your password</label>
+            <input type="password" name="password" class="form-control" id="password"> <!--id и for=" " должны совпадать, чтоб при клике по label курсор попадал в input-->
+          </div>
+          <!-- /.form-group -->
+
+          <div class="form-group">
+            <label for="repeat-password">Repeat your password</label>
+            <input type="password" name="repeat-password" class="form-control" id="repeat-password"> <!--id и for=" " должны совпадать, чтоб при клике по label курсор попадал в input-->
+          </div>
+          <!-- /.form-group -->
+
+          <div class="checkbox-group">
+            <input type="checkbox" name="agree-terms" id="agree-terms">
+            <span class="mark"></span>
+            <label for="agree-terms">I accept the terms of <a href="#">use</a></label>
+          </div>
+          <!-- /.checkbox -->
+
+          <div class="form-footer">
+              <button class="submit-btn"><span>Sign up</span></button>
+              <nav class="social">
+                <a href="#" class="social-icon fb"><span class="fa fa-facebook"></span></a>
+                <a href="#" class="social-icon google"><span class="fa fa-google-plus"></span></a>
+                <a href="#" class="social-icon twitter"><span class="fa fa-twitter"></span></a>
+              </nav>
+              <!-- /.social -->
+          </div>
+          <!-- /.form-footer -->
+        </form>
+      </div>
+      <!-- /.auth-body -->
+
+    </div>
+    <!-- /.auth-container - вся часть у формы, которая будет разделена на две части header и его тела -->
+  </div>
+  <!-- /.wrapper -->
+</main>
+
+
+
+
+<!--Footer part - the last part-->
+<footer>
+
+</footer>
+
+
+
+</body>
+</html>

@@ -1,0 +1,208 @@
+@import "text.css";
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrapper{
+  width: 1200px;
+  border-left: 2px dotted black;
+  border-right: 2px dotted black;
+  margin: 0 auto;
+}
+
+/*header*/
+.logo-image{ /*логотип и название слева вверху*/
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 40px;
+  margin-left: 20px;
+}
+.logo-image:hover{
+  opacity: 0.7;
+}
+
+.logo-span{
+  display: block;
+  text-align: center;
+}
+
+ .contacts{ /*телефон и почта справа вверху*/
+  float: right;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.contacts a{
+  display: block;
+  color: black;
+  font-size: 24px;
+  margin-top:20px;
+  text-align: right;
+}
+.contacts a:hover{
+  text-decoration: none;
+}
+
+.header-nav{
+  padding: 0 30px;
+  text-align: left;
+  border-top: 3px solid black;
+  border-bottom: 3px solid #000;
+}
+
+.header-nav-list-item{
+  display: inline-block;
+  position: relative; /*на этого родителя ориентируется вложенный список li ul - чтоб вложенный выскакивал нормально, перекрывая основной текст*/
+}
+
+.header-nav-link{
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 20px;
+  color: black;
+  /*border: 1px solid black; - каждая ссылка будет окружена границей*/ 
+}
+.header-nav-link:hover{
+  background-color: #000;
+  color: #fff;
+}
+
+
+/*вложенный список*/
+.header-nav-li{ /*только вложенный список */
+  display: none; /*скрыть вложенный список при просмотре страницы*/
+  position: absolute;
+  z-index: 2; /*нужно установить, потому что дальше также есть position absolute и нужно установить, что будет находиться поверх свего*/
+}
+li:hover ul{
+  display: block; /*при наведении на эту ссылку - вложенный список откроется и будет выглядеть, как блочные элементы*/
+  box-shadow: 2px 2px 10px rgba(170, 147, 147, 0.5);
+}
+
+li ul li{
+  background-color: #fff;
+  list-style-type: none; /*убираем маркеры*/
+  text-align: center;
+  font-size: 18px;
+}
+li ul li:hover{
+  background-color: #000;
+}
+
+li ul li a{
+  display: block; /*чтоб установить можно было отступы*/
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  width: 110px;
+}
+li ul li a:hover{
+  color: #fff;
+}
+
+
+/*main part*/
+main{
+  margin-right:300px;
+}
+
+main h1,
+main h2{
+  padding-top: 30px;
+  padding-left: 20px;
+}
+
+main p{
+  padding: 10px 20px 30px 20px;
+  font-size: 18px;
+}
+
+main img{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/*footer part*/
+footer{
+  background-color: #000;
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+}
+
+.footer-nav-list-item{
+  display: inline-block;
+}
+
+.footer-nav-link{
+  display: inline-block;
+  margin: 20px 10px;
+  text-decoration: none;
+  color: #fff;
+  
+}
+.footer-nav-link:hover{
+  border-bottom: 1px dashed #fff;
+}
+
+
+/*Aside part*/
+aside{
+  float: right;
+  width: 300px;
+}
+
+.aside-inform{
+  border: 1px dotted black;
+  margin: 20px 20px;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+aside p + p{ /*только для второго абзаца <p> именно в данном  aside*/
+   padding-top: 10px;
+  font-size: 16px;
+}
+
+time{
+  font-style: italic;
+}
+
+aside p a{
+  float: right;
+  color: black;
+}
+aside p a:hover{
+  text-decoration: none;
+}
+ /*исправить разрастание сайта при добавлении в него информации*/
+
+
+
+
+ /*для границы, которая разделяет main и aside*/
+.container{
+  position: relative;
+}
+
+.container-border{
+  position: absolute;
+  width: 0;
+  height: 100%;
+  right: 300px;
+  top: 0;
+  border-right: 2px dotted #000;
+}
+
+.container::after{ /*обязательно нужно, чтоб при добавлении контента в sidebar и main растягивался сам контейнер*/
+  display: block; /*потому что применяется к болчным - поэтому пишем так*/
+  content: '';
+  clear: both;
+}

@@ -1,0 +1,258 @@
+@font-face{ /*определение шрифта и его подключение (шрифт находим на сайте cdn, скачиваем и пожключаем)*/
+  font-family: 'ralewaymedium';
+  src: url('fonts/raleway-medium.woff') format('woff');
+  font-weight: normal; 
+  font-display: swap;
+}
+
+@font-face{
+  font-family: 'ralewayregular';
+  src: url('fonts/raleway-regular.woff') format('woff');
+  font-weight: normal; /*если указываем число, то теперь можно убрать приставки в шрифте Bold Medium Book*/ 
+  font-display: swap;
+}
+
+@font-face{
+  font-family: 'ralewaysemibold'; /*без font-weight нужно указывать Gotham Book и т.п, а так можно просто написать его название Gotham*/
+  src: url('fonts/raleway-semibold.woff') format('woff');
+  font-weight: normal; /* и теперь можно убрать приставки в шрифте Bold Medium Book*/
+  font-display: swap; 
+}
+
+/*стандартный сброс стилей*/
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.clearfix::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/*=== Section 1 ===*/
+article{
+  position: relative;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+#first{
+  background: #e7e4aa url('images/1.jpg') no-repeat center center / cover;
+  height: 100vh;
+  position: relative;
+  box-shadow: 5px 0px 5px rgba(0,0,0,0.75);
+}
+
+#first article{
+  height: 100vh;
+}
+
+.header-clock{
+  text-align: center;
+  font-size: 0.9375rem;
+  font-family: 'Ubuntu', sans-serif;
+  text-transform: uppercase;
+  padding-top: 6vh;
+}
+
+.wheel{ /*картинка колеса находится по центру*/
+  position: absolute;
+  left: 50%;
+  margin-left: -267.5px;
+  top: 50%;
+  margin-top: -165.5px;
+
+}
+
+.header-icon1{
+  font-family: 'Ubuntu', sans-serif;
+  color: #3b3a1f;
+  letter-spacing: 0.06em;
+  background: url('images/icon1.png') no-repeat center top; /*по центру вверху*/
+  padding-top: 170px; /*это сама высота icon1 и неменого запаса*/
+  width: 220px; /*примерная ширина картинки с текстом*/
+  text-align: center;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+
+  top: 50%; /*опускаем верхнюю границу на 50% экрана*/
+  margin-top: -110px; /*поднимаем на полвысоты вверх, чтою полностью картинка стала по середине*/
+}
+
+.header-icon2{
+  font-family: 'Ubuntu', sans-serif;
+  color: #3b3a1f;
+  letter-spacing: 0.06em;
+  background: url('images/icon2.png') no-repeat center top; /*по центру вверху*/
+  padding-top: 170px; /*это сама высота icon1 и неменого запаса*/
+  width: 220px; /*примерная ширина картинки с текстом*/
+  text-align: center;
+  font-weight: bold;
+  position: absolute;
+  right: 0;
+
+  top: 50%; /*опускаем верхнюю границу на 50% экрана*/
+  margin-top: -110px; /*поднимаем на полвысоты вверх, чтою полностью картинка стала по середине*/
+}
+
+.header-title-first,
+.header-title-second{
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  font-size: 0.8125rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #3b3a1f;
+}
+
+.header-bottom{
+  position: absolute;
+  bottom: 16vh; /*отступ от низа для данного div*/
+  left: 0;
+  width: 100%; /*задаем ширину и выравниваем, тем самым, по середине*/
+}
+
+.header-title-first{
+  margin-bottom: 20px;
+}
+
+.header-title-second span{
+  margin-left: 20px;
+}
+.header-title-second span:nth-child(1){
+  margin-left: 0;
+}
+
+.header-btn{
+  font-weight: bold;
+  text-align: center;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  background-color: #cf3f3f;
+  padding: 20px 30px 10px 30px;
+  border-radius: 4px 4px 0 0;
+  width: 300px; /*задаем ширину кнопки с отступами*/
+
+  position: absolute;
+  bottom: 0vh; /*от низа нулевой отступ*/
+  left: 50%; /*по центру - а теперь нужно отнять половину ширины и сместить влеао*/
+  margin-left: -150px;
+}
+.header-btn span{
+  display: block; /*чтоб иконка перескочила вниз от названия кнопки*/
+}
+
+
+
+/*======== Section id = "second" =======*/
+#second{
+  background: url('images/3.jpg') repeat-y;
+  padding-top: 50px;
+  color: #e7e4bb;
+  padding-bottom: 60px;
+}
+
+h2{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 33px;
+  color: #e7e4bb;
+  text-align: center;
+  background: url('images/littleround.png') no-repeat center top;
+  text-transform: uppercase;
+  padding-top: 60px;
+  margin-top: 0px;
+}
+
+.left{
+  float: left;
+}
+
+.fs23{
+  font-size: 40px;
+}
+
+.icon{
+  width: 290px;
+  background: url('images/icon3.png') no-repeat center top;
+  padding-top: 140px;
+  margin-right: 95px;
+  margin-left: 52px;
+  float: left;
+  text-align: center;
+}
+.icon:nth-child(2){
+  background: url('images/5.png') no-repeat center top;
+  margin-right: 80px;
+  margin-left: 0px;
+}
+.icon:nth-child(3){
+  background: url('images/4.png') no-repeat center top;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.second-icons{
+  margin-top: 40px;
+}
+
+
+
+
+/*==== Third part ====*/
+.red{
+  text-align: center;
+  font-size: 15px;
+  width: 540px;
+  margin: 0 auto;
+  padding-bottom: 60px;
+}
+
+#third{
+  background: url('images/7.jpg') repeat;
+  color: #e7e4bb;
+  padding-top: 30px;
+  margin-top: 0;
+}
+
+h3{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 23px;
+  color: #e7e4bb;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 10px;
+}
+
+.cell{
+  background: transparent; /*прозрачный фон у кнопки*/
+  border: 0;
+  border-bottom: 1px solid #dd9e86;
+  color: #fff;
+  font-size: 15px;
+  text-transform: uppercase;
+  padding: 10px 0;
+  width: 252px;
+  margin-right: 20px;
+}
+
+.act{
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  color: #db9c84;
+  background: transparent;
+  padding: 10px;
+}
+
+form{
+  text-align: center; /*выравнивание ячеек формы по центру*/
+  margin: 20px auto;
+}

@@ -1,0 +1,345 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrapper{
+
+}
+
+.container{
+ 
+}
+
+
+header{
+  background-color: #eff0f2;
+}
+
+.header-text{
+text-transform: uppercase;
+font-family: 'Montserrat';
+font-weight: 700;
+position: relative;
+}
+
+.fa-align-justify{
+  position: absolute;
+  right: 240px;
+  top: 80px;
+}
+
+.header-text-dot{
+  background-color: #b2f2ee;
+  padding: 2px 5px;
+}
+
+.header-text h3,
+.header-text p{
+  display: inline-block;
+}
+
+.header-text h3{
+  border: 3px solid black;
+  font-family: 'Montserrat';
+  font-size: 17px;
+  padding: 10px 5px;
+  margin-left: 150px;
+  margin-top: 65px;
+}
+
+.header-text-o{
+  color: #77efe5;
+  font-size: 19px;
+}
+
+.header-text h1{
+ width: 1000px;
+ margin-left: auto;
+ margin-right: auto;
+ margin-top: 205px;
+ margin-bottom: 140px;
+text-align: center;
+letter-spacing: 0.06em;
+font-family: 'Montserrat';
+font-size: 45px;
+text-shadow: 3px 3px 10px  #505050;
+}
+
+.header-link{
+ padding-bottom: 140px;
+}
+
+.header-link p{
+  text-transform: uppercase;
+  color: #777879;
+  border: 2px solid #777879;
+  padding: 20px 45px;
+  text-align: center;
+  width: 240px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 18px;
+  letter-spacing: 0.12em;
+  font-family: 'Montserrat';
+  font-weight: 700;
+}
+.header-link a{
+  text-decoration: none;
+  color: #777879;
+}
+
+
+.header-link-images{
+  position: relative;
+  text-align: right;
+  right: 300px;
+}
+
+.header-link-first{
+position: absolute;
+z-index: 2;
+top: -25px;
+}
+
+.header-link-second{
+  position: absolute;
+  z-index: 1;
+}
+
+
+
+
+/*main part-------------------------------------------------------------------------------------------------*/
+
+
+.main-first{
+  background-color: #f8fafa;
+  overflow: hidden; /*чтоб фон был ко всему контенту*/
+  padding-left: 190px;
+  padding-right: 190px;
+}
+
+.main-one-name{
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 38px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  padding-top: 130px;
+  padding-bottom: 130px;
+  text-transform: uppercase;
+}
+
+.main-one-name h1{
+  color: #323333;
+}
+
+.main-one-name p{
+  color: #848585;
+}
+
+.main-one-title{
+  float: left;
+  width: 50%;
+}
+
+.main-one-title-text h2,
+.main-one-title-text h3{
+  color: #646565;
+  font-family: 'Merriweather';
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.main-one-title-text h2{
+  font-size: 20px;
+  padding-bottom: 15px;
+  padding-top: 25px;
+}
+
+.main-one-title-text h3{
+  font-size: 17px;
+  padding-bottom: 15px;
+  padding-top: 25px;
+}
+
+.main-one-title-text p{
+  color: #dadbdb;
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.main-one-title-text{
+  padding-bottom: 140px;
+}
+
+
+
+
+
+/*The second part---------------------------------------------*/
+.main-second{
+  clear: both;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-bottom: 130px;
+  overflow: hidden;
+}
+
+.main-two-title-text img{
+  float: left;
+  padding: 5px;
+  width: 33.3333%;
+   /*??????? главное - правильно обрезать фото - если есть маска у картинки, то выбрать иконку картинки + с помощью ctrl+лкм выбрать иконку маски - скопировать, ctrl+N -> enter и вставить,  чтоб картинка была пропорциональна в размерах*/
+}
+
+
+.main-two-name{
+  padding-top: 130px;
+  padding-bottom: 120px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.main-two-name h1{
+  font-family: 'Montserrat';
+  font-size: 38px;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  color: #343434;
+}
+
+.main-two-name p{
+  font-family: 'Merriweather';
+  font-size: 17px;
+  letter-spacing: 0.06em;
+  font-weight: 400;
+  color: #dedede;
+}
+
+
+/*The third part_______________________________________*/
+.main-third{
+  clear: both;
+  overflow: hidden;
+  padding-left: 150px;
+  padding-right: 150px;
+  background-color: #f9fbfb;
+}
+
+.main-three-name{
+text-align: center;
+padding-top: 120px;
+padding-bottom: 120px;
+}
+
+.main-three-title{
+  display:inline-block;
+  padding: 5px;
+}
+
+.main-three-title-text-1,
+.main-three-title-text-2{
+  float: left;
+  padding: 5px;
+}
+
+.main-three-title-text-1{
+  width: 60%;
+  overflow: hidden;
+}
+
+.main-three-title-text-2{
+  width: 40%;
+}
+
+.col31{
+  padding-top: 60px;
+  padding-left: 60px;
+  padding-bottom: 60px;
+  padding-right: 110px;
+  background-image: url('images/9.jpg');
+  background-size: cover;
+  position: relative;
+}
+.col31::after {
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: rgba(113, 246,236, 0.9);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.col31 h3{
+  padding-bottom: 40px;
+  text-transform: uppercase;
+  font-family: 'Merriweather';
+  letter-spacing: 0.05em;
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+}
+ .col31 p{
+   font-family: 'Raleway';
+   font-size: 16px;
+   letter-spacing: 0.05em;
+   color: #000;
+ }
+
+.fa-times{
+  padding-top: 80px;
+}
+
+.col32 p{
+  padding-bottom: 60px;
+  color: #fff;
+  font-family: 'Raleway';
+  font-weight: 400;
+}
+.col32 h3{
+  padding-bottom: 25px;
+  text-transform: uppercase;
+  font-family: 'Merriweather';
+  letter-spacing: 0.05em;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+.col32 a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.fa-arrow-right{
+  padding-left: 5px;
+}
+
+.col32{
+  
+  background-image: url('images/7.jpg');
+  background-size: cover;
+  padding-top: 180px;
+  padding-left: 60px;
+  padding-right: 90px;
+  position: relative;
+  padding-bottom: 60px;
+}
+.col32::after {
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: rgba(0,0,0,0.6);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+

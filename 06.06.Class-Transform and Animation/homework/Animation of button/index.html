@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Font-family</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,700" rel="stylesheet"> <!--подключаем font-family текст, который есть на гугл font-->
+  <link rel="stylesheet" href="css/font-awesome.min.css"> <!--подключаем font-awesome - это шрифтовые иконки, но не иконки-->
+ 
+  <style>
+ @font-face{ /*определение шрифта и его подключение (шрифт находим на сайте cdn, скачиваем и пожключаем)*/
+   font-family: 'Gotham Medium';
+   src: url('gothamrounded-medium-webfont.woff') format('woff');
+ }
+
+@font-face{
+   font-family: 'Gotham Bold';
+   src: url('gothamrounded-bold-webfont.woff') format('woff');
+   font-weight: 700; /*если указываем число, то теперь можно убрать приставки в шрифте Bold Medium Book*/ 
+ }
+
+@font-face{
+   font-family: 'Gotham'; /*без font-weight нужно указывать Gotham Book и т.п, а так можно просто написать его название Gotham*/
+   src: url('gothamrounded-book-webfont.woff') format('woff');
+   font-weight: 300; /* и теперь можно убрать приставки в шрифте Bold Medium Book*/ 
+ }
+
+ /*h1{
+   font-family: 'Roboto', sans-serif;  /*(шрифт, который есть есть в гугл fonts)
+ }
+
+ h1 + h1{
+  font-family: 'Gotham', sans-serif;
+ }
+ h1 + h1 + h1{
+  font-family: 'Gotham Book', sans-serif;
+ }
+*/
+ </style>
+</head>
+
+<body>
+  
+  <!--<h1><span class="fa fa-apple"></span></h1> -для значка apple-->
+
+  <div class="wrapper">
+   
+
+
+
+<!--Заголовок-->
+<header>
+  <nav class="header-nav">
+    <ul class="header-nav-list">
+      <li class="header-nav-list-item"><a class="header-nav-link" href="#home">home</a></li>
+      <li class="header-nav-list-item"><a class="header-nav-link" href="#photoapp">photoapp</a></li>
+      <li class="header-nav-list-item"><a class="header-nav-link" href="#our-community"><img class="header-nav-link-img" src="images/photoblack.png" alt="photoblack"></a></li>
+      <li class="header-nav-list-item"><a class="header-nav-link" href="#design">design</a></li>
+      <li class="header-nav-list-item"><a class="header-nav-link" href="#download">download</a></li>
+    </ul>
+  </nav>
+
+  <div class="header-text">
+  <h2 id="home">YOUR LIFE , A PHOTO</h2>
+  <p>print your life in a simple photo</p>
+    <a href="#">GET STARTED</a>
+</div>
+
+  <!--добавить еще 3 текст-кнопки, используя шрифт-->
+  <div class="header-icon">
+      <p><span class="fa fa-twitter fa-2x"></span></p>
+      <p><span class="fa fa-flickr fa-2x"></span></p>
+      <p><span class="fa fa-dribbble fa-2x"></span></p>
+  </div>
+</header>
+
+
+
+
+<!--Основная часть контента-->
+<main>
+
+<div class="main-first">
+  <img src="images/iPhone.png" alt="iphone">
+    <div class="main-first-text">
+    <h2 id="photoapp">represent your life with a simple photo</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum <b>blanditiis et</b> repudiandae cum, maxime quaerat nostrum magni deleniti eaque cupiditate.</p>
+    <label>
+    <a href="#">GET STARTED</a>
+    </label>
+    </div>
+</div>
+
+<!--для второй части main-->
+<div class="main-second">
+      
+      <img src="images/mobleft.png" alt="phone">
+      <h2 id="design">DESIGN</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium magni commodi nostrum odit, eos <b>in qui doloremque</b> explicabo id unde delectus ea quos adipisci hic rerum. </p>
+      <a href="#">LEARN MORE</a>
+      <p><time datetime="2018-05-05">01/05</time></p>
+
+      <div class="main-second-icon">
+        <p><span class="fa fa-angle-left fa-2x"></span></p>
+        <p><span class="fa fa-angle-right fa-2x"></span></p>
+      </div>
+      
+    
+
+</div>
+
+<!--для третьей части main-->
+<div class="main-third">
+    
+    <div class="main-third-icon">
+      <p><span class="fa fa-angle-left fa-2x"></span></p>
+      <p><span class="fa fa-angle-right fa-2x"></span></p>
+    </div>
+
+    <div class="main-third-images">
+      <figure>
+      <img src="images/photo.png" alt="photo-green">
+      <figcaption>OUR COMMUNITY</figcaption>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos?</p>
+      </figure>
+      <img src="images/car.jpg" alt="car">
+      <img src="images/leaf.jpg" alt="leaf">
+    </div>
+</div>
+
+
+<!--The fouth part of main-->
+<div class="main-fouth">
+  
+  <div class="main-fouth-text">
+    <h2 id="our-community">subscribe to our community</h2>
+    <form class="form" method="POST"> <!-- novalidate - можно добавить и почта не будет проверяться на наличие @-->
+    <label>
+    <input type="email" name="email" placeholder="YOUR EMAIL">
+    </label>
+    <label>
+   <button class="form-button-fouth" type="submit" ><span class="fa fa-check fa-2x"></span></button>
+    </label>
+    </form>
+  </div>
+
+</div>
+
+
+<!--The fifth part of main-->
+<div class="main-fifth">
+
+  <div class="main-fifth-text">
+    <h2 id="download">download it</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat molestiae magni dolorem ducimus aut itaque adipisci qui veniam molestias reiciendis enim deleniti nobis consequatur nulla saepe, voluptas provident optio.</p>
+  </div>
+   
+    <div class="fifth-icon">
+     <a class="button-fifth-link" href="#">apple store</a>
+      <label>
+      <button class="button-fifth-icon" type="submit" ><span class="fa fa-apple fa-2x"></span></button>
+      </label>
+      
+      <a class="button-fifth-link" href="#">play store</a>
+     <label>
+      <button class="button-fifth-icon" type="submit" ><span class="fa fa-android   fa-2x"></span></button>
+     </label>
+    </div>
+
+</div>
+
+</main>
+
+
+
+
+<!--Footer part - the last part-->
+<footer>
+
+  <img src="images/photo.png" alt="kodak">
+  
+  <nav class="footer-nav">
+    <ul class="footer-nav-list">
+      <li class="footer-nav-list-item"><a class="footer-nav-link" href="#">credits</a> |</li>
+      <li class="footer-nav-list-item"><a class="footer-nav-link" href="#">privacy</a> |</li>
+      <li class="footer-nav-list-item"><a class="footer-nav-link" href="#">our teams</a> |</li>
+    </ul>
+  </nav>
+
+  <div class="footer-text">
+    <p>Copyright by phototime - all right are reserved</p>
+  </div>
+
+</footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,2106 @@
+.cl{
+	clear: both;
+	display: block;
+}
+
+ul{
+	padding: 0;
+	margin: 0;
+}
+
+.block{
+	display: block;
+}
+
+#footer, #wrapper{
+	min-width: 1003px;
+}
+
+#slide-selector{
+	position: absolute;
+	left: 0;
+	bottom: 15px;
+	width: 100%;
+	text-align: center;
+}
+
+#main-nav #nav-who-we-are:hover{
+	background-position: -150px 14px;
+}
+
+#main-nav #nav-what-we-do:hover{
+	background-position: -155px -65px
+}
+
+#main-nav #nav-our-strategy:hover{
+	background-position: -155px -144px;
+}
+
+#main-nav #nav-drax-force:hover{
+	background-position: -110px -223px;
+}
+
+#main-nav #nav-contact-us:hover{
+	background-position: -154px -382px;
+}
+
+#main-nav #nav-work-done:hover{
+	background-position: -150px -302px;
+}
+
+#slide-selector span{
+	height: 15px;
+	width: 15px;
+	display: inline-block;
+	cursor: pointer;
+	background: #d7d7d7;
+    border-radius: 50%;
+    box-shadow: 0 0 4px #000;
+}
+
+#slide-selector span + span{
+	margin-left: 11px;
+}
+
+#slide-selector span.active-slide-selected{
+	background: #8d0000;
+}
+
+.slide > ul{
+	width: 100%;
+	height: 100%;
+    position: relative;
+}
+
+.slide > ul > li{
+	height: 100%;
+	/*display: none;*/
+	position: relative;
+    float: left;
+    overflow: hidden;
+}
+
+.slide img{
+	display: block;
+    position: relative;
+}
+
+#home-slider img {
+    position: absolute;
+}
+
+/**** Text boxes inside slides *****/
+/* */
+.text-box {
+    position: absolute;
+    /*background: rgba(255, 0, 0, 0.1);*/
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.text-box > div {
+    width: 1000px;
+    margin: 0 auto;
+    height: 100%;
+    /*background: rgba(0, 0, 255, 0.1);*/
+    position: relative;
+}
+/* */
+.text-box > div > div {
+	padding: 20px;
+	position: absolute;
+    font-family: 'Gotham Rounded';
+	background-color: rgba(7, 8, 8, 0.74);
+	background-image: url(../images/text-box-bullet.png);
+	background-position: 20px center;
+	background-repeat: no-repeat;
+}
+
+.text-box h3{
+	margin: 0 0 25px 75px;
+	color: #fbe8bf;
+	font-weight: 200;
+}
+.text-box p{
+	margin: 0 0 0 75px;
+	font-size: 20px;
+	color: #fbe8bf;
+	float: left;
+}
+
+/**** Controls the position of the text boxes in the slides *****/
+.slide-1 .text-box > div > div {
+	bottom: 30%;
+	right: 10px;
+	max-width: 600px;
+}
+
+.slide-2 .text-box > div > div {
+	bottom: 32%;
+	left: 45%;
+	max-height: 50px;
+}
+
+.slide-3 .text-box > div > div {
+	top: 136px;
+	left: 2px;
+}
+
+.slide-3 .text-box p {
+    font-size: 24px !important;
+}
+
+.slide-4 .text-box > div > div {
+    background-position: 120px center;
+    bottom: 87px;
+    left: 325px;
+    padding-left: 148px;
+    padding-top: 26px;
+    height: 90px;
+}
+
+.slide-4 .text-box > div > div:before {
+    border-color: transparent rgba(7, 8, 8, 0.74) transparent transparent;
+    border-style: solid;
+    border-width: 136px 90px 0 136px;
+    content: " ";
+    display: block;
+    height: 0;
+    position: absolute;
+    right: 100%;
+    top: 0;
+    width: 0;
+}
+
+.slide-4 .text-box p, .slide-5 .text-box p, .slide-6 .text-box p {
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.slide-4 img {
+    top: auto !important;
+    bottom: 0;
+}
+
+.slide-5 .text-box > div > div {
+	top: 24%;
+	left: 125px;
+}
+
+.slide-6 .text-box > div > div {
+	top: 21%;
+	left: 48px;
+}
+
+.slide-7 .text-box > div > div {
+	top: 44%;
+	left: 48px;
+    width: 490px;
+}
+
+/**** start of Footer *****/
+#footer{
+	background: #8f0100 url(../images/footer-bckgrd.jpg) repeat-x;
+	border-top: solid 2px #ceb7b7;
+}
+
+/*** Footer logo section *****/
+#footer-logo{
+	width: 290px;
+	float: left;
+	border-right: dotted 1px #954D4D;
+	padding: 50px 0 25px 0;
+}
+#footer-logo a{
+	float: left;
+	margin-left: 25px;
+}
+#footer-logo div{
+	float: left;
+	color: #b48b8b;
+	max-width: 163px;
+	max-height:125px;
+}
+#footer-logo div h4{
+	margin: 0;
+	font-size: 14px;
+	font-weight: normal;
+	overflow: hidden;
+}
+#footer-logo div p{
+	font-size: 10px;
+	margin: 10px 0;
+}
+#footer-menu-section{
+	width: 706px;
+	float: left;
+    font-family: 'MyriadProReg';
+}
+
+/*** Footer Newsletter ****/
+#footer-newsletter form{
+	margin: 16px 6px 0 0;
+	float: right;
+}
+#footer-newsletter p{
+	font-size: 19px;
+	color: #bc8080;
+	text-indent: 13px;
+	float: left;
+}
+#email-box{
+	width: 269px;
+	height: 24px;
+	font-size: 13px;
+	color: #640000;
+	text-indent: 12px;
+	background: url(../images/email-box-bckgrd.jpg);
+	border: none;
+}
+#register-button{
+	height: 26px;
+	width: 111px;
+	background: #570000;
+	border: solid 1px #916262;
+	font-size: 15px;
+	color: #bc8080;
+	margin-left: 6px;
+}
+#footer-newsletter div{
+	float: left;
+}
+
+/**** Footer core services **/
+#footer-menu{
+	padding: 0;
+	margin:0;
+	list-style: none;
+	clear: both;
+}
+#footer-menu li{
+	height: 138px;
+	width: 140px;
+	float: left;
+}
+#footer-menu li + li{
+	margin-left: 1px;
+}
+#footer-menu li span{
+	height: 36px;
+	width: 100%;
+	line-height: 36px;
+	position: absolute;
+	bottom: 0;
+	background-image: url(../images/footer-menu-icons.png);
+	background-repeat: no-repeat;
+	background-color: rgba(255, 255, 255, 0.4);
+}
+
+#footer-menu li a{
+	width: 100%;
+	height: 100%;
+	color: #640000;
+	font-size: 15px;
+	text-decoration: none;
+	position: relative;
+    font-family: "Helvetica Rounded Cond";
+	background-image: url(../images/footer-images.png);
+	background-repeat: no-repeat;
+}
+
+#footer-who-we-are{
+	width: 141px !important;
+}
+
+#footer-who-we-are a{
+	background-position: 1px 0;
+}
+
+#footer-who-we-are a:hover{
+	background-position: 1px bottom;
+}
+
+#footer-what-we-do a{
+	background-position: -141px 0;
+}
+
+#footer-what-we-do a:hover{
+	background-position: -141px bottom;
+}
+
+#footer-our-strategy a{
+	background-position: -283px 0;
+}
+
+#footer-our-strategy a:hover{
+	background-position: -283px bottom;
+}
+
+#footer-drax-force a{
+	background-position: -425px 0;
+}
+
+#footer-drax-force a:hover{
+	background-position: -425px bottom;
+}
+
+#footer-work-done a{
+	background-position: -566px 0;
+}
+
+#footer-work-done a:hover{
+	background-position: -566px bottom;
+}
+
+#footer-what-we-do span{
+	text-indent: 42px;
+	background-position: 11px -37px;
+}
+
+#footer-who-we-are span{
+	text-indent: 45px;
+	background-position: 19px 1px;
+}
+
+#footer-our-strategy span{
+	text-indent: 40px;
+	background-position: 9px -76px;
+}
+
+#footer-drax-force span{
+	text-indent: 51px;
+	background-position: 18px -110px;
+}
+
+#footer-work-done span{
+	text-indent: 53px;
+	background-position: 20px -151px;
+}
+
+#footer-our-strategy{
+	width: 141px !important;
+}
+/**** Contact details block *******/
+#footer-contact-us-block{
+	height: 55px;
+	border: dotted #954D4D;
+	border-width: 1px 0;
+	clear: both;
+	background: #640000;
+    font-family: 'MyriadProReg';
+}
+#contact-details{
+	width: 266px;
+	float: left;
+	padding: 5px 0 5px 25px;
+	border-right: dotted 1px #954D4D;
+}
+#contact-details p{
+	font-size: 12px;
+	color: #ccc;
+	margin: 0;
+}
+#contact-details p em{
+	font-style: normal;
+	font-size: 18px;
+}
+
+/**** Footer social icons ******/
+#footer-social-icons{
+	float: left;
+}
+#footer-social-icons p{
+	text-indent: 130px;
+	padding-right: 37px;
+	float: left;
+	font-size: 15px;
+	color: #ccc;
+	margin: 0;
+	line-height: 55px;
+	background: url(../images/gray-bullet.png) no-repeat right center;
+}
+#footer-social-icons ul{
+	float: left;
+	list-style: none;
+	margin:11px 0 0 40px;
+}
+#footer-social-icons ul li{
+	float: left;
+}
+#footer-social-icons ul li + li{
+	margin-left: 28px;
+}
+#footer-social-icons ul li a{
+	height: 35px;
+	width: 35px;
+	background-image: url(../images/social-icons.png);
+	background-repeat: no-repeat;
+}
+
+.twitter-icon{
+	background-position: 0 -45px;
+}
+.linked-in-icon{
+	background-position: -2px -89px;
+}
+.youtube-icon{
+	background-position: -2px -132px;
+}
+.blog-icon{
+	background-position: -3px -183px;
+	height: 37px !important;
+}
+.pinterest-icon{
+	background-position: -3px -226px;
+}
+
+.fb-icon:hover{
+	background-position: right 0;
+}
+
+.twitter-icon:hover{
+	background-position: right -45px;
+}
+
+.linked-in-icon:hover{
+	background-position: right -89px;
+}
+
+.youtube-icon:hover{
+	background-position: right -132px;
+}
+
+.blog-icon:hover{
+	background-position: right -184px;
+}
+.pinterest-icon:hover {
+	background-position: right -226px;
+}
+
+
+/** Copyright section *****/
+.copyright{
+	font-size: 12px;
+	color: #bc8080;
+	display: block;
+	line-height: 30px;
+	text-align: center;
+}
+
+/*********** Inner pages ****************/
+.unposition #wrapper,
+.unposition .slide,
+.unposition #footer{
+	position: relative !important;
+	bottom: 0 !important;
+}
+.unposition #wrapper{
+	margin-top: -80px;
+}
+.breadcrumb{
+	float: left;
+}
+.breadcrumb a,
+.breadcrumb p{
+	margin: 0;
+	text-decoration: none;
+	color: #848484;
+	font-size: 24px;
+	padding-top: 13px;
+    font-family: 'Gotham Rounded';
+	font-weight: 200;
+	text-transform: uppercase;
+}
+.breadcrumb p img{
+	position: relative;
+	top: 5px;
+}
+.double-red-bullet{
+	display: inline-block;
+	margin: 0 8px 0 21px;
+	width: 12px;
+	height: 14px;
+	background: url(../images/double-red-arrow.png) no-repeat;
+}
+.single-red-bullet{
+	display: inline-block;
+	margin: 0 8px;
+	width: 8px;
+	height: 14px;
+	background: url(../images/single-red-arrow.png) no-repeat;
+}
+.breadcrumb p em{
+	font-style: normal;
+	color: #393939;
+}
+.search-box{
+	width: 296px;
+	float: right;
+	height: 39px;
+	margin: 10px 10px 0 0;
+}
+.search-box input{
+	border: none;
+	padding: 0;
+}
+.search-box input[type=search]{
+	width: 256px;
+	height: 100%;
+	float: left;
+	background: #e0e0e0;
+	text-indent: 19px;
+	color: #a4a4a4;
+	font-size: 15px;
+}
+.search-box input[type=submit]{
+	width: 39px;
+	height: 100%;
+	text-indent: -999999px;
+	background: #780000 url(../images/search-lens.png) no-repeat center center;
+}
+
+.submenu {
+	width: 1003px;
+	background: none;
+	position: absolute;
+	z-index: -1;
+	top: 60px;
+}
+
+.submenu > ul{
+	width: 100%;
+	height: 56px;
+	margin: 1px 0 0;
+	padding: 0;
+	clear: both;
+	list-style: none;
+}
+
+.submenu > div {
+    padding-bottom: 11px;
+    background: #FFF;
+}
+
+.submenu li {
+	float: left;
+	height: 100%;
+	width: 142px;
+	background-image: url(../images/submenu-links.png);
+	background-repeat: no-repeat;
+    background-color: #FFF;
+}
+
+.submenu li + li{
+	margin-left: 1px;
+}
+
+.submenu li:last-child a {
+    padding: 0 1px;
+}
+
+.submenu li a{
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	display: none;
+	text-indent: -999998px;
+}
+
+.active-submenu,
+.submenu li:hover a{
+	text-indent: 0px !important;
+	display: block !important;
+	text-align: center;
+	background: #5f5f5f;
+	color: #fff !important;
+	text-decoration: none;
+	font-size: 21px;
+    font-family: 'MyriadProReg';
+	line-height: 56px;
+}
+
+.advertising-submenu{
+	background-position: -589px center;
+}
+.branding-submenu{
+	background-position: -6px center;
+}
+.packaging-submenu{
+	background-position: -158px center;
+}
+.designing-submenu{
+	background-position: -302px center;
+}
+.presenting-submenu{
+	background-position: -445px center;
+}
+.web-marketing-submenu{
+	width: 150px !important;
+	background-position: -728px center;
+}
+.training-submenu{
+	width: 135px !important;
+	background-position: -880px center;
+}
+
+/********** What we do *********/
+.what-we-do-index .slide section p{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+    font-family: 'Gotham';
+	font-size: 20px;
+	margin: 0;
+}
+.what-we-do-index .slide section p span{
+	display: block;
+}
+
+.what-we-do-index .row-1 p {
+	text-align: center;
+	bottom: 16% !important;
+	color: #000;
+}
+
+.what-we-do-index .row-1 p > span {
+    display: inline-block !important;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 8px;
+}
+
+.what-we-do-index .row-2 p{
+	top: 14% !important;
+	left: 17% !important;
+	color: #fff;
+}
+
+.what-we-do-index .slide-3 {
+    height: auto !important;
+}
+
+.what-we-do-index .slide-3 img {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.what-we-do-index .row-3 > div{
+	width: 945px;
+	margin: 0 auto;
+	position: relative;
+	padding: 47px 28px 0 29px;
+    padding-bottom: 163px;
+}
+
+.what-we-do-index .row-3 div h2{
+	margin: 0;
+	background: #fff;
+	color: #393939;
+    font-family: 'Gotham';
+	font-weight: 200;
+	font-size: 20px;
+	text-align: center;
+	padding: 21px 0 23px;
+}
+.what-we-do-index .row-3 div > div{
+	width: 100%;
+	margin-top: 18px;
+}
+.what-we-do-index .row-3 div > div ul{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	list-style: none;
+}
+.what-we-do-index .row-3 div > div ul + ul{
+	margin-top: 41px;
+}
+.what-we-do-index .row-3 div > div ul li{
+	float: left;
+	height: 212px;
+	width: 287px;
+}
+.what-we-do-index .row-3 div > div ul li a{
+	display: block;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	text-indent: -9999px;
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.what-we-do-index .row-3 div > div ul li a:hover{
+	background-color: #820000 !important;
+}
+
+.what-we-do-index .row-3 div > div ul li + li{
+	margin-left: 42px;
+}
+#branding{
+	background-image: url(../images/what-we-do/what-we-do-branding.jpg);
+}
+#branding:hover{
+	background-image: url(../images/what-we-do/what-we-do-branding-hover.png);
+}
+#packaging{
+	background-image: url(../images/what-we-do/what-we-do-packaging.jpg);
+}
+#packaging:hover{
+	background-image: url(../images/what-we-do/what-we-do-packaging-hover.png);
+}
+#designing{
+	background-image: url(../images/what-we-do/what-we-do-designing.jpg);
+}
+#designing:hover{
+	background-image: url(../images/what-we-do/what-we-do-designing-hover.png);
+}
+#presenting{
+	background-image: url(../images/what-we-do/what-we-do-presenting.jpg);
+}
+#presenting:hover{
+	background-image: url(../images/what-we-do/what-we-do-presenting-hover.png);
+}
+#advertising{
+	background-image: url(../images/what-we-do/what-we-do-advertising.jpg);
+}
+#advertising:hover{
+	background-image: url(../images/what-we-do/what-we-do-advertising-hover.png);
+}
+#web-marketing{
+	background-image: url(../images/what-we-do/what-we-do-marketing.jpg);
+}
+#web-marketing:hover{
+	background-image: url(../images/what-we-do/what-we-do-marketing-hover.png);
+}
+#training{
+	background-image: url(../images/what-we-do/what-we-do-training.jpg);
+}
+#training:hover{
+	background-image: url(../images/what-we-do/what-we-do-training-hover.png);
+}
+#training-link{
+	height: 212px;
+	width: 287px;
+	margin: 41px auto 0;
+}
+/******** Branding **********/
+.white-text-box{
+	margin: 0;
+	padding: 20px;
+	position: absolute;
+	color: #292929;
+	background: #fff;
+	font-size: 20px;
+    font-family: 'Gotham';
+}
+.white-text-box span{
+	display: block;
+}
+
+.branding .slide section{
+	position: relative;
+}
+
+.branding .row-1 .white-text-box{
+	bottom: 191px;
+	right: 61px;
+}
+
+.branding .row-2 .white-text-box{
+	top: 6%;
+	right: 25%;
+}
+
+.branding .slide.row-3 {
+    height: auto !important;
+}
+
+.branding .slide.row-3 img {
+    left: 0 !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    right: 0 !important;
+}
+
+.what-we-do-numbered-list{
+	width: 880px;
+	margin: 0 auto;
+	position: absolute;
+	left:0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	padding: 85px 0 0 123px;
+    font-family: 'Gotham';
+}
+.what-we-do-numbered-list > p{
+	margin: 0;
+	font-size: 28px;
+	color: #000;
+	text-shadow: 1px 1px #E09529;
+}
+.what-we-do-numbered-list > p span{
+	display: block;
+}
+.what-we-do-numbered-list > ul{
+	margin: 49px 0 0;
+	padding: 0;
+	list-style:  none;
+	width: 733px;
+}
+.what-we-do-numbered-list > ul li{
+	height: 75px;
+	font-size: 24px;
+	text-indent: 80px;
+	line-height: 75px;
+	text-transform: capitalize;
+	background: #fff url(../images/what-we-do/list-number-bckgrd.jpg) no-repeat left top;
+}
+.what-we-do-numbered-list > ul li span{
+	display: inline-block;
+	text-indent: 0;
+	float: left;
+	padding-left: 30px;
+	text-align: center;
+	line-height: 75px;
+	font-size: 36px;
+	color: #fff;
+    font-family: 'Helvetica Rounded Cond';
+	font-weight: bold;
+}
+
+.what-we-do-numbered-list > ul li + li{
+	margin-top: 21px;
+}
+/****** Advertising Page ********/
+.advertising .row-1 .content {
+    margin-top: -803px;
+    height: 803px;
+}
+
+.advertising .row-1 .white-text-box{
+	top: 51px;
+	left: 41px;
+}
+
+.advertising .row-2 .content {
+    text-align: center;
+    height: 400px;
+    margin-top: -400px;
+    line-height: 400px;
+}
+
+.advertising .row-2 .white-text-box{
+    position: relative;
+    display: inline-block;
+    line-height: 1.3em;
+    bottom: 193px;
+    vertical-align: bottom;
+}
+
+/****** Designing Page ********/
+
+.designing .row-1 .content {
+    text-align: center;
+    margin-top: -350px;
+    height: 350px;
+    vertical-align: bottom;
+    line-height: 350px;
+}
+
+.designing .row-1 .white-text-box {
+	display: inline-block;
+    text-align: left;
+    bottom: 20px;
+    position: relative;
+    line-height: 1.3em;
+    vertical-align: bottom;
+}
+
+/****** Packaging Page ********/
+.packaging .row-1 .white-text-box{
+	bottom: 18%;
+	left: 30%;
+}
+
+.training #wrapper,
+.web-marketing #wrapper,
+.advertising #wrapper,
+.branding #wrapper,
+.presenting #wrapper,
+.designing #wrapper,
+.packaging #wrapper {
+    background: #fff no-repeat url('../images/what-we-do/top-bckgrd.jpg') top center;
+    background-size: 100% 197px;
+    padding-top: 198px;
+}
+
+.contact-us #wrapper .slide,
+.training #wrapper .slide,
+.web-marketing #wrapper .slide,
+.advertising #wrapper .slide,
+.branding #wrapper .slide,
+.presenting #wrapper .slide,
+.designing #wrapper .slide,
+.packaging #wrapper .slide {
+    height: auto !important;
+}
+
+.contact-us #wrapper .slide img,
+.training #wrapper .slide img,
+.web-marketing #wrapper .slide img,
+.advertising #wrapper .slide img,
+.branding #wrapper .slide img,
+.presenting #wrapper .slide img,
+.designing #wrapper .slide img,
+.packaging #wrapper .slide img {
+    top: 0 !important;
+}
+
+.designing #wrapper .row-1 img {
+    max-width: 100%;
+    left: 0 !important;
+}
+
+/****** Presenting Page ********/
+.presenting .row-1 .white-text-box {
+	top: 51px;
+	left: 41px;
+}
+
+.presenting .row-1 .content {
+    top: -802px;
+}
+
+/****** Presenting Page ********/
+.training .row-1 .content {
+    height: 803px;
+    margin-top: -803px;
+}
+
+.training .row-1 .white-text-box{
+	top: 41px;
+	left: 53px;
+}
+
+/****** Presenting Page ********/
+.web-marketing .row-1 .white-text-box{
+	bottom: 30%;
+	left: 37%;
+}
+.web-marketing .row-2 .white-text-box{
+	bottom: 14%;
+	right: 37%;
+}
+
+
+/*********** Who we are page **************/
+.who-we-are-wrapper .transparent-text-box,
+.who-we-are-wrapper .who-we-are-text-box {
+	font-size: 20px;
+	color: #393939;
+	margin: 0;
+	padding: 20px;
+	position: absolute;
+	font-size: 20px;
+    font-family: 'Gotham';
+}
+
+span {
+	display: block;
+}
+
+.who-we-are-wrapper .transparent-text-box {
+	background-color: rgba(255, 255, 255, 0.75);
+	color: #000;
+}
+
+.row-1 .who-we-are-text-box{
+	top:54%;
+	left: 56%;
+}
+
+.row-2 .who-we-are-text-box{
+	top: 14%;
+	left: 16%;
+    background: rgba(255, 255, 255, 0.75);
+}
+
+.row-3 .who-we-are-text-box{
+	top: 16%;
+	left: 50%;
+    background: rgba(255, 255, 255, 0.75);
+}
+
+.row-4 .who-we-are-text-box{
+	top: 50%;
+	left: 53%;
+}
+
+.row-5 .who-we-are-text-box{
+	bottom: 5%;
+	left: 31%;
+    background: rgba(255, 255, 255, 0.75);
+}
+
+.row-6 .who-we-are-text-box{
+	bottom: 35%;
+	left: 8%;
+}
+
+.row-7 .transparent-text-box{
+	bottom: 16%;
+	left: 17%;
+}
+
+.row-8 .who-we-are-text-box{
+	top: 28%;
+	left: 52%;
+    background: rgba(255, 255, 255, 0.73);
+}
+
+.who-we-are-wrapper .row-9 .transparent-text-box{
+	top: 13%;
+	left: 31%;
+}
+.who-we-are-wrapper .row-10 .transparent-text-box{
+	top: 7%;
+	left: 31%;
+}
+
+.who-we-are-wrapper .row-11 .transparent-text-box{
+	bottom: 11%;
+	left: 31%;
+}
+.who-we-are-wrapper .row-12 > div{
+	position: absolute;
+	top: 20%;
+	left: 13%;
+	width: 440px;
+}
+.who-we-are-wrapper .row-12 > div > h3{
+	margin: 0;
+	font-size: 36px;
+    font-family: 'Gotham';
+	font-weight: 200;
+	padding: 10px 0 10px 25px;
+	background: #780000;	
+	color: #fff;
+}
+.who-we-are-wrapper .row-12 > div > p{
+	margin: 0;
+	padding: 25px;
+    font-family: 'Gotham';
+	font-weight: 200;
+	font-size: 28px;
+	color: #000;
+	background: #fff;
+}
+.who-we-are-wrapper .row-12 > div > p span{
+	font-weight: 100;
+	display: block;
+}
+.who-we-are-wrapper .row-13 > p{
+	margin: 0;
+	position: absolute;
+    font-family: 'Gotham';
+	font-size: 32px;
+	color: #000;
+	bottom: 6%;
+	left: 35%;
+    padding: 6px;
+    background: rgba(255, 255, 255, 0.7);
+}
+.who-we-are-wrapper .row-14 > div{
+	width: 1173px;
+	margin: 0 auto 253px;
+	padding-top: 27px;
+    position: relative;
+}
+.who-we-are-wrapper .slide.row-14 {
+    height: auto !important;
+}
+.who-we-are-wrapper .slide.row-14 > section > img {
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+}
+.who-we-are-wrapper .row-14 > div > div{
+	width: 1003px;
+	margin: 0 0 0 42px;
+	float: left;
+}
+.who-we-are-wrapper .row-14 > div > div h2{
+	text-align: center;
+	font-size: 32px;
+	color: #000;
+    font-family: 'Gotham Rounded';
+	font-weight: 200;
+	padding: 13px 0;
+	margin: 0;
+	background: #ebf1f8;
+}
+.who-we-are-wrapper .row-14 > div > div h2 img{
+	position: relative;
+	top: 5px;
+	display: inline;
+}
+
+#meet-the-team-carousel {
+    width: 1000px;
+    overflow: hidden;
+    height: 519px;
+	margin: 120px 0 0;
+}
+
+#meet-the-team-carousel > ul {
+	padding: 0;
+	list-style: none;
+    position: relative;
+}
+
+#meet-the-team-carousel > ul > li{
+	float: left;
+	width: 327px;
+	height: 519px;
+	background: #fff;
+}
+#meet-the-team-carousel > ul > li + li{
+	margin-left: 9px;
+}
+
+#meet-the-team-carousel ul h3{
+	font-size: 20px;
+	color: #292929;
+    font-family: 'Gotham Rounded';
+	font-weight: bold;
+	line-height: 21px;
+	margin: 19px 0 0 15px;
+}
+
+#meet-the-team-carousel ul h3 em{
+	font-weight: normal;
+	font-style: normal;
+	font-size: 18px;
+}
+
+#meet-the-team-carousel ul p{
+	margin: 25px 15px 0 15px;
+	color: #292929;
+	font-size: 15px;
+	line-height: 20px;
+	font-weight: 100;
+    font-family: 'Gotham Rounded';
+}
+
+.who-we-are-wrapper .row-14 > div a{
+	display: block;
+	height: 90px;
+	width: 45px;
+	margin-top: 392px;
+	background-image: url(../images/caroul-arrows.png);
+	background-repeat: no-repeat;
+}
+.who-we-are-wrapper .row-14 > div a.prev-arrow{
+	background-position: 0 0;
+	float: left;
+}
+.who-we-are-wrapper .row-14 > div a.next-arrow{
+	background-position: -53px 0;
+	float: right;
+}
+
+/************* Portfolio/Work done page ****************/
+
+/*********** Work done **********/
+.work-done .screen-text {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.work-done .screen-text > div {
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    width: 1000px;
+    z-index: 0;
+}
+
+.work-done .screen-text > div > div {
+    right: 90px;
+    top: 43%;
+    position: absolute;
+	color: #000;
+	font-size: 20px;
+	font-family: 'Gotham';
+}
+
+.work-done .row-2 {
+    height: auto !important;
+}
+
+.work-done .row-2 img {
+    height: 100% !important;
+    display: block;
+    position: absolute;
+    top: 0 !important;
+}
+
+.work-done .row-2 > div{
+	width: 1000px;
+	margin: 0 auto;
+    position: relative;
+    margin-bottom: 72px;
+}
+
+.work-done .row-2 > div > p{
+	text-indent: 48px;
+	font-family: 'Gotham';
+	color: #fff;
+	font-size: 20px;
+	margin: 27px 0;
+}
+.work-done .row-2 div div{
+	width: 806px;
+	margin: 0 auto;
+}
+.work-done .row-2 div div ul{
+	margin:0;
+	padding: 0;
+	list-style: none;
+}
+.work-done .row-2 div div ul + ul{
+	margin-top: 15px;
+}
+.work-done .row-2 div div li{
+	float: left;
+	width: 191px;
+	height: 131px;
+	background-image:url(../images/work-done/clients.jpg);
+	background-repeat: no-repeat;
+    transition: opacity 0.5s;
+}
+.work-done .row-2 div div li img{
+    width: 100% !important;
+    height: 100% !important;
+    display: block;
+    position: static !important;
+}
+.work-done .row-2 div div li + li{
+	margin-left: 14px;
+}
+.work-done .row-2 div div li:last-of-type {
+    width: 186px;
+}
+.work-done .row-2 div div li a{
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
+.work-done .row-2 div div li:hover{
+	/*background-color: rgba(0, 0, 0, 0.5);*/
+    opacity: 0.7;
+}
+
+.etisalat{
+	background-position: -205px 0;
+}
+
+.b-and-o{
+	background-position: -410px 0;
+}
+.dangote-noddles{
+	background-position: -615px 0;
+}
+.unn{
+	background-position: 0 -144px;
+}
+.pharmcare{
+	background-position: -205px -144px;
+}
+.bgl{
+	background: #fff;
+}
+.dangote-pasta{
+	background-position: -615px -144px;
+}
+.tiger-brands{
+	background-position: 0 -289px;
+}
+.five-d{
+	background-position: -205px -289px;
+}
+.nexus{
+	background-position: -410px -289px;
+}
+.dangote-flour{
+	background-position: -615px -289px;
+}
+.packaging-solutions{
+	background-position: 0 -435px;
+}
+.musik-track{
+	background-position: -205px -435px;
+}
+.afri-wood{
+	background-position: -410px -435px;
+}
+.message-wise{
+	background-position: -615px -435px;
+}
+.red-button{
+	background-position: 0 -579px;
+}
+.movie-producers{
+	background-position: -205px -579px;
+}
+.dragnet{
+	background-position: -410px -579px;
+}
+.computer-dot-com{
+	background-position: -615px -579px;
+}
+.dominion-city{
+	background-position: 0 -724px;
+}
+.huawei{
+	background-position: -205px -724px;
+}
+.okey-bakassi{
+	background-position: -410px -724px;
+}
+.bubblex{
+	background-position: -615px -724px;
+}
+
+
+/*********** Our Strategy page ***********/
+.our-strategy-text-box{
+	color: #000;
+	position: absolute;
+	text-align: center;
+}
+.our-strategy-text-box h3{
+	font-family: 'Gotham Rounded';
+	font-weight: 200;
+	font-size: 28px;
+	margin:0 0 10px;
+}
+.row-1 .our-strategy-text-box p{
+    background: rgba(255, 255, 255, 0.85);
+    padding: 4px;
+}
+
+.row-4 .our-strategy-text-box,
+.row-3 .our-strategy-text-box,
+.row-2 .our-strategy-text-box {
+    background: rgba(255, 255, 255, 0.75);
+    padding: 8px;
+}
+
+.our-strategy-text-box p{
+	font-family: 'Gotham';
+	font-size: 20px;
+	margin: 0;
+}
+
+.our-strategy-text-box p span{
+	display: block;
+}
+
+.our-strategy .row-1 .our-strategy-text-box{
+	bottom: 11%;
+	left: 35%;
+}
+
+.our-strategy .row-2 .our-strategy-text-box{
+	bottom: 12%;
+	left: 31%;
+}
+
+.our-strategy .row-3 .our-strategy-text-box{
+	bottom: 16%;
+	left: 31%;
+}
+
+.our-strategy .row-4 .our-strategy-text-box{
+	bottom: 9%;
+	left: 31%;
+}
+
+.our-strategy .row-5 .our-strategy-text-box{
+	bottom: 22%;
+    width: 100%;
+}
+
+.our-strategy .row-5 .our-strategy-text-box p {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.35);
+    padding: 4px;
+}
+
+.who-we-are-wrapper .breadcrumb p,
+.our-strategy .breadcrumb p,
+.drax-force .breadcrumb p{
+	color: #393939 !important;
+}
+
+.drax-force #wrapper .slide {
+    height: auto !important;
+}
+
+.drax-force #wrapper .slide img {
+    top: 0 !important;
+}
+
+.drax-force .breadcrumb p {
+	text-transform: none !important;
+}
+
+.drax-force .row-1 p{
+	color: #fff;
+	font-size: 20px;
+	font-family: 'Gotham';
+	margin:0;
+	position: absolute;
+	bottom: 124px;
+    width: 100%;
+    text-align: center;
+    line-height: 28px;
+}
+
+.drax-force .drax-force-text-box{
+	position: absolute;
+}
+
+.drax-force .drax-force-text-box h3{
+	font-size: 36px;
+	color: #780000;
+	margin: 0;
+	font-family: 'Gotham';
+	font-weight: 200;
+}
+
+.drax-force .drax-force-text-box b{
+	color: #000;
+	font-size: 24px;
+	font-family: 'Gotham';
+	font-weight: 200;
+}
+
+.drax-force .drax-force-text-box p{
+	font-size: 20px;
+	color: #000;
+	margin: 0;
+	line-height: 28px;
+	font-family: 'Gotham';
+}
+.drax-force .row-2 .drax-force-text-box{
+	bottom: 10%;
+	left: 61%;
+}
+.drax-force .row-3 .drax-force-text-box{
+	bottom: 4%;
+	left: 65%;
+}
+.drax-force .row-4 .drax-force-text-box{
+	top: 17%;
+	left: 61%;
+}
+.drax-force .row-5 .drax-force-text-box{
+	top: 10%;
+	left: 57%;
+}
+.drax-force .row-6 .drax-force-text-box{
+	top: 5%;
+	left: 55%;
+}
+
+/******* Contact Us **********/
+.contact-us-content-container{
+	width: 950px;
+	padding: 0 25px;
+	position: absolute;
+	top:0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: 20% auto 10%;
+}
+
+.contact-us-content-container
+.form-column{
+	width: 454px;
+	float: left;
+	padding: 45px 35px 30px 20px;
+	background-color: rgba(225, 227, 229, 0.7);
+}
+
+.contact-us-content-container
+.form-column h1{
+	color: #292929;
+	font-size: 30px;
+	text-align: center;
+    font-family: 'Gotham Rounded';
+	margin: 0 0 30px;
+	font-weight: normal;
+}
+
+.contact-us-content-container
+.form-column form{
+	width: 100%;
+    font-family: 'Gotham Rounded';
+}
+
+.contact-us-content-container
+.form-column form input,
+.contact-us-content-container
+.form-column form textarea{
+	resize: none;
+	background: #f3f3f3;
+	border: solid 1px #bbbebf;
+	width: 388px;
+}
+
+.form-column form > div {
+    clear: both;
+}
+
+.form-column form > div > div {
+    float: right;
+}
+
+.contact-us-content-container
+.form-column form label{
+	color: #000;
+	font-size: 14px;
+	float: left;
+}
+.contact-us-content-container
+.form-column form input{
+	margin-bottom: 23px;
+	height: 23px;
+}
+
+.contact-us-content-container
+.form-column form textarea{
+	height: 190px;
+}
+.contact-us-content-container
+.form-column form button{
+	height: 23px;
+	width: 101px;
+	color: #fff;
+	font-size: 16px;
+	background: #780000;
+	border: none;
+	padding:0;
+	margin: 15px 0 0 65px;
+	text-transform:uppercase;
+	clear:both;
+}
+
+.contact-us-content-container .address-column {
+	width: 360px;
+	margin-top: 0;
+	float: right;
+    font-family: 'Gotham Rounded';
+}
+
+.contact-us-content-container
+.address-column h2{
+	margin: 0 0 56px;
+	color: #fff;
+	font-size: 28px;
+	font-weight: normal;
+}
+
+.contact-us-content-container
+.address-column > div{
+	margin-left: 42px;
+	padding-left: 47px;
+	border-left: dotted 1px #555;
+	color: #181818;
+}
+
+.contact-us-content-container
+.address-column > div h3{
+	font-size: 24px;
+	font-weight: normal;
+	margin: 0 0 25px;
+}
+
+.contact-us-content-container .address-column a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.contact-us-content-container .address-column a:hover {
+    text-decoration: underline;
+    color: #333;
+}
+
+.contact-us-content-container
+.address-column > div p{
+	margin: 0 0 30px;
+}
+
+.contact-us-content-container
+.address-column > div em{
+	font-style: normal;
+	font-size: 24px;
+}
+
+.contact-us .breadcrumb p{
+	color: #393939;
+}
+
+/***** Work Done *********/
+
+/***** B & O *********/
+.work-done-inner .screen-text{
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: #000;
+	font-size: 16px;
+}
+
+.work-done-inner .screen-text p{
+	margin: 0 0 35px;
+	line-height: 28px;
+}
+
+.work-done-inner .slide > section{
+	 position: relative;
+     height: 100%;
+}
+
+.work-done-inner .slide .row-1 h1{
+	 font-size: 32px;
+	 color: #fff;
+	 position: absolute;
+	 top: 57%;
+	 width: 100%;
+	 text-align: center;
+    font-family: 'Gotham Rounded';
+	font-weight: 200;
+}
+ 
+.b-and-o #wrapper > .row-2 {
+    height: 651px !important;
+}
+
+.b-and-o .row-2 img {
+    top: 0 !important;
+}
+
+.b-and-o .row-2 p {
+    margin-bottom: 0;
+}
+
+.b-and-o .row-2 p:first-child {
+    margin-bottom: 22px;    
+}
+
+.b-and-o .row-2 .screen-text > div > div {
+	top: 344px;
+	left: 634px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 11px 21px;
+}
+
+.b-and-o #wrapper > .row-3 {
+    min-height: 400px;
+    border-top-color: #000 !important;
+}
+
+.b-and-o .row-3 .screen-text > div > div {
+	top: 70px;
+	left: 71px;
+}
+
+.b-and-o #wrapper > .row-4{
+    border-top-color: #000 !important;
+}
+
+.b-and-o .row-4 .screen-text > div > div {
+	top: 74px;
+	left: 84px;
+}
+
+.b-and-o .row-4 img {
+    top: 0 !important;
+}
+
+.b-and-o #wrapper > .row-5 {
+    height: 100% !important;
+}
+
+.b-and-o .row-5 .screen-text > div > div {
+	color: #fff;
+	top: 300px;
+	left: 347px;
+}
+
+.b-and-o #wrapper > .row-6 {
+    height: 100% !important;
+}
+
+.b-and-o .row-6 .screen-text > div > div {
+	top: 600px;
+	left: 497px;
+    text-align: center;
+    width: 340px;
+}
+
+.b-and-o #wrapper > .row-7 {
+    height: 100% !important;
+}
+
+.b-and-o .row-7 .screen-text > div > div {
+	top: 48px;
+	left: 647px;
+}
+
+/***** Etisalat *********/
+.work-done-inner .screen-text h2{
+	font-size: 32px;
+	margin: 0 0 32px;
+    font-family: 'Gotham Rounded';
+}
+
+.work-done-inner .screen-text h3{
+	font-size: 20px;
+	color: #000;
+	margin: 0 0 32px;
+    font-family: 'Gotham';
+}
+
+.etisalat .screen-text h2{
+	color: #fff;
+}
+
+.etisalat #wrapper > .row-1 {
+    height: auto !important;
+}
+
+.etisalat #wrapper > .row-2 {
+    max-height: 653px;
+    min-height: 540px;
+}
+
+.etisalat .row-2 .screen-text > div > div {
+	color: #fff;
+	top: 25%;
+	left: 71px;
+    width: 336px;
+}
+
+.etisalat #wrapper > .row-3 {
+    min-height: 640px;
+}
+
+.etisalat .row-3 .screen-text > div > div {
+	top: 23%;
+	left: 71px;
+}
+
+.work-done-inner.etisalat #wrapper > .slide.row-4 {
+    min-height: 510px;
+    border-top-color: #000;
+}
+
+.etisalat .row-4 .screen-text > div > div {
+	top: 18%;
+	left: 634px;
+}
+
+.etisalat #wrapper > .row-5 {
+    min-height: 595px;
+}
+
+.etisalat .row-5 .screen-text > div > div {
+	top: 25%;
+	left: 71px;
+	color: #fff;
+}
+
+.etisalat .row-5 .screen-text h3{
+	color: #fff;
+}
+
+.etisalat #wrapper > .row-6 {
+    min-height: 893px;
+}
+
+.etisalat .row-6 .screen-text > div > div {
+	bottom: 0;
+	left: 0;
+    width: 100%;
+	text-align: center;
+}
+
+.etisalat .row-6 img {
+    top: 0 !important;
+}
+
+.etisalat #wrapper > .row-7 {
+    min-height: 650px;
+}
+
+.etisalat .row-7 .screen-text > div > div {
+	top: 73%;
+	left: 243px;
+	background-color: rgba(255, 255, 255, 0.6);
+	padding: 10px;
+	text-align: center;
+    width: 487px;
+}
+
+.etisalat .row-7 .screen-text p{
+	margin: 0;
+}
+
+.etisalat #wrapper > .row-8 {
+    min-height: 908px;
+}
+
+.etisalat .row-8 img {
+    top: 0 !important;
+}
+
+.etisalat .row-8 .screen-text > div > div {
+	top: 835px;
+	left: 0;
+    width: 100%;
+	text-align: center;
+	line-height: 25px;
+}
+
+/************** NEXUS ***********/
+.nexus .screen-text > div > div {
+	line-height: 25px;
+}
+
+.nexus .row-1 .screen-text > div > div {
+	top: 0%;
+	left: 0%;
+}
+
+.nexus #wrapper > .row-2 {
+    max-height: 649px;
+    min-height: 512px;
+}
+
+.nexus .row-2 .screen-text > div > div {
+	top: 163px;
+	left: 71px;
+}
+
+.nexus #wrapper > .row-3 {
+    min-height: 460px;
+}
+
+.nexus .row-3 .screen-text > div > div {
+	top: 10%;
+	left: 634px;
+	background-color: rgba(255, 255, 255, 0.7);
+	padding: 20px 35px 20px 25px;
+}
+
+.nexus #wrapper > .row-4 {
+    min-height: 437px;
+}
+
+.nexus .row-4 .screen-text > div > div {
+	top: 20%;
+	left: 85px;
+}
+
+.nexus #wrapper > .row-5 {
+    min-height: 626px;
+}
+
+.nexus .row-5 .screen-text > div > div {
+	top: 19%;
+	left: 658px;
+}
+
+.nexus #wrapper > .row-6 {
+    min-height: 474px;
+}
+
+.nexus .row-6 .screen-text > div > div {
+	top: 16%;
+	left: 61px;
+	background-color: rgba(255, 255, 255, 0.7);
+	padding: 20px 35px 20px 25px;
+}
+
+.nexus #wrapper > .row-7 {
+    min-height: 474px;
+}
+
+.nexus .row-7 img {
+    top: 0 !important;
+}
+
+.nexus .row-7 .screen-text > div > div {
+	top: 37px;
+	left: 634px;
+}
+
+/**************** UNIVERSITY OF NIGERIA***************/
+.work-done-inner #wrapper .row-1 img {
+    top: 0 !important;
+}
+
+.work-done-inner #wrapper > .row-1 {
+    height: auto !important;
+}
+
+.work-done-inner .screen-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.work-done-inner .screen-text > div {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+    height: 100%;
+    z-index: 0;
+}
+
+.work-done-inner .screen-text > div > div {
+    position: absolute;
+}
+
+.work-done-inner #wrapper .slide + .slide {
+    border-top-color: #fff;
+}
+
+.work-done-inner #wrapper > .row-2 {
+    border-top: none;
+}
+
+.unn #wrapper > .row-2 {
+    min-height: 330px;
+    max-height: 650px;
+}
+
+.unn .row-2 .screen-text > div > div {
+	left: 71px;
+	top: 18%;
+	color: #fff;
+}
+
+.unn .row-3 .screen-text > div > div {
+	left: 56px;
+	top: 24%;
+	padding: 20px 11px 20px 15px;
+	background-color: rgba(0, 0, 0, 0.7);
+	color: #fff;
+}
+
+.unn #wrapper > .slide.row-3 {
+    min-height: 600px;
+    border-top-color: #000;
+}
+
+.unn .row-4 .screen-text h3,
+.unn .row-5 .screen-text h3,
+.unn .row-3 .screen-text h3{
+	color: #fff;
+}
+
+.unn #wrapper > .slide.row-4 {
+    min-height: 665px;
+    border-top-color: #000;
+}
+
+.unn .row-4 .screen-text > div > div {
+	right: 4px;
+	top: 0;
+	padding: 20px 35px 235px 13px;
+	background-color: rgba(0, 0, 0, 0.7);
+	color: #fff;
+	background-image: url(../images/work-done/unn/compass-icon.png);
+	background-repeat: no-repeat;
+	background-position: center 87%; 
+}
+
+.unn #wrapper > .row-5 {
+    min-height: 635px;
+}
+
+.unn .row-5 .screen-text > div > div {
+	left: 61px;
+	top: 37%;
+	padding: 20px 35px 20px 25px;
+	background-color: rgba(0, 0, 0, 0.7);
+	color: #fff;
+}
+
+.unn #wrapper > .row-6 {
+    min-height: 725px;
+}
+
+.unn .row-6 .screen-text > div > div {
+	left: 71px;
+	top: 160px;
+}
+
+.unn .row-6 img {
+    top: 0 !important;
+}
+
+.unn .row-6 .screen-text h2{
+	margin-bottom: 90px;
+}
+
+.unn .row-7 img {
+    top: 0 !important;
+}
+
+.unn #wrapper > .row-8 {
+    min-height: 978px;
+}
+
+.unn .row-8 img {
+    top: 0 !important;
+}
+
+.unn .row-8 .screen-text > div > div {
+    bottom: 0;
+    color: #FFFFFF;
+    left: 366px;
+    margin: 0 auto;
+    width: 290px;
+}
+
+.unn .row-9 .screen-text > div > div {
+	left: 71px;
+	top: 50%;
+    font-weight: bold;
+    line-height: 28px;
+}
+.unn .screen-text h3{
+	font-size: 24px;
+}

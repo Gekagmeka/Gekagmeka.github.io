@@ -1,0 +1,32 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+header{
+  width: 400px;
+  margin: auto;
+}
+header a:hover{
+  color: red; /*при наведении на ссылки - они будут краситься в красный цвет*/
+  border-bottom: 2px solid green; /*при наведении будет нижнее подчеркивание зеленого цвета*/
+}
+
+main{
+  width: 1000px;
+  background-image:url("images/3.jpg"); /*фоновое изображение, которое находится справа вверху*/
+  background-repeat: no-repeat;
+  background-position: right top;
+  padding: 20px;
+  margin: auto;
+}
+
+footer{
+width: 50%;
+background-color: lightgray;
+position: absolute;
+top: 95%;
+left: 25%;
+padding: 20px;
+}
