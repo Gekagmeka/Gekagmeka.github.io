@@ -1,0 +1,580 @@
+@font-face{ /*определение шрифта и его подключение (шрифт находим на сайте cdn, скачиваем и пожключаем)*/
+  font-family: 'ChunkFive Bold';
+  src: url('fonts/ChunkFiveExtraBold/ChunkFiveExtraBold.woff') format('woff');
+  font-weight: 700;
+}
+
+@font-face{ /*определение шрифта и его подключение (шрифт находим на сайте cdn, скачиваем и пожключаем)*/
+  font-family: 'Lato-regular';
+  src: url('fonts/Lato/latoregular.woff') format('woff');
+  font-weight: 700;
+}
+
+@font-face{ /*определение шрифта и его подключение (шрифт находим на сайте cdn, скачиваем и пожключаем)*/
+  font-family: 'Lato-heavy';
+  src: url('fonts/Lato/latoheavy.woff') format('woff');
+  font-weight: 700;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /*не учитывать padding в общей длине*/
+}
+
+.clearfix::after{ 
+  content: '';
+  clear: both;
+  width: 100%;
+  display: block;
+}
+
+h3{
+  font-family: 'Lato-heavy', Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+  color: #3c434d;
+  Text-align: center;
+  margin-bottom: 60px;
+}
+
+p{
+  font-family: 'Lato-regular', Arial, Helvetica, sans-serif;
+  font-size: 1.125rem;
+  color: #80909c;
+}
+
+
+/* PSD file 2 */
+/*header===================================================================================================*/
+body{
+  background-color: #e2e7e9;
+}
+
+.header-main{
+  height: 100vh;
+}
+.container{
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.header-main .container{
+  margin-top: 17vh;
+}
+.header-main .container-content{
+  width: 100%;
+  padding: 12.5vh;
+  background-color: #fff;
+}
+
+
+/*Для кнопки вверх========================================================*/
+.up{ /*границы стрелки*/
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border: 2px solid red;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 10;
+  bottom: 20px;
+  right: 80px;
+  transform: translate(200px, 0);
+  transition: transform 0.2s ease-in;
+}
+.up::after{ /*сама стрелка - квадрат без двух границ, повернутый на 45 градусов*/
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 14px;
+  z-index: 10;
+  width: 25px;
+  height: 25px;
+  border-right: 2px solid red;
+  border-top: 2px solid red;
+  transform: rotate(-45deg);
+}
+.up.visible{
+  transform: none;
+}
+
+.header-carousel{
+  max-width: 730px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.header-carousel-text img{
+  width: 160px;
+  margin: 0 auto;
+}
+
+.header-carousel-text h4{
+  padding-top: 60px;
+  padding-bottom: 10px;
+}
+
+.header-content{
+  position: relative;
+}
+
+.prev-button{
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  background: transparent;
+  border: none;
+}
+
+.next-button{
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  background: transparent;
+  border: none;
+}
+
+
+
+/*First main part===================================================================*/
+.first-main{
+  margin-bottom: 70px;
+}
+
+.first-main .first-main-part-content{
+  background-color: #fff;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.first-main-part-content-text{
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.first-main-part-content-text p{
+  max-width: 570px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px 50px;
+}
+
+.first-main-part-content-text span{
+  color: #629fd1;
+}
+
+.first-main-part-content-text span:last-child{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.first-main-part-content-author h4{
+  font-family: 'Lato-heavy', Arial, Helvetica, sans-serif;
+  font-size: 1.25rem;
+  color: #3c434d;
+}
+
+.first-main-part-content-author a{
+  font-family: 'Lato-regular', Arial, Helvetica, sans-serif;
+  font-size: 1.125rem;
+  color: #629fd1;
+}
+
+.first-main-part-content-author{
+  max-width: 200px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 15px;
+}
+
+
+/*Second-main-part===================================================================*/
+.second-main-part-content{
+  background-color: #fff;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  padding-left: 60px;
+  padding-right: 60px;
+  
+}
+
+.second-main-part-content{
+  position: relative;
+}
+
+.second-prev-button{
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  background: transparent;
+  border: none;
+}
+
+.second-next-button{
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  background: transparent;
+  border: none;
+}
+
+.slider-nav{
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.slider-nav-text{
+  max-width: 110px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.slider-for{
+  max-width: 650px;
+  margin: 0 auto;
+  margin-top: 35px;
+}
+
+.slider-for p{
+  text-align: center;
+}
+
+.slider-for h4{
+  text-align: center;
+  padding-top: 50px;
+}
+
+.second-main{
+  margin-bottom: 70px;
+}
+
+
+
+/*The third part===========================================================*/
+.third-main .container-content{
+  background-color: #fff;
+  padding: 120px 115px;
+}
+
+.third-carousel{
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .third-carousel-text-author img{
+  float: left;
+} */
+
+.third-carousel-text-author{
+  display: flex;
+  align-items: center;
+}
+
+.third-carousel-text-author img{
+  margin-right: 30px;
+}
+
+.third-carousel-text > p{ /*только для слежующего абзаца 'p'*/
+  background: url('images/Blue.png') no-repeat center top / cover;
+  max-width: 570px;
+  padding: 40px 25px 50px 25px;
+  color: #fff;
+  font-family: 'Lato-regular', Arial, Helvetica, sans-serif;
+  font-size: 1.125rem;
+}
+
+
+
+.third-carousel-text-author{
+  margin-top: 25px;
+}
+
+.third-prev-button,
+.third-next-button{
+  background: transparent;
+  border: none;
+  position: absolute;
+}
+
+.third-main .third-main-part-content{
+  position: relative;
+}
+
+.third-next-button{
+  bottom: -40px;
+  right: 0;
+}
+
+.third-prev-button{
+  bottom: -40px;
+  left: 0;
+}
+
+
+/*Работа с кастомными dots в slick*/
+/*Начало+++++*/
+
+.my-dots li {
+  position: relative;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.my-dots {
+  position: absolute;
+  bottom: -45px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.my-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 10px;
+  height: 10px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+.my-dots li button:hover,
+.my-dots li button:focus {
+  outline: none;
+}
+
+.my-dots li button:hover:before,
+.my-dots li button:focus:before {
+  opacity: 1;
+}
+
+.my-dots li button:before {
+  font-family: 'slick';
+  font-size: 6px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  content: '';
+  border: 2px solid blue;
+  border-radius: 50%;
+  text-align: center;
+  opacity: .25;
+  color: black;
+}
+
+.my-dots li.slick-active button:before { /*при изменении картинки - меняется и кастомная кнопка*/
+  opacity: .75;
+  color: black;
+}
+/*++++++ завершение*/
+
+
+
+
+
+
+/*======================= media =====================*/
+@media screen and (max-width: 1024px){
+
+}
+
+@media screen and (max-width: 720px){
+  .logo{
+    float: none; /*отменяем float*/
+    display: block; /*картинка станет по центру*/
+    margin: 0 auto;
+  }
+
+  .burger-button{
+    display: block;/*кнопка появится при уменьшении экрана до 425px и ниже*/
+    position: absolute;
+    top: 46px;
+    left: 25px;
+  }
+  .header-nav{
+    position: absolute;
+    max-width: 200px;
+    top:25px;
+    left:0;
+    display: none; /*сначала скрытые*/
+  }
+  .header-nav.active{
+    display: block; /*станут открытыми*/
+  }
+  ul.header-nav-list {
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 0;
+  }
+
+  .first-section-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .first-right .caption{
+    padding-top: 50px;
+  }
+  
+  .second-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .third-section-content{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+  .submit-btn{
+    width: 100%;
+  }
+  .third-section-middle {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.third-section-right h3{
+  padding-bottom: 20px;
+}
+.third-section-content{
+  margin-top: 20px;
+}
+
+.last-section-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.last-right-controls-form{
+  width: 100%;
+}
+
+.up{
+  display: none;
+}
+}
+
+
+
+
+@media screen and (max-width: 475px){
+  .logo{
+    float: none; /*отменяем float*/
+    display: block; /*картинка станет по центру*/
+    margin: 0 auto;
+  }
+
+  .burger-button{
+    display: block;/*кнопка появится при уменьшении экрана до 475px и ниже*/
+    position: absolute;
+    top: 46px;
+    left: 25px;
+  }
+  .header-nav{
+    position: absolute;
+    max-width: 200px;
+    top:25px;
+    left:0;
+    display: none; /*сначала скрытые*/
+  }
+  .header-nav.active{
+    display: block; /*станут открытыми*/
+  }
+  ul.header-nav-list {
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 0;
+  }
+
+
+
+  .first-section-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .first-right .caption{
+    padding-top: 50px;
+  }
+
+  .second-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .third-section-content{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+  .submit-btn{
+    width: 100%;
+  }
+  .third-section-middle {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.third-section-right h3{
+  padding-bottom: 20px;
+}
+.third-section-content{
+  margin-top: 20px;
+}
+
+.last-section-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.last-right-controls-form{
+  width: 100%;
+}
+
+
+.up{
+  display: none;
+}
+
+  .auth-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form-group,
+  .form-textarea{
+    width: 100%; /*form-group's занимают по 50% от ширины контейнера, то есть половину от 950px*/
+    max-width: 450px;
+  }
+
+.submit-btn{
+  width: 100%;
+}
+
+.last-left{
+  text-align: center;
+}
+
+}
+
