@@ -387,13 +387,13 @@ id = 'second'*/
   max-width: 280px;
 }
 
-/* .slick-slide {
+ .slick-slide {
   padding: 0 15px;
 }
 
 .carusel{
-  margin: 0 -15px; /*Для установки расстояния между картинками slick задаешь стили для .slick-slide {padding: 0 15px;} к примеру. а для контейнера margin: 0 -15px;*/
-/* } */ 
+  margin: 0 -15px; /*Для установки расстояния между картинками slick задаешь стили для .slick-slide {padding: 0 15px;} к примеру. а для контейнера margin: 0 -15px; */
+ }
 
 .carusel-btn{
   display: flex;
@@ -694,10 +694,28 @@ form .last-right-control-text-icon{
 
 /*======================= media =====================*/
 @media screen and (max-width: 1024px){
+ .first-section-phon img{
+   width: 100%;
+   margin-left: -50%;
+ }
+ .slick-slide {
+  padding: 0;
+}
 
+.carusel{
+  margin: 0; /*Для установки расстояния между картинками slick задаешь стили для .slick-slide {padding: 0 15px;} к примеру. а для контейнера margin: 0 -15px; */
+ }
 }
 
 @media screen and (max-width: 720px){
+  .slick-slide {
+    padding: 0;
+  }
+  
+  .carusel{
+    margin: 0; /*Для установки расстояния между картинками slick задаешь стили для .slick-slide {padding: 0 15px;} к примеру. а для контейнера margin: 0 -15px; */
+   }
+
   .logo{
     float: none; /*отменяем float*/
     display: block; /*картинка станет по центру*/
@@ -790,6 +808,14 @@ form .last-right-control-text-icon{
 }
 
 @media screen and (max-width: 475px){
+  .slick-slide {
+    padding: 0;
+  }
+  
+  .carusel{
+    margin: 0; /*Для установки расстояния между картинками slick задаешь стили для .slick-slide {padding: 0 15px;} к примеру. а для контейнера margin: 0 -15px; */
+   }
+
   .logo{
     float: none; /*отменяем float*/
     display: block; /*картинка станет по центру*/
@@ -838,7 +864,6 @@ form .last-right-control-text-icon{
   }
 
 .second-left{
-  width: 100%;
   margin-right: 0;
   margin-left: 0;
 }
@@ -911,9 +936,29 @@ form .last-right-control-text-icon{
 }
 
 @media screen and (max-width: 375px){
+  .slick-slide {
+    padding: 0;
+  }
+  
+  .carusel{
+    margin: 0; /*Для установки расстояния между картинками slick задаешь стили для .slick-slide {padding: 0 15px;} к примеру. а для контейнера margin: 0 -15px; */
+   }
+
+  /* .second-carusel-one-inside-text,
+  .second-carusel-two-inside-text,
+  .second-carusel-three-inside-text
+  {
+    width: 100%;
+  } */
+
+.caption,
+.caption span{
+  font-size: 1.5rem;
+}
+
 .header-title-first{
   font-size: 1.5rem;
-  margin-top: 200px;
+  margin-top: 150px;
 }
 
   .burger-button{
