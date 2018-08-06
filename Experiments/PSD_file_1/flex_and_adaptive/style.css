@@ -427,7 +427,12 @@ nav{
 
 /*======================= media =====================*/
 @media screen and (max-width: 1024px){
-
+  .header-title{
+    margin-top: 32vh;
+  }
+  .header-button{
+    margin-top: 12vh;
+  }
 }
 
 @media screen and (max-width: 720px){
@@ -453,6 +458,12 @@ nav{
 }
 
 @media screen and (max-width: 525px){
+  h1.header-title-second{
+    font-size: 2.5rem;
+  }
+  h2.header-title-first{
+    font-size: 1.75rem;
+  }
   .burger-button{
     display: block;/*кнопка появится при уменьшении экрана до 425px и ниже*/
   }
@@ -510,6 +521,12 @@ nav{
 }
 
 @media screen and (max-width: 375px){
+  h1.header-title-second{
+    font-size: 1.75rem;
+  }
+  h2.header-title-first{
+    font-size: 1.25rem;
+  }
   .burger-button{
     display: block;/*кнопка появится при уменьшении экрана до 425px и ниже*/
   }
