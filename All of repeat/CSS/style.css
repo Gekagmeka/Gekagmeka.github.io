@@ -31,6 +31,12 @@ h4{
 	font-size:28px;
 }
 
+h5{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+}
+
+
 p{
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:0.75rem;
@@ -218,4 +224,52 @@ a{
 	font-weight:700;
 	text-decoration:none;
 	color:#000;
+}
+
+
+/*third_block*/
+.third_block_content{
+	width:1024px;
+	margin:0 auto;
+	padding:0 0 110px;
+}
+
+.third_block_content_decoration{
+	display:flex;
+	justify-content:space-between;
+}
+
+.third_block_text_fig{
+	text-align:center;
+	display:flex;
+	flex-direction:column;
+}
+
+.third_block_text_fig{
+	width:190px;
+	padding:10px;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+}
+
+.third_block_content_text > p{
+	text-align:right;
+}
+
+.third_block_text_fig > h5,
+.third_block_text_fig > p{
+	color:#373737;
+}
+
+.third_block_text_fig > h5{
+	padding:0 0 20px;
+}
+
+.third_block_text_fig > p > img{
+	padding:0 0 20px;
+}
+
+.third_block_content_text > p > .arrows a{
+	margin:0 5px;
 }
