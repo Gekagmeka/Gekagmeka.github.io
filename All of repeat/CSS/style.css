@@ -273,3 +273,127 @@ a{
 .third_block_content_text > p > .arrows a{
 	margin:0 5px;
 }
+
+
+/*fouth_block*/
+.fouth_block{
+	padding:20px;
+	background:url('../images/fouth_block_header.png') no-repeat left center / cover;
+}
+
+.fouth_block_content{
+	max-width:500px;
+	margin:0 auto;
+	padding:240px 10px;
+	text-align:center;
+}
+
+.fouth_block_content_text{
+	font-family:Times New Roman, Times, serif;
+	text-transform:uppercase;
+	color:#fff;
+	font-size:24px;
+	padding:0 0 20px;
+}
+
+/*поле ввода*/
+.fouth_block_field input{
+	border:0; /*Убираем границы обводки на input*/
+	width:280px;
+	margin:0 auto;
+	padding:20px 10px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	letter-spacing:0.15px;
+	border-radius:4px 0 0 4px;
+}
+/*форма*/
+.form {
+	font-size: 0; /*Для того, чтоб пробела не было между полем ввода и кнопкой*/
+}
+
+.fouth_block_field .button{
+	border:0; /*Чтоб убрать границы обводки на кнопке*/
+	border-radius:0 4px 4px 0;
+	background-color: #16a085;
+	color: #fff;
+	text-align: center;
+	padding: 18px 20px 21px 20px;
+	
+	transition:all 0.3s ease-in;
+}
+.fouth_block_field .button:hover{
+	background:#12c6a3;
+}
+
+
+/*fifth_block*/
+.fifth_block{
+	background-color:#f5f6f7;
+	padding:88px 10px 110px;
+}
+
+.fifth_block_content{
+	max-width:870px;
+	margin:0 auto;
+	text-align:center;
+}
+
+.fifth_block_content_text{
+	padding:30px 10px;
+}
+
+.fifth_block_content_text h3{
+	text-transform:uppercase;
+	font-family:Times NEw ROman, Times, serif;
+	font-size:20px;
+	color:#373737;
+	letter-spacing:1px;
+	padding:0 0 20px;
+}
+
+.fifth_block_content_text p{
+	text-transform:uppercase;
+	line-height:22px;
+	letter-spacing:1.5px;
+}
+
+.button_left, .button_right{
+	border:0;
+	border-radius:4px 0 0 4px;
+	padding:20px;
+	display:flex;
+	align-items:center;
+}
+
+.button_left a, .button_right a{
+	width:240px;
+	text-transform:uppercase;
+	color:#fff;
+	font-size:16px;
+	font-family:Times New Roman, Times, serif;
+	letter-spacing:1.5px;
+	text-decoration:none;
+	background:#1abc9c;
+}
+
+.button_left a:hover, .button_right a:hover{
+	opacity:0.7;
+}
+
+.button_left span{
+	border-radius:0 4px 4px 0;
+	background:#16a085;
+	padding:17px 20px 13px;
+}
+
+.button_right span{
+	border-radius:0 4px 4px 0;
+	background:#16a085;
+	padding:12px 20px 13px;
+}
+
+.fifth_block_content_button{
+	display:flex;
+	justify-content:center;
+}
