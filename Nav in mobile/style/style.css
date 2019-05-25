@@ -62,11 +62,23 @@
 		display:block;
 		text-align:center;
 	}
-	.header_nav_list_item{
-		padding:5px 15px;
+	.header_nav_link{
+		font-size:24px;
+		display:block; /*для того, чтоб активная ссылка была полностью li с заливкой*/
 	}
 	.header_nav_link:hover{
 		opacity:1;
 		text-decoration:none;
+	}
+	.header_nav_list_item{
+		background:#ccc;
+		border:2px solid #000;
+		border-top:none;
+	}
+	.header_nav_list_item:first-child{
+		border-top:2px solid #000;
+	}
+	.header_nav_list_item:hover{
+		background:#aaa;
 	}
 }
