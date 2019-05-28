@@ -1,0 +1,50 @@
+@font-face{
+	font-family:'Lato-regular'; /*Кавычки , потому что два слова используется*/
+	src: url('../fonts/Lato/latoregular.woff') format('woff');
+	font-weight:400;
+}
+
+@font-face{
+	font-family:'Lato-heavy';
+	src:url('../fonts/Lato/latoheavy.woff') format('woff');
+	font-weight:700;
+}
+
+*{/*сброс стандартных стилей браузеров*/
+	padding:0;
+	margin:0;
+	box-sizing:border-box; /*не учитывает бордеры в общей длине (они уже учтены)*/
+}
+
+.clearfix::after{/*отменяет обтекание*/
+	content:'';
+	clear:both;
+	width:100%;
+	display:block;
+}
+
+p{
+	font-family:'Lato-regular', Arial, Helvetica, sans-serif;
+	font-size:1.5rem;
+	color:#000;
+}
+
+h1{
+	font-family:'Lato-heavy', Arial, Helvetica, sans-serif;
+}
+
+.wrapper{
+	width:100%;
+}
+.content{
+	width:600px;
+	margin: 0 auto;
+	padding:20px;
+}
+
+.content h1{
+	padding:0 0 20px;
+}
+.content p, h1{
+	text-align:center;
+}
