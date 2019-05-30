@@ -1,0 +1,96 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}
+
+.clearfix::after{/*используется для отмены обтекания - следующие строчные элементы будут начинаться с новой строки - вешается на родителя, в котором есть float*/
+	content:'';
+	display:block;
+	clear:both;
+}
+
+.content{
+	max-width:600px;
+	margin:0 auto;
+	position:relative;
+}
+
+.box{
+	background:#f2f2f2;
+	padding:20px;
+}
+
+.text1{
+	width:200px;
+	background:#f00;
+	padding:10px;
+	position:absolute;
+	/*top:0; вначале блока-родителя*/
+	/*left:0; вначале блока-родителя*/
+	top:0;
+	right:0;
+	z-index:5;
+}
+
+.text2{
+	width:200px;
+	background:#0f0;
+	padding:10px;
+	position:absolute;
+	/*top:0; вначале блока-родителя*/
+	/*left:0; вначале блока-родителя*/
+	bottom:0;
+	right:0;
+	z-index:5;
+}
+
+.text3{
+	width:200px;
+	background:#00f;
+	padding:10px;
+	position:absolute;
+	/*top:0; вначале блока-родителя*/
+	/*left:0; вначале блока-родителя*/
+	bottom:50%;
+	right:0;
+	z-index:5;
+}
+
+.lower_block{
+	width:50px;
+	background:#c1c1c1;
+	position:absolute;
+	bottom:0;
+	right:0;
+	z-index:10;
+}
+.upper_block{
+	width:50px;
+	background:#c1c1c1;
+	position:absolute;
+	top:0;
+	right:0;
+	z-index:10;
+}
+
+
+
+
+/*media queries*/
+@media screen and (max-width:599px){
+	.box{
+		width:100%;
+	}
+	.box .box_content{
+		width:100%;
+		max-width:500px;
+		margin:0 auto;
+	}
+	.text1, .text2,.text3{
+		position:relative;
+		width:100%;
+	}
+	
+}
+
