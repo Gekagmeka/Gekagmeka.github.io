@@ -73,8 +73,37 @@
 	right:0;
 	z-index:10;
 }
+.content__part{
+	background:lightblue;
+	padding:20px;
+}
+
+.content__arrow{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:20px;
+	color:#000;
+}
+.content__part a{
+	text-decoration:none;
+	color:#000;
+}
 
 
+/*ДЛя Fixed - относительно блока , а не окна*/
+/*.context {
+  max-width: 600px;
+  margin: 0 auto;
+  transform: translateZ(0);
+}
+.viewport {
+  width: 100%;
+}
+.centered {
+  position: fixed;
+  right: 10px;
+  top: 100%;
+  transform: translateX(0%);
+}*/
 
 
 /*media queries*/
