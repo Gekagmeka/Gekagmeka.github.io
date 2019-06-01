@@ -1,0 +1,45 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}
+
+.clearfix::after{/*используется для отмены обтекания - следующие строчные элементы будут начинаться с новой строки - вешается на родителя, в котором есть float*/
+	content:'';
+	display:block;
+	clear:both;
+}
+
+.content{
+	max-width:600px;
+	margin:0 auto;
+	padding:10px;
+}
+
+.bgi p{
+	font-size:20px;
+	color:#fff;
+}
+.bgc p{
+	font-size:16px;
+	color:#00f;
+}
+
+.bgi{
+	background-image:url('1.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center bottom;
+}
+
+.bgc{
+	background-color:#ccc;
+	padding:20px;
+}
+
+
+/*media queries*/
+@media screen and (max-width:599px){
+	
+}
+
