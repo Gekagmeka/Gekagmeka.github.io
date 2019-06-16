@@ -1,0 +1,17 @@
+.menu .menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+
+.menu .menu__item {
+  list-style: none;
+  margin: 0 25px; }
+
+.menu .menu__link {
+  text-decoration: none;
+  font-size: 1.25rem; }
+
+.menu .menu__link:hover {
+  text-decoration: underline; }

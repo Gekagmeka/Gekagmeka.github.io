@@ -1,0 +1,22 @@
+.search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .search .search__field {
+    -ms-flex-preferred-size: 65%;
+    flex-basis: 65%;
+    border: 1px solid #000;
+    padding: 7px 10px;
+    margin: 0 10px 0 0; }
+  .search .search__button {
+    -ms-flex-preferred-size: calc(65% - 10px);
+    flex-basis: calc(65% - 10px);
+    border: 1px solid #000;
+    background: #00b200;
+    padding: 7px 10px;
+    border-radius: 7px;
+    -webkit-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in; }
+    .search .search__button:hover {
+      background: #0f0; }
