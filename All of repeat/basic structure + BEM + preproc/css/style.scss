@@ -1,15 +1,38 @@
-.button{
-	width:100%;
-	display:block;
-	padding:7px 10px;
-	letter-spacing:1px;
-	margin:0 10px;
-	border:1px solid #000;
-	border-radius:5px;
-	cursor:pointer;
-	background:#ced635;
-	transition:all 0.2s ease-in;
-	&:hover{
-		background:#e4ed36;
+.content{
+	display:flex;
+	.content__left{
+		flex-basis:250px;
+		.left__sidebar{
+			.left__link{
+				display:block;
+				padding:7px 10px;
+				border: 1px solid #000;
+				text-align:center;
+				text-decoration:none;
+				margin:10px 20px;
+			}
+			.left__link--active{
+				background:#f00;
+				color:#fff;
+			}
+		}
+	}
+	.content__center{
+		flex-basis: calc(100% - 250px - 250px - 80px);
+		margin:0 20px;
+		h1{
+			padding:10px 0;
+		}
+		ul{
+			margin:10px 20px;
+		}
+	}
+	.content__right{
+		flex-basis:250px;
+		.right__img{
+			display:block;
+			max-width:100%;
+			padding:10px 0 0;
+		}
 	}
 }

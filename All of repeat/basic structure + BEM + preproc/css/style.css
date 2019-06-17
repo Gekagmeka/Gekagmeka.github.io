@@ -2,6 +2,7 @@
 @import url("header.css");
 @import url("search.css");
 @import url("button.css");
+@import url("left.css");
 
 * {
   padding: 0;
@@ -19,11 +20,11 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
   -ms-flex-line-pack: justify;
-  align-content: space-between;
+  align-content: center;
    -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
