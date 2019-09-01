@@ -1,4 +1,0 @@
-draxarts
-========
-
-Private project

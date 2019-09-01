@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Project Title</title>
+	<link media="all" rel="stylesheet" href="css/main.css">
+	<style>
+	@font-face{
+	    font-family:'Gotham Bold';
+	    src:url('scss/fonts/gothamrounded-bold-webfont.woff') format('woff');
+	}
+	@font-face{
+	    font-family:'Gotham Medium';
+	    src:url('scss/fonts/gothamrounded-medium-webfont.woff') format('woff');
+	}
+	@font-face{
+	    font-family:'Gotham Book';
+	    src:url('scss/fonts/gothamrounded-book-webfont.woff') format('woff');
+	}
+	</style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-3.3.1.min.js" defer><\/script>')</script>
+	<script src="js/jquery.main.js" defer></script>
+</head>
+<body>
+	<div id="wrapper">
+		<header class="header">
+		    <nav class="menu header__menu">
+		        <ul class="menu__list">
+		            <li class="menu__item">
+		                <a href="#" class="menu__link menu__link--active">Home</a>
+		            </li>
+		            <li class="menu__item">
+		                <a href="#" class="menu__link menu__link--active">Photoapp</a>
+		            </li>
+		            <li class="menu__item">
+		                <a href="#" class="menu__link menu__link--active">
+		                    <img class="menu__logo menu__logo--active" src="images/photoblack.png" alt="Photo" />
+		                </a>
+		            </li>
+		            <li class="menu__item">
+		                <a href="#" class="menu__link menu__link--active">Design</a>
+		            </li>
+		            <li class="menu__item">
+		                <a href="#" class="menu__link menu__link--active">Download</a>
+		            </li>
+		        </ul>
+		    </nav>
+		    <div class="content header__content">
+		        <h2 id="home" class="content__title">YOUR LIFE , A PHOTO</h2>
+		        <p class="content__text">print your life in a simple photo</p>
+		          <a class="content__link content__link--active" href="#">GET STARTED</a>
+		    </div>
+		    <div class="icons header__icons">
+		         <a class="icons__link icons__link--active" href="http://link"><img src="images/ico-twitter.png" alt="Tw" /></a>
+		         <a class="icons__link icons__link--active" href="http://link"><img src="images/ico-ins.png" alt="Ig" /></a>
+		         <a class="icons__link icons__link--active" href="http://link"><img src="images/ico-web.png" alt="Web" /></a>
+		    </div>
+		</header>
+		
+		<main id="main">
+				<div class="content">
+						<!-- grey block -->
+					<div class="info content__info">
+						<div class="copy info__copy">
+							<!-- left side -->
+							<div class="left copy__left">
+								<h3 class="left__title">
+									Lorem ipsum dolor sit amet, consectetur.
+								</h3>
+								<p class="left__text">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum vero delectus asperiores <b>nostrum consectetur</b> suscipit distinctio, quae quo animi numquam.
+								</p>
+								<a class="left__btn left__btn--active" href="#">GET STARTED</a>
+							</div>
+							<!-- right side -->
+							<div class="right copy__right">
+								<img class="right__img" src="images/iPhone.png" alt="Iphone" />
+							</div>
+						</div>
+					</div>
+					<!-- white block -->
+					<div class="white content__white">
+						<div class="copyright white__copyright">
+							<!-- left side -->
+							<div class="leftside copy__leftside">
+								<img class="leftside__img" src="images/mobleft.png" alt="Mobile" />
+							</div>
+							<!-- right side -->
+							<div class="rightside copy__rightside">
+								<h3 class="rightside__title">
+									Lorem ipsum dolor sit amet, consectetur.
+								</h3>
+								<p class="rightside__text">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum vero delectus asperiores <b>nostrum consectetur</b> suscipit distinctio, quae quo animi numquam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem fugiat perferendis voluptates animi cum dignissimos debitis nam hic aspernatur cumque.
+								</p>
+								<a class="rightside__btn rightside__btn--active" href="#">learn more</a>
+								<p class="rightside__time">
+									<time datetime="2018-05-05">01/05</time>
+								</p>
+								<div class="datalist rightside__datalist">
+									<p class="datalist__angleleft">
+										<a class="datalist__link" href="http://link">&lsaquo;</a>
+									</p>
+									<p class="datalist__angleright">
+										<a class="datalist__link" href="http://link">&rsaquo;</a>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 3 columns -->
+					<div class="images content__images">
+						<div class="column images__column">
+							<div class="first first__column">
+								<img class="first__img" src="images/photo.png" alt="Camera" />
+								<h3 class="first__title">Our Community</h3>
+								<p class="first__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, rerum.</p>
+							</div>
+							<div class="second second__column">
+								<img class="second__img" src="images/car.jpg" alt="Car" />
+							</div>
+							<div class="third third__column">
+								<img class="third__img" src="images/leaf.jpg" alt="leaf" />
+							</div>
+						</div>
+						<div class="imagelist images__imagelist">
+							<p class="imagelist__angleleft">
+								<a class="imagelist__link" href="http://link">&lt;</a>
+							</p>
+							<p class="imagelist__angleright">
+								<a class="imagelist__link" href="http://link">&gt;</a>
+							</p>
+						</div>
+					</div>
+					<!-- form -->
+					<div class="subscribe content__subscribe">
+						<div class="subscribe__copy">
+							<h2 id="our-community" class="subscribe__title">subscribe to our community</h2>
+							<form class="form" method="POST">
+								<label>
+									<input class="form__input" type="email" name="email" placeholder="YOUR EMAIL">
+								</label>
+								<label>
+									<button class="form__button" type="submit" >&#10004;</button>
+								</label>
+							</form>
+						</div>
+					</div>
+					<!-- pre-footer -->
+					<div class="prefooter content__prefooter">
+						<div class="prefooter-copy prefooter__prefooter-copy">
+							<h3 class="prefooter-title prefooter-copy__prefooter-title">
+								DOWNLOAD IT
+							</h3>
+							<p class="prefooter-text prefooter-copy__prefooter-text">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis officia minus harum laudantium voluptatem nulla libero, neque sit magnam ad assumenda, vel atque, maxime mollitia accusamus nesciunt iure sapiente natus quasi beatae. Voluptas dolorum sunt expedita, voluptates in consequatur tenetur, molestias ullam nemo, a culpa necessitatibus, labore cupiditate soluta non?
+							</p>
+							<div class="prefooter-btn prefooter-copy__prefooter-btn">
+								<button class="prefooter-btn__btnleft" type="button">APPLE STORE <img class="prefooter-btn__imgleft" src="images/ico-apple.png" alt="apple" /></button>
+								<button class="prefooter-btn__btnright" type="button">PLAY STORE <img class="prefooter-btn__imgright" src="images/ico-android.png" alt="android" /></button>
+							</div>
+						</div>
+					</div>
+				</div>
+		</main>
+		<footer id="footer">
+			<!-- footer -->
+			<div class="footer content__footer">
+				<div class="footer-copy footer__footer-copy">
+					<div class="footer-left footer__footer-left">
+						<a class="footer-left__link" href="http://link">CREDITS</a> <span class="footer-left__devider">&nbsp;|&nbsp;</span> <a class="footer-left__link" href="http://link">PRIVACY</a> <span class="footer-left__devider">&nbsp;|&nbsp;</span> <a class="footer-left__link" href="http://link"> OUR TEAMS</a>
+						<p class="footer-left__info">
+							Copyright by phototime - all right reserved
+						</p>
+					</div>
+					<div class="footer-right footer__footer-right">
+						<a class="footer-right__link" href="http://link">
+							<img class="footer-right__img" src="images/photo.png" alt="photo" />
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
