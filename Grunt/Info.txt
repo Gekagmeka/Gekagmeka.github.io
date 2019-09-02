@@ -1,3 +1,0 @@
-1) You need to copy folder "markup" to any way
-2) Git Bash - grunt 
-3) Next - you need to open in browser and in Sublime index.html and main.sccs
