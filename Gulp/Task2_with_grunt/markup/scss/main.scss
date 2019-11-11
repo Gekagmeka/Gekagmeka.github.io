@@ -31,14 +31,51 @@ $media-expressions: (
 @import 'base/forms';
 
 .header{
-	color:#f00;
-	font-size:40px;
-	text-align:center;
-	max-width:1024px;
-	margin:0 auto;
-	.list{
-		display:flex;
-		justify-content:space-between;
-		align-items:center;
+	background:url("../images/bg-01.jpg") no-repeat center top / cover;
+	min-height:100vh;
+	.header__container{
+		text-align:center;
+		max-width:1024px;
+		margin:0 auto;
+		@extend %clearfix; //cancel float
+			.container__logo{
+				float:left;
+				margin:43px 0 0 10px;
+				display:block;
+			}
+			.container__menu{
+				@extend %clearfix;
+				margin:0 0 300px;
+				.menu__navigation{
+					float:right;
+					margin:50px 0 0 0;
+					.menu__item{
+						float:left;
+						display:inline-block;
+						margin:0 41px 0 0;
+						.menu__link{
+							text-transform:uppercase;
+							color:#fff;
+							text-decoration:none;
+							&:hover{
+								text-decoration:underline;
+								point:cursor;
+							}
+						}
+					}
+				}
+			}
+			.container__title{
+				.title__copy{
+					font-size:40px;
+					color:#fff;
+					text-transform:uppercase;
+					letter-spacing:-0.7px;
+				}
+				.title__headline{
+					color:#fff;
+					letter-spacing:-1px;
+				}
+			}
+		}
 	}
-}

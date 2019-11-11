@@ -353,10 +353,11 @@ td,
 th {
   padding: 0; }
 
-.clearfix:after {
+.clearfix:after, .header .header__container:after, .header .header__container .container__menu:after {
   content: '';
   display: block;
-  clear: both; }
+  clear: both;
+  width: 100%; }
 
 .ellipsis {
   white-space: nowrap;
@@ -372,7 +373,9 @@ html {
   box-sizing: inherit; }
 
 * {
-  max-height: 1000000px; }
+  max-height: 1000000px;
+  padding: 0;
+  margin: 0; }
 
 body {
   color: #333;
@@ -403,7 +406,7 @@ h6, .h6,
   color: inherit; }
 
 h1, .h1 {
-  font-size: 30px; }
+  font-size: 75px; }
 
 h2, .h2 {
   font-size: 27px; }
@@ -421,7 +424,7 @@ h6, .h6 {
   font-size: 15px; }
 
 p {
-  margin: 0 0 1em; }
+  margin: 0 0 0.65em; }
 
 a {
   color: #39f; }
@@ -506,19 +509,38 @@ input[type='submit'] {
   cursor: pointer; }
 
 .header {
-  color: #f00;
-  font-size: 40px;
-  text-align: center;
-  max-width: 1024px;
-  margin: 0 auto; }
-  .header .list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
+  background: url("../images/bg-01.jpg") no-repeat center top/cover;
+  min-height: 100vh; }
+  .header .header__container {
+    text-align: center;
+    max-width: 1024px;
+    margin: 0 auto; }
+    .header .header__container .container__logo {
+      float: left;
+      margin: 43px 0 0 10px;
+      display: block; }
+    .header .header__container .container__menu {
+      margin: 0 0 300px; }
+      .header .header__container .container__menu .menu__navigation {
+        float: right;
+        margin: 50px 0 0 0; }
+        .header .header__container .container__menu .menu__navigation .menu__item {
+          float: left;
+          display: inline-block;
+          margin: 0 41px 0 0; }
+          .header .header__container .container__menu .menu__navigation .menu__item .menu__link {
+            text-transform: uppercase;
+            color: #fff;
+            text-decoration: none; }
+            .header .header__container .container__menu .menu__navigation .menu__item .menu__link:hover {
+              text-decoration: underline;
+              point: cursor; }
+    .header .header__container .container__title .title__copy {
+      font-size: 40px;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: -0.7px; }
+    .header .header__container .container__title .title__headline {
+      color: #fff;
+      letter-spacing: -1px; }
 /*# sourceMappingURL=main.css.map */
