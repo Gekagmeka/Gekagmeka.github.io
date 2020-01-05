@@ -46,7 +46,7 @@ $media-expressions: (
 			.container__menu{
 				@extend %clearfix;
 				margin:0 0 300px;
-				@include media ('<=600px') {
+				@include media ('<600px') {
 					margin:0 0 80px;
 				}
 				.menu__navigation{
@@ -72,9 +72,10 @@ $media-expressions: (
 				.title__copy{
 					font-size:40px;
 					color:#fff;
+					font-style:italic;
 					text-transform:uppercase;
 					letter-spacing:-0.7px;
-					@include media ('<=600px') {
+					@include media ('<600px') {
 						font-size:28px;
 					}
 				}
@@ -82,11 +83,11 @@ $media-expressions: (
 					color:#fff;
 					letter-spacing:-1px;
 					margin:0 0 100px;
-					@include media ('<=600px') {
+					@include media ('<600px') {
 						margin:0 0 30px;
 					}
 					.title__h1{
-						@include media ('<=600px') {
+						@include media ('<600px') {
 							font-size:3rem;
 						}
 					}
@@ -94,23 +95,23 @@ $media-expressions: (
 				.title__button{
 					max-width:240px;
 					margin:0 auto;
-					background-color:#fed136;
+					background-color:#e3c712;
 					border-radius:5px;
 					&:hover{
-						background-color:#f0e68c;
+						background-color:#9b870c;
 						transition: all 0.3s ease-in;
 					}
 					.title__link{
 						display:block;
 						padding:20px 5px;
 						text-decoration:none;
-						color:#484543;
+						color:#fff;
 						font-family: Arial, Helvetica, sans-serif;
-						font-size:1.25rem;
+						font-size:1.1rem;
 						font-weight:700;
 						text-transform:uppercase;
 						letter-spacing:0.3px;
-						@include media ('<=600px') {
+						@include media ('<600px') {
 							padding:15px 5px;
 						}
 					}
@@ -125,7 +126,7 @@ $media-expressions: (
 		margin:0 auto;
 		text-align:center;
 		padding:100px 50px;
-		@include media ('<=600px') {
+		@include media ('<600px') {
 			padding:40px 15px;
 		}
 		.services__text{
@@ -134,7 +135,7 @@ $media-expressions: (
 				font-size:40px;
 				color:#222;
 				text-transform:uppercase;
-				@include media ('<=600px') {
+				@include media ('<600px') {
 					font-size:28px;
 				}
 			}
@@ -143,7 +144,7 @@ $media-expressions: (
 				font-size:16px;
 				color:#777;
 				margin:0 0 50px;
-				@include media ('<=600px') {
+				@include media ('<600px') {
 					margin:0 0 30px;
 				}
 			}
@@ -152,13 +153,13 @@ $media-expressions: (
 			display:flex;
 			justify-content:space-around;
 			align-items:flex-start;
-			@include media ('<=600px') {
+			@include media ('<600px') {
 				display:block;
 			}
 			.column__info{
 				width:33.3333%;
 				padding:15px;
-				@include media ('<=600px') {
+				@include media ('<600px') {
 					width:100%;
 				}
 				.column__icon{
@@ -182,43 +183,139 @@ $media-expressions: (
 		max-width:1024px;
 		margin:0 auto;
 		text-align:center;
-		padding:100px 50px;
-		@include media ('<=600px') {
+		padding:100px 20px 71px;
+		@include media ('<=1023px') {
 			padding:50px 15px 40px;
 		}
-		.portfolio__text{
+		.portfolio__headline{
 			.portfolio__title{
 				font-family:Arial, Helvetica, sans-serif;
 				font-size:40px;
 				color:#222;
 				text-transform:uppercase;
-				@include media ('<=600px') {
+				padding:0 0 4px;
+				@include media ('<600px') {
 					font-size:28px;
 				}
 			}
 			.portfolio__copy{
-				font-family:Arial, Helvetica, sans-serif;
+				font-family: Arial, Helvetica, sans-serif;
+				font-style:italic;
+				letter-spacing:0.3px;
 				font-size:16px;
 				color:#777;
-				margin:0 0 50px;
-				@include media ('<=600px') {
+				margin:0 0 76px;
+				@include media ('<600px') {
 					margin:0 0 30px;
 				}
 			}
 		}
 		.portfolio__album{
-			display:flex;
-			justify-content:space-between;
-			@include media ('<=464px') {
-				display:block;
-			}
+			@include media ('<=1023px') {
+					margin:0 auto;
+					width:100%;
+				}
 			.album__info{
-				padding:0 9px;
-				@include media ('<=464px') {
-					padding:10px;
+				width:290px;
+				vertical-align:top;
+				display:inline-block;
+				margin:0 15px 49px;
+				background-color:#fffffe;
+				@include media ('<=1023px') {
+					width:25%;
+					max-width:290px;
+					margin:0 10px 40px;
+				}
+				@include media ('<=767px') {
+					width:40%;
+					max-width:290px;
+					margin:0 10px 40px;
+				}
+				@include media ('<600px') {
+					display:block;
+					width:100%;
+					margin:0 auto;
+				}
+				.album__post{
+					width:100%;
+					padding:0 0 18px;
+					.album__image{
+						padding:0 0 27px;
+					}
+					.album__text{
+						font-size:14px;
+						font-style:italic;
+						color:#737373;
+					}
 				}
 			}
 		}
 	}
+	}
+	.about-block{
+		background-color:#fffffe;
+		.container__about{
+			max-width:1024px;
+			margin:0 auto;
+			padding:100px 20px 71px;
+			.about__headline{
+				padding:0 0 40px;
+				.about__title{
+					font-size:40px;
+					text-transform:uppercase;
+					font-family:Arial, Helvetica, sans-serif;
+					color:#000;
+					text-align:center;
+				}
+				.about__copy{
+					font-size:16px;
+					font-family:Times New Roman, Times, serif;
+					font-style:italic;
+					color:#777;
+					text-align:center;
+				}
+			}
+			.about__news{
+				padding:0 0 40px;
+				.news__info{
+					display:flex;
+					justify-content:flex-start;
+					align-items:flex-start;
+					@include media ('<600px') {
+							display:block;
+							text-align:center;
+						}
+					.news__photo{
+						min-width:183px;
+						@include media ('<600px') {
+							padding:0 0 20px;
+						}
+					}
+					.news__textblock{
+						padding:0 0 0 40px;
+						@include media ('<600px') {
+							padding:0;
+						}
+						.news__title{
+							font-size:24px;
+							font-family:Arial, Helvetica, sans-serif;
+							color:#000;
+							padding:0 0 5px;
+						}
+						.news__subtitle{
+							font-size:18px;
+							font-family:Arial, Helvetica, sans-serif;
+							color:#000;
+							padding:0 0 5px;
+						}
+						.news__copy{
+							font-size:14px;
+							font-family:Arial, Helvetica, sans-serif;
+							color:#777;
+						}
+					}
+				}
+			}
+		}
 	}
 }
