@@ -669,8 +669,7 @@ input[type='submit'] {
       width: 290px;
       vertical-align: top;
       display: inline-block;
-      margin: 0 15px 49px;
-      background-color: #fffffe; }
+      margin: 0 15px 49px; }
       @media (max-width: 1023px) {
         .main .portfolio-block .container__portfolio .portfolio__album .album__info {
           width: 25%;
@@ -680,13 +679,15 @@ input[type='submit'] {
         .main .portfolio-block .container__portfolio .portfolio__album .album__info {
           width: 40%;
           max-width: 290px;
-          margin: 0 10px 40px; } }
+          margin: 0 10px 30px; } }
       @media (max-width: 599px) {
         .main .portfolio-block .container__portfolio .portfolio__album .album__info {
           display: block;
           width: 100%;
-          margin: 0 auto; } }
+          margin: 0 auto;
+          margin-bottom: 30px; } }
       .main .portfolio-block .container__portfolio .portfolio__album .album__info .album__post {
+        background-color: #fffffe;
         width: 100%;
         padding: 0 0 18px; }
         .main .portfolio-block .container__portfolio .portfolio__album .album__info .album__post .album__image {
@@ -702,8 +703,14 @@ input[type='submit'] {
     max-width: 1024px;
     margin: 0 auto;
     padding: 100px 20px 71px; }
+    @media (max-width: 599px) {
+      .main .about-block .container__about {
+        padding: 50px 15px 20px; } }
     .main .about-block .container__about .about__headline {
       padding: 0 0 40px; }
+      @media (max-width: 599px) {
+        .main .about-block .container__about .about__headline {
+          padding: 0 0 20px; } }
       .main .about-block .container__about .about__headline .about__title {
         font-size: 40px;
         text-transform: uppercase;
