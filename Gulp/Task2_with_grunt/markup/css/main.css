@@ -719,7 +719,7 @@ input[type='submit'] {
         text-align: center; }
       .main .about-block .container__about .about__headline .about__copy {
         font-size: 16px;
-        font-family: Times New Roman, Times, serif;
+        font-family: 'Times New Roman', Times, serif;
         font-style: italic;
         color: #777;
         text-align: center; }
