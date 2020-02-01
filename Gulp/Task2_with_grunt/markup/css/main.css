@@ -509,7 +509,7 @@ input[type='submit'] {
   cursor: pointer; }
 
 .header {
-  background: url("../images/bg-01.jpg") no-repeat center top/cover;
+  background: url("https://i.imgur.com/5igCqPI.jpg") no-repeat center top/cover;
   min-height: 100vh; }
   .header .header__container {
     text-align: center;
@@ -763,4 +763,75 @@ input[type='submit'] {
             font-size: 14px;
             font-family: Arial, Helvetica, sans-serif;
             color: #777; }
+
+.main .container__contact {
+  width: 100%;
+  background: url("https://i.imgur.com/6UxtGpy.png") no-repeat center top/cover; }
+  .main .container__contact .contact__block {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 0 50px; }
+    .main .container__contact .contact__block .contact__text {
+      padding: 120px 100px; }
+      @media (max-width: 599px) {
+        .main .container__contact .contact__block .contact__text {
+          padding: 60px 20px 30px; } }
+      .main .container__contact .contact__block .contact__text .contact__title {
+        padding: 0 0 10px;
+        font-size: 40px;
+        text-transform: uppercase;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #fff;
+        text-align: center; }
+      .main .container__contact .contact__block .contact__text .contact__copy {
+        font-size: 16px;
+        font-family: 'Times New Roman', Times, serif;
+        font-style: italic;
+        color: #777;
+        text-align: center; }
+    .main .container__contact .contact__block .contact__info {
+      width: 100%; }
+      .main .container__contact .contact__block .contact__info .contact__form {
+        width: 100%; }
+        .main .container__contact .contact__block .contact__info .contact__form .contact__container {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between; }
+          @media (max-width: 479px) {
+            .main .container__contact .contact__block .contact__info .contact__form .contact__container {
+              display: block; } }
+          .main .container__contact .contact__block .contact__info .contact__form .contact__container .contact__leftside {
+            width: 48%;
+            padding: 0 20px; }
+            @media (max-width: 479px) {
+              .main .container__contact .contact__block .contact__info .contact__form .contact__container .contact__leftside {
+                width: 100%; } }
+            .main .container__contact .contact__block .contact__info .contact__form .contact__container .contact__leftside .contact__leftside__group {
+              margin: 0 0 20px; }
+              @media (max-width: 479px) {
+                .main .container__contact .contact__block .contact__info .contact__form .contact__container .contact__leftside .contact__leftside__group {
+                  margin: 0 0 15px; } }
+              .main .container__contact .contact__block .contact__info .contact__form .contact__container .contact__leftside .contact__leftside__group .contact__leftside__control {
+                width: 100%;
+                border: 1px solid #ccc;
+                background: #f2f2f2;
+                font-size: 1.125rem;
+                border-radius: 5px;
+                padding: 12px;
+                -webkit-transition: all 0.2s ease-in;
+                transition: all 0.2s ease-in; }
+                .main .container__contact .contact__block .contact__info .contact__form .contact__container .contact__leftside .contact__leftside__group .contact__leftside__control:focus {
+                  background: #fff; }
+                @media (max-width: 479px) {
+                  .main .container__contact .contact__block .contact__info .contact__form .contact__container .contact__leftside .contact__leftside__group .contact__leftside__control {
+                    padding: 8px; } }
+          .main .container__contact .contact__block .contact__info .contact__form .contact__container .contact__rightside {
+            width: 48%;
+            padding: 0 20px; }
+            @media (max-width: 479px) {
+              .main .container__contact .contact__block .contact__info .contact__form .contact__container .contact__rightside {
+                width: 100%; } }
 /*# sourceMappingURL=main.css.map */
