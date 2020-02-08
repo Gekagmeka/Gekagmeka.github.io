@@ -69,6 +69,7 @@ $media-expressions: (
 				}
 			}
 			.container__title{
+				padding:0 0 40px;
 				.title__copy{
 					font-size:40px;
 					color:#fff;
@@ -327,19 +328,20 @@ $media-expressions: (
 	}
 	.container__contact{
 		width:100%;
-		background:url("https://i.imgur.com/6UxtGpy.png") no-repeat center top / cover;
+		background:url("https://i.imgur.com/6UxtGpy.png") no-repeat 80% top / cover;
 		.contact__block{
 			max-width:1024px;
 			margin:0 auto;
 			padding:0 0 50px;
 			.contact__text{
-				padding:120px 100px;
+				padding:120px 100px 50px;
 				@include media ('<600px') {
 					padding:60px 20px 30px;
 				}
 				.contact__title{
 					padding:0 0 10px;
 					font-size:40px;
+					letter-spacing:2px;
 					text-transform:uppercase;
 					font-family:Arial, Helvetica, sans-serif;
 					color:#fff;
@@ -355,16 +357,18 @@ $media-expressions: (
 			}
 			.contact__info{
 				width:100%;
+				padding:0 0 50px;
 				.contact__form{
 					width:100%;
 					.contact__container{
 						display:flex;
 						justify-content:space-between;
+						padding:0 0 50px;
 						@include media ('<480px') {
 							display:block;
 						}
 						.contact__leftside{
-							width:48%;
+							width:49%;
 							padding:0 20px;
 							@include media ('<480px') {
 								width:100%;
@@ -377,13 +381,13 @@ $media-expressions: (
 								.contact__leftside__control{
 									width:100%;
 									border:1px solid #ccc;
-									background:#f2f2f2;
+									background-color:#f2f2f2;
 									font-size:1.125rem;
 									border-radius:5px;
 									padding:12px;
 									transition:all 0.2s ease-in;
 									&:focus{
-										background:#fff;
+										background-color:#fff;
 									}
 									@include media ('<480px') {
 										padding:8px;
@@ -392,21 +396,83 @@ $media-expressions: (
 							}
 						}
 						.contact__rightside{
-							width:48%;
+							width:49%;
 							padding:0 20px;
 							@include media ('<480px') {
 								width:100%;
 							}
 							.contact__rightside__group{
 								.contact__rightside__control{
-									
+									width:100%;
+									height:181px;
+									border:1px solid #e2e2e2;
+									background-color:#f2f2f2;
+									color:#bbbbbb;
+									font-family: Arial, Helvetica, sans-serif;
+									font-size:1.125rem;
+									border-radius:3px;
+									padding-left:20px;
+									padding-right:20px;
+									padding-top:10px;
+									resize:none;
+									transition:all 0.2s ease-in;
+									&:focus{
+										background-color:#fffffe;
+									}
+									@include media ('<480px') {
+										padding:8px;
+										height:auto;
+									}
 								}
 							}
 						}
 					}
+					
+				}
+				.contact__button{
+					width:100%;
+					max-width:250px;
+					margin:0 auto;
+					.contact__field{
+						display:inline-block;
+						padding:21px 10px 20px;
+						width:100%;
+						border:1px solid #00f;
+						border-radius:4px;
+						font:700 16px/20px Arial, Helvetica, sans-serif;
+						color:#fff;
+						letter-spacing:1px;
+						text-transform:uppercase;
+						background-color:#fed136;
+						text-decoration:none;
+						text-align:center;
+						
+						position:relative;
+						overflow:hidden;
+						&::before{
+							position:absolute;
+							content:'';
+							width:0;
+							height:100%;
+							top:0;
+							left:0;
+							background-color:#3fc6ea;
+							transform:translateX(-100%);
+							transition:all 0.15s ease-in;
+							}
+						&:hover{
+							&::before{//address to ::before when parent is active (hover)
+								transform: translateX(0);
+								width:100%;
+							}
+						}
+						.contact__link{
+							position:relative;
+							z-index:1;
+						}
+					}
 				}
 			}
-			
 		}
 	}
 }
