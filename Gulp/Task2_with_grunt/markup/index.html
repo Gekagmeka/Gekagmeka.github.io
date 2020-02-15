@@ -26,16 +26,16 @@
 								<a href="http://link" class="menu__link">Home</a>
 							</li>
 							<li class="menu__item">
-								<a href="http://link" class="menu__link">Services</a>
+								<a href="#services" class="menu__link">Services</a>
 							</li>
 							<li class="menu__item">
-								<a href="http://link" class="menu__link">Portfolio</a>
+								<a href="#portfolio" class="menu__link">Portfolio</a>
 							</li>
 							<li class="menu__item">
-								<a href="http://link" class="menu__link">About</a>
+								<a href="#about" class="menu__link">About</a>
 							</li>
 							<li class="menu__item">
-								<a href="http://link" class="menu__link">Contact</a>
+								<a href="#contact" class="menu__link">Contact</a>
 							</li>
 						</ul>
 					</nav>
@@ -57,14 +57,14 @@
 						</h1>
 					</div>
 					<div class="title__button">
-						<a class="title__link" href="#">TELL ME MORE</a>
+						<a class="title__link" href="#"><span class="title__field">TELL ME MORE</span></a>
 					</div>
 				</div>
 			</div>
 		</header>
 		<main id="main" class="main">
 			<!-- start white block -->
-			<div class="services container__services">
+			<div id="services" class="services container__services">
 				<div class="services__text">
 					<h4 class="services__title">
 						Services
@@ -111,7 +111,7 @@
 			</div>
 			<!--end white block-->
 			<!-- start block portfolio-->
-			<div class="portfolio-block">
+			<div id="portfolio" class="portfolio-block">
 				<div class="portfolio container__portfolio">
 					<div class="portfolio__headline">
 						<h4 class="portfolio__title">
@@ -193,7 +193,7 @@
 			</div>
 			<!-- end block portfolio -->
 			<!-- start about -->
-			<div class="about-block">
+			<div id="about" class="about-block">
 				<div class="about container__about">
 					<div class="about__headline">
 						<h4 class="about__title">
@@ -279,7 +279,7 @@
 			</div>
 			<!-- end about -->
 			<!-- start contact -->
-			<div class="contact container__contact">
+			<div id="contact" class="contact container__contact">
 				<div class="contact__block">
 					<div class="contact__text">
 						<h4 class="contact__title">
@@ -310,7 +310,7 @@
 								</div>
 							</div>
 							<div class="contact__button">
-								<a class="contact__field" href="#"><span class="contact__link">SEND MESSAGE</span></a>
+								<a class="contact__link" href="#"><span class="contact__field">SEND MESSAGE</span></a>
 							</div>
 						</form>
 					</div>
@@ -318,10 +318,13 @@
 			</div>
 			<!-- end contact -->
 		</main>
-		
-		
-		
-		<footer id="footer"></footer>
+		<footer id="footer" class="footer">
+			<div class="container footer__container">
+				<div class="footer__text">
+					&copy; Copyright 2014 <a class="footer__link" href="#">FreeBusiness.com</a>
+				</div>
+			</div>
+		</footer>
 	</div>
 </body>
 </html>
