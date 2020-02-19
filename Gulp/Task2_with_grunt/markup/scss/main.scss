@@ -108,9 +108,6 @@ body{
 							}
 						}
 					}
-					// .active{
-					// 		display:block;
-					// 	}
 					// start burger
 					.burger-button{
 					width: 20px;
@@ -125,19 +122,6 @@ body{
 						position: absolute;
 						top: 10px;
 						left: 10px;
-						&.active{
-							.burger-button__first-serif{
-							transform:rotate(45deg);
-							top:9px;
-							}
-							.burger-button__second-serif{
-								opacity:0;
-							}
-							.burger-button__third-serif{
-								transform:rotate(-45deg);
-								bottom:9px;
-							}
-						}
 					}
 					.burger-button__first-serif{
 					width: 100%;
@@ -147,6 +131,10 @@ body{
 					left: 0;
 					background-color: #fff;
 					transition:all 0.3s ease-in;
+					&.active{
+						transform:rotate(45deg);
+						top:9px;
+					}
 				}
 					.burger-button__second-serif{
 					width: 100%;
@@ -156,6 +144,9 @@ body{
 					left: 0;
 					background-color: #fff;
 					transition:all 0.3s ease-in;
+					&.active{
+						opacity:0;
+					}
 				}
 					.burger-button__third-serif{
 					width: 100%;
@@ -165,6 +156,10 @@ body{
 					bottom: 0;
 					background-color: #fff;
 					transition:all 0.3s ease-in;
+					&.active{
+						transform:rotate(-45deg);
+						bottom:9px;
+					}
 				}
 					}
 					//end burger
