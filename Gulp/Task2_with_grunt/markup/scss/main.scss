@@ -48,12 +48,15 @@ body{
 					float:left;
 					margin:43px 10px 0 10px;
 					display:block;
+					@include media ('<600px') {
+						margin:25px 0 0 15px;
+					}
 				}
 				.container__menu{
 					@extend %clearfix;
 					margin:0 0 300px;
 					@include media ('<600px') {
-						margin:0 0 80px;
+						margin-bottom:4vh;
 					}
 					.menu__navigation{
 						float:right;
@@ -66,9 +69,9 @@ body{
 							top:-100%;
 							left:0;
 							background-color:#5e6f5c;
-							padding:50px 10px 20px;
+							padding:25vh 10px 20px;
 							height:0;
-							opacity:0.98;
+							opacity:0.99;
 							transition:all 0.3s ease-in;
 							overflow:auto;
 							&.active{
@@ -89,13 +92,14 @@ body{
 								text-align:left;
 								padding:10px 0;
 								margin:0;
+								text-align:center;
 							}
 							.menu__link{
 								text-transform:uppercase;
 								color:#fff;
 								text-decoration:none;
 								@include media ('<600px') {
-									font-size:1.5rem;
+									font-size:2rem;
 									font-weight:700;
 								}
 								&:hover{
@@ -120,8 +124,8 @@ body{
 					@include media ('<600px') {
 						display: block;
 						position: absolute;
-						top: 10px;
-						left: 10px;
+						top: 25px;
+						right: 15px;
 					}
 					.burger-button__first-serif{
 					width: 100%;
@@ -175,7 +179,7 @@ body{
 						@include media ('<600px') {
 							font-size:28px;
 							padding:0 10px;
-							margin:20vh 0 6vh;
+							margin:15vh 0 6vh;
 						}
 					}
 					.title__headline{
@@ -183,13 +187,19 @@ body{
 						letter-spacing:-1px;
 						margin:0 0 100px;
 						@include media ('<600px') {
-							margin:0 0 10vh;
+							margin:0 0 5vh;
 						}
 						.title__h1{
 							@include media ('<600px') {
-								font-size:3rem;
-								letter-spacing:1px;
+								font-size:3.75rem;
+								letter-spacing:2px;
 								padding:0 10px 30px;
+							}
+							@include media ('<414px') {
+								font-size:3.5rem;
+							}
+							@include media ('<350px') {
+								font-size:2.75rem;
 							}
 						}
 					}
@@ -348,6 +358,10 @@ body{
 					vertical-align:top;
 					display:inline-block;
 					margin:0 15px 49px;
+					transition:all 0.1s ease-in;
+					&:hover{
+						box-shadow:0 0 15px #5a5b5c;
+					}
 					@include media ('<=1023px') {
 						width:25%;
 						max-width:290px;
