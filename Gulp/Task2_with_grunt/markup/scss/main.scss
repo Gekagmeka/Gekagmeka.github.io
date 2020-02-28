@@ -43,11 +43,25 @@ body{
 			text-align:center;
 			max-width:1024px;
 			margin:0 auto;
+			overflow:hidden;
 			@extend %clearfix; //cancel float
 				.container__logo{
 					float:left;
 					margin:43px 10px 0 10px;
 					display:block;
+					animation-name:header-logo;
+					animation-duration:0.5s;
+					animation-delay:0s;
+					animation-iteration-count:1;
+					animation-timig-function:linear;
+					@keyframes header-logo{
+						from{
+							transform:translate(-100%, 0);
+						}
+						to{
+							transform:translate(0, 0);
+						}
+					}
 					@include media ('<600px') {
 						margin:25px 0 0 15px;
 					}
@@ -61,6 +75,19 @@ body{
 					.menu__navigation{
 						float:right;
 						margin:50px 0 0 0;
+						animation-name:menu-nav;
+						animation-duration:0.5s;
+						animation-delay:0s;
+						animation-iteration-count:1;
+						animation-timig-function:linear;
+						@keyframes menu-nav{
+							from{
+								transform:translate(100%, 0);
+							}
+							to{
+								transform:translate(0, 0);
+							}
+						}
 						@include media ('<600px') {
 							margin:0;
 							position:absolute;
@@ -103,7 +130,6 @@ body{
 									font-weight:700;
 								}
 								&:hover{
-									text-decoration:underline;
 									point:cursor;
 									@include media ('<600px') {
 										text-decoration:none;
