@@ -52,7 +52,7 @@ $('.third-carousel').slick({
 /*Кнопка наверх */
 //МОжно сделать через функцию
 function setUpVisibility(){
-  var scrollTop = $(window).scrollTop()   //console.log(scrollTop)   
+  var scrollTop = $(window).scrollTop()   //вводим переменную scrollTop, отвечаю-я за скролл окна браузера (scrollTop()) console.log(scrollTop)   
   console.log(scrollTop) /*показать в консоле , на сколько сдвинут экран в px */
   if(scrollTop > 900){ // сдвигаем на 200px и появляется кнопка
     $('#up').addClass('visible')
@@ -82,7 +82,7 @@ $(window).on('scroll',setUpVisibility);
 
 /*Теперь скрол наверх */
 $('#up').on('click', function(){ // на кнопку up вешаем слушатель событий анимацию вверх (0)
-  $('html').stop().animate({
+  $('html').stop().animate({ //останавливаем методом stop() и анимацию проводим вначала документа html - плавно перемещяясь
     scrollTop: 0
   })
 });

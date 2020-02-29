@@ -64,11 +64,17 @@ body{
 					}
 					@include media ('<600px') {
 						margin:25px 0 0 15px;
+						@keyframes header-logo{
+							display:none;
+						}
 					}
 				}
 				.container__menu{
 					@extend %clearfix;
 					margin:0 0 300px;
+					@include media ('<768px') {
+						margin-bottom:150px;
+					}
 					@include media ('<600px') {
 						margin-bottom:4vh;
 					}
@@ -101,6 +107,9 @@ body{
 							opacity:0.99;
 							transition:all 0.3s ease-in;
 							overflow:auto;
+							@keyframes menu-nav{
+								display:none;
+							}
 							&.active{
 								top:0;
 								height:100%;
@@ -317,6 +326,7 @@ body{
 				display:flex;
 				justify-content:space-around;
 				align-items:flex-start;
+				overflow:hidden;
 				@include media ('<600px') {
 					display:block;
 				}
@@ -325,6 +335,26 @@ body{
 					padding:15px;
 					@include media ('<600px') {
 						width:100%;
+					}
+					&.appear{
+						animation-name:appearing-blocks;
+						animation-duration:0.4s;
+						animation-delay:0s;
+						animation-iteration-count:1;
+						animation-timing-function:linear;
+						@keyframes appearing-blocks{
+							from{
+								transform:translate(100%, 0);
+							}
+							to{
+								transform:translate(0, 0);
+							}
+						}
+						@include media ('<600px') {
+							@keyframes appearing-blocks{
+								display:none;
+							}
+						}
 					}
 					.column__icon{
 						padding:0 0 10px;
@@ -671,6 +701,35 @@ body{
 					text-decoration:underline;
 				}
 			}
+		}
+	}
+	.up{
+		width:60px;
+		height:60px;
+		position:fixed;
+		bottom:20px;
+		right:20px;
+		border-radius:50%;
+		border:3px solid #f00;
+		background-color:#f2f2f2;
+		transform:translate(200px, 0);
+		transition:transform 0.3s ease-in;
+		&::after{
+			content:'';
+			width:20px;
+			height:20px;
+			position:absolute;
+			top:22px;
+			left:17px;
+			border-top:2px solid #000;
+			border-right:2px solid #000;
+			transform:rotate(-45deg);
+		}
+		&.visible{
+			transform:none;
+		}
+		@include media ('<600px') {
+			display:none;
 		}
 	}
 }
