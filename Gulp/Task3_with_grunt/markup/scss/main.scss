@@ -1,0 +1,106 @@
+$breakpoints: (
+	'xs-phone': 320px,
+	'phone': 480px,
+	'tablet': 768px,
+	'desktop': 1024px,
+	'widescreen': 1200px
+);
+
+// keywords
+$media-expressions: (
+	'screen': 'screen',
+	'print': 'print',
+	'handheld': 'handheld',
+	'landscape': '(orientation: landscape)',
+	'portrait': '(orientation: portrait)',
+	'retina2x': '(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)',
+	'retina3x': '(-webkit-min-device-pixel-ratio: 2.5), (min-resolution: 240dpi)'
+);
+
+// ligatured operators ≥ ≤
+
+@import 'vendors/include-media';
+@import 'vendors/normalize';
+
+@import 'base/functions';
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/helpers';
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/forms';
+@import 'base/fonts';
+
+.header{
+	min-height:100vh;
+	background-image:url("https://i.imgur.com/aIAVMFn.jpg");
+	background-size:cover;
+	background-position:center top;
+	box-shadow:inset 0 10px 10px rgba(0, 0, 0, 0.3);
+	.container{
+		max-width:1180px;
+		margin:0 auto;
+		padding:0 10px;
+		.header__content{
+			display:flex;
+			justify-content:space-between;
+			align-items:center;
+			padding:10px 0;
+			.header__burger{
+				display:none;
+				width:40px;
+				height:25px;
+				position:relative;
+				&:before,
+				&:after{
+					content:'';
+					display:block;
+					width:100%;
+					background:#fffffe;
+					position:absolute;
+					left:0;
+				}
+				&:before{
+					height:3px;
+					top:0;
+				}
+				&:after{
+					height:3px;
+					bottom:0;
+				}
+				.header__serif{
+					content:'';
+					position:absolute;
+					top:11px;
+					left:0;
+					width:100%;
+					height:3px;
+					background-color:#fffffe;
+				}
+			}
+			.header__logo{
+				border-radius:50%;
+				overflow:hidden;
+				img{
+					display:block;
+				}
+			}
+			.header__menu{
+				.header__list{
+					display:flex;
+					.header__item{
+						list-style:none;
+						padding:0 0 0 30px;
+						.header__link{
+							font-family:Bellota, cursive;
+							font-size:1.5rem;
+							color:#fff;
+							font-weight:700;
+							text-decoration:none;
+						}
+					}
+				}
+			}
+		}
+	}
+}
