@@ -35,13 +35,29 @@ $media-expressions: (
 	min-height:100vh;
 	background-image:url("https://i.imgur.com/aIAVMFn.jpg");
 	background-size:cover;
-	background-position:center top;
+	background-position:center bottom;
 	box-shadow:inset 0 10px 10px rgba(0, 0, 0, 0.3);
+	&:before{
+		content:'';
+		position:fixed;
+		z-index:3;
+		top:0;
+		left:0;
+		width:100%;
+		height:110px;
+		background-color:#491f67;
+		opacity:0;
+		@include media ('<=768px') {
+			height:90px;
+			opacity:1;
+		}
+	}
 	.container{
 		max-width:1180px;
 		margin:0 auto;
 		padding:0 10px;
 		.header__content{
+			position:relative;
 			display:flex;
 			justify-content:space-between;
 			align-items:center;
@@ -51,6 +67,10 @@ $media-expressions: (
 				width:40px;
 				height:25px;
 				position:relative;
+				z-index:5;
+				@include media ('<=768px') {
+					display:block;
+				}
 				&:before,
 				&:after{
 					content:'';
@@ -81,22 +101,50 @@ $media-expressions: (
 			.header__logo{
 				border-radius:50%;
 				overflow:hidden;
+				position:relative;
+				z-index:5;
+				@include media ('<=768px') {
+					width:70px;
+				}
 				img{
 					display:block;
+					width:100%;
 				}
 			}
 			.header__menu{
+				@include media ('<=768px') {
+					position:fixed;
+					top:0;
+					left:0;
+					width:100%;
+					height:100%;
+					background-color:#9bddd9;
+					z-index:2;
+				}
 				.header__list{
 					display:flex;
+					position:relative;
+					z-index:3;
+					@include media ('<=768px') {
+						display:block;
+						padding:100px 0 0;
+					}
 					.header__item{
 						list-style:none;
 						padding:0 0 0 30px;
+						@include media ('<=768px') {
+							margin:0 0 10px;
+							padding:0 0 0 10px;
+						}
 						.header__link{
 							font-family:Bellota, cursive;
 							font-size:1.5rem;
 							color:#fff;
 							font-weight:700;
 							text-decoration:none;
+							@include media ('<=768px') {
+								font-size:2.5rem;
+							}
 						}
 					}
 				}
