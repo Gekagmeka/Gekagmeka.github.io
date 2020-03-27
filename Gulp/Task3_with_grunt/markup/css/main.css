@@ -716,9 +716,52 @@ body .header {
           letter-spacing: 1px;
           text-decoration: none;
           color: #10273d;
-          text-transform: uppercase; }
+          text-transform: uppercase;
+          -webkit-transition: all 0.2s ease-in;
+          transition: all 0.2s ease-in; }
+          body .header .container .header__main .header__button .header__link:hover {
+            background-color: #01a2a6;
+            color: #fff; }
           @media (max-width: 768px) {
             body .header .container .header__main .header__button .header__link {
               letter-spacing: 0;
               padding: 15px 10px; } }
+
+body .main .intro {
+  width: 100%;
+  background-color: #e1e1e1; }
+  body .main .intro .container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 10px; }
+    body .main .intro .container .intro__content {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      padding: 50px 10px; }
+      body .main .intro .container .intro__content .intro__photo {
+        width: 100%;
+        max-width: 452px; }
+        body .main .intro .container .intro__content .intro__photo img {
+          width: 100%;
+          min-width: 452px;
+          display: block; }
+      body .main .intro .container .intro__content .intro__info {
+        padding: 0 0 0 110px; }
+        body .main .intro .container .intro__content .intro__info .intro__title {
+          font-family: Alfa Slab One, cursive;
+          font-size: 3.2rem;
+          color: #29d9c2;
+          letter-spacing: 1px;
+          padding: 10px 0 55px; }
+          body .main .intro .container .intro__content .intro__info .intro__title span {
+            color: #01a2a6; }
+        body .main .intro .container .intro__content .intro__info .intro__text {
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 1rem;
+          color: #777;
+          line-height: 2.2rem; }
 /*# sourceMappingURL=main.css.map */

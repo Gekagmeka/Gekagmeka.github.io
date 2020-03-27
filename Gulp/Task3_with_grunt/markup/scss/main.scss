@@ -246,9 +246,58 @@ body{
 						text-decoration:none;
 						color:#10273d;
 						text-transform:uppercase;
+						transition:all 0.2s ease-in;
+						&:hover{
+							background-color:#01a2a6;;
+							color:#fff;
+						}
 						@include media ('<=768px') {
 							letter-spacing:0;
 							padding:15px 10px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.main{
+		.intro{
+			width:100%;
+			background-color:#e1e1e1;
+			.container{
+				max-width:1180px;
+				margin:0 auto;
+				padding:0 10px;
+				.intro__content{
+					display:flex;
+					align-items:center;
+					padding:50px 10px;
+					.intro__photo{
+						width:100%;
+						max-width:452px;
+						img{
+							width:100%;
+							min-width:452px;
+							display:block;
+						}
+					}
+					.intro__info{
+						padding:0 0 0 110px;
+						.intro__title{
+							font-family:Alfa Slab One, cursive;
+							font-size:3.2rem;
+							color:#29d9c2;
+							letter-spacing:1px;
+							padding:10px 0 55px;
+							span{
+								color:#01a2a6;
+							}
+						}
+						.intro__text{
+							font-family:Arial, Helvetica, sans-serif;
+							font-size:1rem;
+							color:#777;
+							line-height:2.2rem;
 						}
 					}
 				}
