@@ -719,15 +719,24 @@ body .header {
           text-transform: uppercase;
           -webkit-transition: all 0.2s ease-in;
           transition: all 0.2s ease-in; }
+          @media (max-width: 768px) {
+            body .header .container .header__main .header__button .header__link {
+              -webkit-transition: none;
+              transition: none; } }
           body .header .container .header__main .header__button .header__link:hover {
             background-color: #01a2a6;
             color: #fff; }
+            @media (max-width: 768px) {
+              body .header .container .header__main .header__button .header__link:hover {
+                background-color: #ffffa6;
+                color: #10273d; } }
           @media (max-width: 768px) {
             body .header .container .header__main .header__button .header__link {
               letter-spacing: 0;
               padding: 15px 10px; } }
 
 body .main .intro {
+  position: relative;
   width: 100%;
   background-color: #e1e1e1; }
   body .main .intro .container {
@@ -735,28 +744,55 @@ body .main .intro {
     margin: 0 auto;
     padding: 0 10px; }
     body .main .intro .container .intro__content {
+      position: relative;
+      z-index: 1;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
       padding: 50px 10px; }
+      @media (max-width: 768px) {
+        body .main .intro .container .intro__content {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          padding: 50px 0; } }
       body .main .intro .container .intro__content .intro__photo {
         width: 100%;
-        max-width: 452px; }
+        max-width: 452px;
+        margin: 0 100px 0 0; }
+        @media (max-width: 1023px) {
+          body .main .intro .container .intro__content .intro__photo {
+            margin: 0 40px 0 0; } }
+        @media (max-width: 768px) {
+          body .main .intro .container .intro__content .intro__photo {
+            margin: 0;
+            padding: 0 0 8%; } }
         body .main .intro .container .intro__content .intro__photo img {
           width: 100%;
-          min-width: 452px;
           display: block; }
       body .main .intro .container .intro__content .intro__info {
-        padding: 0 0 0 110px; }
+        max-width: 578px;
+        width: 100%; }
         body .main .intro .container .intro__content .intro__info .intro__title {
           font-family: Alfa Slab One, cursive;
           font-size: 3.2rem;
           color: #29d9c2;
           letter-spacing: 1px;
-          padding: 10px 0 55px; }
+          padding: 10px 0 35px; }
+          @media (max-width: 1024px) {
+            body .main .intro .container .intro__content .intro__info .intro__title {
+              padding: 15px 0 25px;
+              font-size: 2.75rem; } }
+          @media (max-width: 768px) {
+            body .main .intro .container .intro__content .intro__info .intro__title {
+              letter-spacing: 0; } }
           body .main .intro .container .intro__content .intro__info .intro__title span {
             color: #01a2a6; }
         body .main .intro .container .intro__content .intro__info .intro__text {
@@ -764,4 +800,26 @@ body .main .intro {
           font-size: 1rem;
           color: #777;
           line-height: 2.2rem; }
+          @media (max-width: 480px) {
+            body .main .intro .container .intro__content .intro__info .intro__text {
+              line-height: 1.75rem; } }
+    body .main .intro .container .decoration img {
+      position: absolute;
+      top: -12%;
+      left: 50%;
+      margin-left: -590px;
+      z-index: 0;
+      height: 260px; }
+      @media (max-width: 768px) {
+        body .main .intro .container .decoration img {
+          top: -20px;
+          height: 245px;
+          left: 0;
+          margin-left: 0; } }
+      @media (max-width: 480px) {
+        body .main .intro .container .decoration img {
+          height: 40%; } }
+      @media (max-width: 374px) {
+        body .main .intro .container .decoration img {
+          height: 36%; } }
 /*# sourceMappingURL=main.css.map */

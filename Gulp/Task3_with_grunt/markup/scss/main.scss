@@ -247,9 +247,16 @@ body{
 						color:#10273d;
 						text-transform:uppercase;
 						transition:all 0.2s ease-in;
+						@include media ('<=768px') {
+							transition:none;
+						}
 						&:hover{
 							background-color:#01a2a6;;
 							color:#fff;
+							@include media ('<=768px') {
+								background-color:#ffffa6;
+								color:#10273d;
+							}
 						}
 						@include media ('<=768px') {
 							letter-spacing:0;
@@ -262,6 +269,7 @@ body{
 	}
 	.main{
 		.intro{
+			position:relative;
 			width:100%;
 			background-color:#e1e1e1;
 			.container{
@@ -269,26 +277,48 @@ body{
 				margin:0 auto;
 				padding:0 10px;
 				.intro__content{
+					position:relative;
+					z-index:1;
 					display:flex;
 					align-items:center;
+					justify-content:space-between;
 					padding:50px 10px;
+					@include media ('<=768px') {
+						flex-direction:column;
+						padding:50px 0;
+					}
 					.intro__photo{
 						width:100%;
 						max-width:452px;
+						margin:0 100px 0 0;
+						@include media ('<=1023px') {
+							margin:0 40px 0 0;
+						}
+						@include media ('<=768px') {
+							margin:0;
+							padding:0 0 8%;
+						}
 						img{
 							width:100%;
-							min-width:452px;
 							display:block;
 						}
 					}
 					.intro__info{
-						padding:0 0 0 110px;
+						max-width:578px;
+						width:100%;
 						.intro__title{
 							font-family:Alfa Slab One, cursive;
 							font-size:3.2rem;
 							color:#29d9c2;
 							letter-spacing:1px;
-							padding:10px 0 55px;
+							padding:10px 0 35px;
+							@include media ('<=1024px') {
+								padding:15px 0 25px;
+								font-size:2.75rem;
+							}
+							@include media ('<=768px') {
+								letter-spacing:0;
+							}
 							span{
 								color:#01a2a6;
 							}
@@ -298,6 +328,31 @@ body{
 							font-size:1rem;
 							color:#777;
 							line-height:2.2rem;
+							@include media ('<=480px') {
+								line-height:1.75rem;
+							}
+						}
+					}
+				}
+				.decoration{
+					img{
+						position:absolute;
+						top:-12%;
+						left:50%;
+						margin-left:-590px;
+						z-index:0;
+						height:260px;
+						@include media ('<=768px') {
+							top:-20px;
+							height:245px;
+							left:0;
+							margin-left:0;
+						}
+						@include media ('<=480px') {
+							height:40%;
+						}
+						@include media ('<=374px') {
+							height:36%;
 						}
 					}
 				}
