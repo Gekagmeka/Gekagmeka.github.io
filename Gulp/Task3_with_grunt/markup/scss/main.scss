@@ -285,7 +285,6 @@ body{
 					padding:50px 10px;
 					@include media ('<=768px') {
 						flex-direction:column;
-						padding:50px 0;
 					}
 					.intro__photo{
 						width:100%;
@@ -311,12 +310,15 @@ body{
 							font-size:3.2rem;
 							color:#29d9c2;
 							letter-spacing:1px;
-							padding:10px 0 35px;
+							padding:10px 0 7%;
+							@include media ('<=1179px') {
+								padding:15px 0 9%;
+							}
 							@include media ('<=1024px') {
-								padding:15px 0 25px;
-								font-size:2.75rem;
+								padding:15px 0 30px;
 							}
 							@include media ('<=768px') {
+								font-size:2.75rem;
 								letter-spacing:0;
 							}
 							span{
@@ -341,7 +343,18 @@ body{
 						left:50%;
 						margin-left:-590px;
 						z-index:0;
-						height:260px;
+						@include media ('<=1179px') {
+							left:0;
+							margin-left:0;
+							width:100%;
+							height:260px;
+						}
+						@include media ('<=1023px') {
+							left:0;
+							margin-left:0;
+							width:100%;
+							height:245px;
+						}
 						@include media ('<=768px') {
 							top:-20px;
 							height:245px;
@@ -353,6 +366,76 @@ body{
 						}
 						@include media ('<=374px') {
 							height:36%;
+						}
+					}
+				}
+			}
+		}
+		.major-sense{
+			width:100%;
+			background-color:#f2fefe;
+			.container{
+				max-width:1180px;
+				margin:0 auto;
+				padding:0 10px;
+				.major-sense__content{
+					display:flex;
+					justify-content:space-between;
+					padding:56px 80px;
+					@include media ('<=1024px') {
+						padding:50px 30px;
+					}
+					@include media ('<=768px') {
+						flex-direction:column;
+					}
+					.major-sense__info{
+						max-width:578px;
+						width:100%;
+						@include media ('<=768px') {
+							margin:0 auto;
+						}
+						.major-sense__title{
+							font-family:Alfa Slab One, cursive;
+							font-size:3.2rem;
+							color:#29d9c2;
+							letter-spacing:1px;
+							padding:0 0 35px;
+							@include media ('<=1024px') {
+								padding:15px 0 25px;
+								font-size:2.75rem;
+							}
+							@include media ('<=768px') {
+								letter-spacing:0;
+							}
+							span{
+								color:#01a2a6;
+							}
+						}
+						.major-sense__text{
+							font-family:Arial, Helvetica, sans-serif;
+							font-size:1rem;
+							color:#777;
+							line-height:2.2rem;
+							@include media ('<=480px') {
+								line-height:1.75rem;
+							}
+						}
+					}
+					.major-sense__mention{
+						width:230px;
+						margin:12px 0 0 40px;
+						text-align:right;
+						@include media ('<=768px') {
+							width:100%;
+							margin:20px 0 0;
+						}
+						img{
+							display:inline-block;
+							vertical-align:-8px;
+						}
+						span{
+							font-size:12px;
+							letter-spacing:0.3px;
 						}
 					}
 				}
