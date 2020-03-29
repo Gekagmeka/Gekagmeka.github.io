@@ -975,4 +975,6 @@ body .main .major-sense {
             body .main .major-sense .container .major-sense__content .poster .poster__info .poster__text {
               line-height: 1.75rem;
               color: #626161; } }
+    body .main .major-sense .container .major-sense__content .carousel {
+      padding: 50px 0 0; }
 /*# sourceMappingURL=main.css.map */
