@@ -379,65 +379,148 @@ body{
 				margin:0 auto;
 				padding:0 10px;
 				.major-sense__content{
-					display:flex;
-					justify-content:space-between;
-					padding:56px 80px;
-					@include media ('<=1024px') {
-						padding:50px 30px;
-					}
-					@include media ('<=768px') {
-						flex-direction:column;
-					}
-					.major-sense__info{
-						max-width:578px;
-						width:100%;
-						@include media ('<=768px') {
-							margin:0 auto;
+					.two-columns{
+						display:flex;
+						justify-content:space-between;
+						padding:56px 80px;
+						@include media ('<1024px') {
+							padding:50px 30px;
 						}
-						.major-sense__title{
-							font-family:Alfa Slab One, cursive;
-							font-size:3.2rem;
-							color:#29d9c2;
-							letter-spacing:1px;
-							padding:0 0 35px;
-							@include media ('<=1024px') {
-								padding:15px 0 25px;
-								font-size:2.75rem;
-							}
+						@include media ('<=768px') {
+							flex-direction:column;
+							padding:50px 10px;
+						}
+						.two-columns__info{
+							max-width:578px;
+							width:100%;
 							@include media ('<=768px') {
-								letter-spacing:0;
+								margin:0 auto;
+							}
+							.two-columns__title{
+								font-family:Alfa Slab One, cursive;
+								font-size:3.2rem;
+								color:#29d9c2;
+								letter-spacing:1px;
+								padding:0 0 35px;
+								@include media ('<=1024px') {
+									padding:15px 0 25px;
+									font-size:2.75rem;
+								}
+								@include media ('<=768px') {
+									letter-spacing:0;
+								}
+								span{
+									color:#01a2a6;
+								}
+							}
+							.two-columns__text{
+								font-family:Arial, Helvetica, sans-serif;
+								font-size:1rem;
+								color:#777;
+								line-height:2.2rem;
+								@include media ('<=480px') {
+									line-height:1.75rem;
+								}
+							}
+						}
+						.two-columns__mention{
+							width:230px;
+							margin:12px 0 0 40px;
+							text-align:right;
+							font-size:12px;
+							color:#777;
+							letter-spacing:0.3px;
+							@include media ('<=768px') {
+								width:100%;
+								margin:20px 0 0;
 							}
 							span{
-								color:#01a2a6;
-							}
-						}
-						.major-sense__text{
-							font-family:Arial, Helvetica, sans-serif;
-							font-size:1rem;
-							color:#777;
-							line-height:2.2rem;
-							@include media ('<=480px') {
-								line-height:1.75rem;
+								vertical-align:6px;
+								img{
+									display:inline-block;
+									transition:all 0.2s ease-in;
+									&:hover{
+										opacity:0.8;
+										@include media ('<=768px') {
+											opacity:1;
+										}
+									}
+								}
 							}
 						}
 					}
-					.major-sense__mention{
-						width:230px;
-						margin:12px 0 0 40px;
-						text-align:right;
+					.poster{
+						background-image:url('https://i.imgur.com/aOT0mjH.png');
+						background-repeat:no-repeat;
+						background-color:#84ecfa;
+						background-size:cover;
+						background-position:center bottom;
 						@include media ('<=768px') {
-							width:100%;
-							margin:20px 0 0;
+							background-position:22% bottom;
 						}
-						img{
-							display:inline-block;
-							vertical-align:-8px;
-						}
-						span{
-							font-size:12px;
-							letter-spacing:0.3px;
+						.poster__info{
+							position:relative;
+							width:495px;
+							padding:50px 56px 90px;
+							margin:0 0 0 auto;
+							background-color:#fff;
+							opacity:0.9;
+							@include media ('<=1023px') {
+								padding:40px 30px 60px;
+								width:50%;
+							}
+							@include media ('<=768px') {
+								width:100%;
+								padding:40px 20px 100px;
+								opacity:0.8;
+							}
+							&::after{
+								content:'';
+								position:absolute;
+								left:-20px;
+								top:50%;
+								border:10px solid transparent;
+								border-right:10px solid #fff;
+								margin-top:-5px;
+								@include media ('<=768px') {
+									display:none;
+									font-size:0;
+									line-height:0;
+								}
+							}
+							img{
+								display:block;
+								padding:0 0 5px;
+								@include media ('<=768px') {
+									padding:0 0 20px;
+								}
+							}
+							.poster__title{
+								color: #25a9ac;
+								font-size: 1.875rem;
+								font-family:Arial, Helvetica, sans-serif;
+								font-weight:400;
+								@include media ('<=768px') {
+									line-height:1.75rem;
+									color:#138f49;
+									padding:0 0 10px;
+								}
+							}
+							.poster__text{
+								font-family:Arial, Helvetica, sans-serif;
+								font-size: 1rem;
+								color: #777;
+								line-height: 2.2rem;
+								@include media ('<=768px') {
+									line-height:1.75rem;
+									color:#626161;
+								}
+							}
 						}
 					}
+					
+					
+					
 				}
 			}
 		}

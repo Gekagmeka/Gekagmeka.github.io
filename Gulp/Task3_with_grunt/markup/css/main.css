@@ -843,7 +843,7 @@ body .main .major-sense {
     max-width: 1180px;
     margin: 0 auto;
     padding: 0 10px; }
-    body .main .major-sense .container .major-sense__content {
+    body .main .major-sense .container .major-sense__content .two-columns {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -851,56 +851,128 @@ body .main .major-sense {
           -ms-flex-pack: justify;
               justify-content: space-between;
       padding: 56px 80px; }
-      @media (max-width: 1024px) {
-        body .main .major-sense .container .major-sense__content {
+      @media (max-width: 1023px) {
+        body .main .major-sense .container .major-sense__content .two-columns {
           padding: 50px 30px; } }
       @media (max-width: 768px) {
-        body .main .major-sense .container .major-sense__content {
+        body .main .major-sense .container .major-sense__content .two-columns {
           -webkit-box-orient: vertical;
           -webkit-box-direction: normal;
               -ms-flex-direction: column;
-                  flex-direction: column; } }
-      body .main .major-sense .container .major-sense__content .major-sense__info {
+                  flex-direction: column;
+          padding: 50px 10px; } }
+      body .main .major-sense .container .major-sense__content .two-columns .two-columns__info {
         max-width: 578px;
         width: 100%; }
         @media (max-width: 768px) {
-          body .main .major-sense .container .major-sense__content .major-sense__info {
+          body .main .major-sense .container .major-sense__content .two-columns .two-columns__info {
             margin: 0 auto; } }
-        body .main .major-sense .container .major-sense__content .major-sense__info .major-sense__title {
+        body .main .major-sense .container .major-sense__content .two-columns .two-columns__info .two-columns__title {
           font-family: Alfa Slab One, cursive;
           font-size: 3.2rem;
           color: #29d9c2;
           letter-spacing: 1px;
           padding: 0 0 35px; }
           @media (max-width: 1024px) {
-            body .main .major-sense .container .major-sense__content .major-sense__info .major-sense__title {
+            body .main .major-sense .container .major-sense__content .two-columns .two-columns__info .two-columns__title {
               padding: 15px 0 25px;
               font-size: 2.75rem; } }
           @media (max-width: 768px) {
-            body .main .major-sense .container .major-sense__content .major-sense__info .major-sense__title {
+            body .main .major-sense .container .major-sense__content .two-columns .two-columns__info .two-columns__title {
               letter-spacing: 0; } }
-          body .main .major-sense .container .major-sense__content .major-sense__info .major-sense__title span {
+          body .main .major-sense .container .major-sense__content .two-columns .two-columns__info .two-columns__title span {
             color: #01a2a6; }
-        body .main .major-sense .container .major-sense__content .major-sense__info .major-sense__text {
+        body .main .major-sense .container .major-sense__content .two-columns .two-columns__info .two-columns__text {
           font-family: Arial, Helvetica, sans-serif;
           font-size: 1rem;
           color: #777;
           line-height: 2.2rem; }
           @media (max-width: 480px) {
-            body .main .major-sense .container .major-sense__content .major-sense__info .major-sense__text {
+            body .main .major-sense .container .major-sense__content .two-columns .two-columns__info .two-columns__text {
               line-height: 1.75rem; } }
-      body .main .major-sense .container .major-sense__content .major-sense__mention {
+      body .main .major-sense .container .major-sense__content .two-columns .two-columns__mention {
         width: 230px;
         margin: 12px 0 0 40px;
-        text-align: right; }
+        text-align: right;
+        font-size: 12px;
+        color: #777;
+        letter-spacing: 0.3px; }
         @media (max-width: 768px) {
-          body .main .major-sense .container .major-sense__content .major-sense__mention {
+          body .main .major-sense .container .major-sense__content .two-columns .two-columns__mention {
             width: 100%;
             margin: 20px 0 0; } }
-        body .main .major-sense .container .major-sense__content .major-sense__mention img {
-          display: inline-block;
-          vertical-align: -8px; }
-        body .main .major-sense .container .major-sense__content .major-sense__mention span {
-          font-size: 12px;
-          letter-spacing: 0.3px; }
+        body .main .major-sense .container .major-sense__content .two-columns .two-columns__mention span {
+          vertical-align: 6px; }
+          body .main .major-sense .container .major-sense__content .two-columns .two-columns__mention span img {
+            display: inline-block;
+            -webkit-transition: all 0.2s ease-in;
+            transition: all 0.2s ease-in; }
+            body .main .major-sense .container .major-sense__content .two-columns .two-columns__mention span img:hover {
+              opacity: 0.8; }
+              @media (max-width: 768px) {
+                body .main .major-sense .container .major-sense__content .two-columns .two-columns__mention span img:hover {
+                  opacity: 1; } }
+    body .main .major-sense .container .major-sense__content .poster {
+      background-image: url("https://i.imgur.com/aOT0mjH.png");
+      background-repeat: no-repeat;
+      background-color: #84ecfa;
+      background-size: cover;
+      background-position: center bottom; }
+      @media (max-width: 768px) {
+        body .main .major-sense .container .major-sense__content .poster {
+          background-position: 22% bottom; } }
+      body .main .major-sense .container .major-sense__content .poster .poster__info {
+        position: relative;
+        width: 495px;
+        padding: 50px 56px 90px;
+        margin: 0 0 0 auto;
+        background-color: #fff;
+        opacity: 0.9; }
+        @media (max-width: 1023px) {
+          body .main .major-sense .container .major-sense__content .poster .poster__info {
+            padding: 40px 30px 60px;
+            width: 50%; } }
+        @media (max-width: 768px) {
+          body .main .major-sense .container .major-sense__content .poster .poster__info {
+            width: 100%;
+            padding: 40px 20px 100px;
+            opacity: 0.8; } }
+        body .main .major-sense .container .major-sense__content .poster .poster__info::after {
+          content: '';
+          position: absolute;
+          left: -20px;
+          top: 50%;
+          border: 10px solid transparent;
+          border-right: 10px solid #fff;
+          margin-top: -5px; }
+          @media (max-width: 768px) {
+            body .main .major-sense .container .major-sense__content .poster .poster__info::after {
+              display: none;
+              font-size: 0;
+              line-height: 0; } }
+        body .main .major-sense .container .major-sense__content .poster .poster__info img {
+          display: block;
+          padding: 0 0 5px; }
+          @media (max-width: 768px) {
+            body .main .major-sense .container .major-sense__content .poster .poster__info img {
+              padding: 0 0 20px; } }
+        body .main .major-sense .container .major-sense__content .poster .poster__info .poster__title {
+          color: #25a9ac;
+          font-size: 1.875rem;
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: 400; }
+          @media (max-width: 768px) {
+            body .main .major-sense .container .major-sense__content .poster .poster__info .poster__title {
+              line-height: 1.75rem;
+              color: #138f49;
+              padding: 0 0 10px; } }
+        body .main .major-sense .container .major-sense__content .poster .poster__info .poster__text {
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 1rem;
+          color: #777;
+          line-height: 2.2rem; }
+          @media (max-width: 768px) {
+            body .main .major-sense .container .major-sense__content .poster .poster__info .poster__text {
+              line-height: 1.75rem;
+              color: #626161; } }
 /*# sourceMappingURL=main.css.map */
