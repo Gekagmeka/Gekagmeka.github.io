@@ -379,6 +379,7 @@ body{
 				margin:0 auto;
 				padding:0 10px;
 				.major-sense__content{
+					padding:0 0 100px;
 					.two-columns{
 						display:flex;
 						justify-content:space-between;
@@ -520,6 +521,94 @@ body{
 					}
 					.carousel{
 						padding:50px 0 0;
+						@include media ('<=1023px') {
+								max-width:600px;
+								width:100%;
+								margin:0 auto;
+							}
+						.slide__block{
+							width:565px;
+							margin:0 10px;
+							height:361px;
+							@include media ('<=480px') {
+								height:auto;
+								margin:0;
+							}
+							&.first, &.second, &.third{
+								background-repeat:no-repeat;
+								background-size:100% 100%;
+								background-position: center center;
+								@include media ('<=1023px') {
+									background-size:cover;
+								}
+							}
+							&.first{
+								background-image:url(https://i.imgur.com/WpWu57t.jpg);
+							}
+							&.second{
+								background-image:url(https://i.imgur.com/IFHad9w.jpg);
+							}
+							&.third{
+								background-image:url(https://i.imgur.com/5Xeoxoe.jpg);
+							}
+							.slide__info{
+								max-width:340px;
+								width:100%;
+								height:100%;
+								padding:30px 25px;
+								background-color:#fff;
+								opacity:0.9;
+								position:relative;
+								@include media ('<=768px') {
+									max-width:60%;
+									padding:25px 15px;
+								}
+								@include media ('<=480px') {
+									padding:15px 10px;
+								}
+								&::after{
+								content:'';
+								position:absolute;
+								top:50%;
+								right:-20px;
+								margin:-5px 0 0;
+								border:10px solid transparent;
+								border-left:10px solid  #fff;
+							}
+								img{
+									display:block;
+									@include media ('<=480px') {
+										margin:0 0 10px;
+										width:80px;
+									}
+									@include media ('<=375px') {
+										margin:0 0 5px;
+										width:50px;
+									}
+								}
+								.slide__title{
+									font-size:1.875rem;
+									color:#25a9ac;
+									font-weight:400;
+									@include media ('<=480px') {
+										font-size:1.5rem;
+									}
+								}
+								.slide__text{
+									font-size:1rem;
+									line-height:2rem;
+									color:#777;
+									@include media ('<=480px') {
+										font-size:0.9rem;
+										line-height:1.5rem;
+									}
+									@include media ('<=480px') {
+										font-size:0.75rem;
+										line-height:1.25rem;
+									}
+								}
+							}
+						}
 					}
 					
 					
