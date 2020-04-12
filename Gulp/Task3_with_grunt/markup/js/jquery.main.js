@@ -5,6 +5,7 @@ $('.header__burger, .header__item').on('click', function(){
 
 $('.carousel').slick({
 dots: true,
+dotsClass: 'my-dots',
 infinite: true,
 slidesToShow: 2,
 slidesToScroll: 1,
