@@ -1361,4 +1361,32 @@ body .footer {
             border-left: 1px solid #000;
             background-color: #01a2a6;
             color: #fff; }
+
+body .arrow-up {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #fffffe;
+  border: 2px solid #f00; }
+  body .arrow-up:after, body .arrow-up:before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: #f00; }
+  body .arrow-up:after {
+    top: 25px;
+    left: 11px;
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg); }
+  body .arrow-up:before {
+    top: 25px;
+    right: 11px;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg); }
 /*# sourceMappingURL=main.css.map */

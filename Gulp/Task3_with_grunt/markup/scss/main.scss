@@ -876,4 +876,31 @@ body{
 			}
 		}
 	}
+	.arrow-up{
+		position:fixed;
+		right:20px;
+		bottom:20px;
+		width:60px;
+		height:60px;
+		border-radius:50%;
+		background-color:#fffffe;
+		border:2px solid #f00;
+		&:after, &:before{
+			content:'';
+			position:absolute;
+			width:20px;
+			height:2px;
+			background-color:#f00;
+		}
+		&:after{
+			top:25px;
+			left:11px;
+			transform:rotate(-45deg);
+		}
+		&:before{
+			top:25px;
+			right:11px;
+			transform:rotate(45deg);
+		}
+	}
 }
