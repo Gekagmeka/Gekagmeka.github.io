@@ -1370,7 +1370,19 @@ body .arrow-up {
   height: 60px;
   border-radius: 50%;
   background-color: #fffffe;
-  border: 2px solid #f00; }
+  border: 2px solid #f00;
+  -webkit-transform: translateX(100px);
+      -ms-transform: translateX(100px);
+          transform: translateX(100px);
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in; }
+  @media (max-width: 768px) {
+    body .arrow-up {
+      display: none; } }
+  body .arrow-up.shifted {
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0); }
   body .arrow-up:after, body .arrow-up:before {
     content: '';
     position: absolute;

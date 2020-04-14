@@ -885,6 +885,14 @@ body{
 		border-radius:50%;
 		background-color:#fffffe;
 		border:2px solid #f00;
+		transform: translateX(100px);
+		transition: all 0.2s ease-in;
+		@include media ('<=768px') {
+			display:none;
+		}
+		&.shifted{
+			transform: translateX(0);
+		}
 		&:after, &:before{
 			content:'';
 			position:absolute;
