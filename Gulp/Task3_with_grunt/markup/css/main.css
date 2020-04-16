@@ -1254,35 +1254,41 @@ body .main .prefooter {
           @media (max-width: 480px) {
             body .main .prefooter .container .prefooter__content .prefooter__info .prefooter__contacts h2 {
               font-size: 1.75rem; } }
-        body .main .prefooter .container .prefooter__content .prefooter__info .prefooter__contacts p {
-          font-size: 0.75rem;
-          color: #fff;
+        body .main .prefooter .container .prefooter__content .prefooter__info .prefooter__contacts .prefooter__row {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: start;
+              -ms-flex-pack: start;
+                  justify-content: flex-start;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
           padding: 0 0 5px; }
           @media (max-width: 480px) {
-            body .main .prefooter .container .prefooter__content .prefooter__info .prefooter__contacts p {
-              padding: 0 0 20px;
-              text-align: center; } }
-          body .main .prefooter .container .prefooter__content .prefooter__info .prefooter__contacts p span {
-            padding: 0 5px 0 0;
-            display: inline-block;
-            vertical-align: -4px; }
+            body .main .prefooter .container .prefooter__content .prefooter__info .prefooter__contacts .prefooter__row {
+              display: block; } }
+          body .main .prefooter .container .prefooter__content .prefooter__info .prefooter__contacts .prefooter__row img {
+            display: block; }
             @media (max-width: 480px) {
-              body .main .prefooter .container .prefooter__content .prefooter__info .prefooter__contacts p span {
-                display: block;
-                margin: 0 0 10px; } }
-            body .main .prefooter .container .prefooter__content .prefooter__info .prefooter__contacts p span img {
-              display: block; }
-              @media (max-width: 480px) {
-                body .main .prefooter .container .prefooter__content .prefooter__info .prefooter__contacts p span img {
-                  margin: 0 auto; } }
-          body .main .prefooter .container .prefooter__content .prefooter__info .prefooter__contacts p a {
-            text-decoration: none;
+              body .main .prefooter .container .prefooter__content .prefooter__info .prefooter__contacts .prefooter__row img {
+                margin: 0 auto; } }
+          body .main .prefooter .container .prefooter__content .prefooter__info .prefooter__contacts .prefooter__row p {
+            font-size: 0.75rem;
             color: #fff;
-            font-style: italic; }
-            body .main .prefooter .container .prefooter__content .prefooter__info .prefooter__contacts p a:hover {
-              text-decoration: underline; }
-            body .main .prefooter .container .prefooter__content .prefooter__info .prefooter__contacts p a[href^="tel"]:hover {
-              text-decoration: none; }
+            padding: 0 0 0 10px; }
+            @media (max-width: 480px) {
+              body .main .prefooter .container .prefooter__content .prefooter__info .prefooter__contacts .prefooter__row p {
+                padding: 10px 0 20px;
+                text-align: center; } }
+            body .main .prefooter .container .prefooter__content .prefooter__info .prefooter__contacts .prefooter__row p a {
+              text-decoration: none;
+              color: #fff;
+              font-style: italic; }
+              body .main .prefooter .container .prefooter__content .prefooter__info .prefooter__contacts .prefooter__row p a:hover {
+                text-decoration: underline; }
+              body .main .prefooter .container .prefooter__content .prefooter__info .prefooter__contacts .prefooter__row p a[href^="tel"]:hover {
+                text-decoration: none; }
 
 body .footer {
   background-image: url("https://i.imgur.com/OeiaKe3.jpg");

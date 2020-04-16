@@ -756,38 +756,38 @@ body{
 									font-size:1.75rem;
 								}
 							}
-							p{
-								font-size:0.75rem;
-								color:#fff;
+							.prefooter__row{
+								display:flex;
+								justify-content:flex-start;
+								align-items:center;
 								padding:0 0 5px;
 								@include media ('<=480px') {
-									padding:0 0 20px;
-									text-align:center;
+									display:block;
 								}
-								span{
-									padding:0 5px 0 0;
-									display:inline-block;
-									vertical-align:-4px;
+								img{
+									display:block;
 									@include media ('<=480px') {
-										display:block;
-										margin:0 0 10px;
-									}
-									img{
-										display:block;
-										@include media ('<=480px') {
-											margin:0 auto;
-										}
+										margin:0 auto;
 									}
 								}
-								a{
-									text-decoration:none;
+								p{
+									font-size:0.75rem;
 									color:#fff;
-									font-style:italic;
-									&:hover{
-										text-decoration:underline;
+									padding:0 0 0 10px;
+									@include media ('<=480px') {
+										padding:10px 0 20px;
+										text-align:center;
 									}
-									&[href^="tel"]:hover{
+									a{
 										text-decoration:none;
+										color:#fff;
+										font-style:italic;
+										&:hover{
+											text-decoration:underline;
+										}
+										&[href^="tel"]:hover{
+											text-decoration:none;
+										}
 									}
 								}
 							}
